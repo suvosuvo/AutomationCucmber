@@ -1,0 +1,99 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-30T14:34:43.669Z",
+        "before": [
+          {
+            "output": [
+              "Java Practice"
+            ],
+            "result": {
+              "duration": 8404000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Practicesteps.init(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "Java Practice",
+        "description": "",
+        "id": "to-test-my-java-practice-test;java-practice",
+        "after": [
+          {
+            "output": [
+              "Java Practice"
+            ],
+            "result": {
+              "duration": 1161000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Practicesteps.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "output": [
+              "Java Practicesuvo i am waste"
+            ],
+            "result": {
+              "duration": 3543000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I created Java String",
+            "match": {
+              "location": "stepDefinitions.Practicesteps.i_created_java_string()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Java Practice\nString\nsuvo i am waste",
+              "Java Practice\nArrayList\n[suvo, mouli, adrija, om, 6908890, 768346647, 99087]"
+            ],
+            "result": {
+              "duration": 1898000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Make them reverse",
+            "match": {
+              "location": "stepDefinitions.Practicesteps.make_them_reverse()"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "Java Practice\nMake the String Reverse\netsaw ma i ovus",
+              "Java Practice\nMake the ArrayList Reverse\n[ovus, iluom, ajirda, mo, 0988096, 746643867, 78099]"
+            ],
+            "result": {
+              "duration": 2114000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Print the String",
+            "match": {
+              "location": "stepDefinitions.Practicesteps.print_the_string()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To test my java practice test",
+    "description": "",
+    "id": "to-test-my-java-practice-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feature/TestDemo.feature",
+    "tags": []
+  }
+]
