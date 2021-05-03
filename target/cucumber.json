@@ -3,14 +3,14 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-04-30T14:34:43.669Z",
+        "start_timestamp": "2021-05-03T16:20:49.515Z",
         "before": [
           {
             "output": [
               "Java Practice"
             ],
             "result": {
-              "duration": 8404000,
+              "duration": 8166000,
               "status": "passed"
             },
             "match": {
@@ -25,10 +25,11 @@
         "after": [
           {
             "output": [
-              "Java Practice"
+              "Java Practice",
+              "BinaryTree.BinaryTreeNew@2de366bb"
             ],
             "result": {
-              "duration": 1161000,
+              "duration": 2438000,
               "status": "passed"
             },
             "match": {
@@ -44,7 +45,7 @@
               "Java Practicesuvo i am waste"
             ],
             "result": {
-              "duration": 3543000,
+              "duration": 4388000,
               "status": "passed"
             },
             "line": 3,
@@ -60,7 +61,7 @@
               "Java Practice\nArrayList\n[suvo, mouli, adrija, om, 6908890, 768346647, 99087]"
             ],
             "result": {
-              "duration": 1898000,
+              "duration": 2195000,
               "status": "passed"
             },
             "line": 4,
@@ -76,7 +77,7 @@
               "Java Practice\nMake the ArrayList Reverse\n[ovus, iluom, ajirda, mo, 0988096, 746643867, 78099]"
             ],
             "result": {
-              "duration": 2114000,
+              "duration": 2371000,
               "status": "passed"
             },
             "line": 5,

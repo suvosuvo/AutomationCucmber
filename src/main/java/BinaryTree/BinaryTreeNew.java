@@ -31,7 +31,16 @@ public class BinaryTreeNew {
                 third.right = sixth;
                 sb.append(third);
 //                System.out.printf("%s ", root.data);
+                System.out.println("Print in order->");
+                traverseInOrder(root);
                 return (sb.toString());
+            }
+            public void traverseInOrder(TreeNode node) {
+                if (node != null) {
+                    traverseInOrder(node.left);
+                    System.out.print(" " + node.data);
+                    traverseInOrder(node.right);
+                }
             }
 
         }

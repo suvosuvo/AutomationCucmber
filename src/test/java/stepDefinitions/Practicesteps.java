@@ -13,7 +13,7 @@ public class Practicesteps {
 
     Utility utility = new Utility();
     BinaryTreeNew binaryTreeNew = new BinaryTreeNew();
-    String Str = "suvo i am waste";
+    String Str = "This is a Beautiful String";
     String Rev = "";
     ArrayList<Object> arrayList = new ArrayList<Object>(Arrays.asList("suvo","mouli","adrija","om",6908890,768346647,99087));
     ArrayList<Object> revArrayList = new ArrayList<Object>();
@@ -57,7 +57,7 @@ public class Practicesteps {
         this.scenario = scenario;
         System.out.println(scenario.getName());
         scenario.log(scenario.getName());
-//        scenario.log(binaryTreeNew.toString());
+        scenario.log(binaryTreeNew.toString());
     }
 
 
