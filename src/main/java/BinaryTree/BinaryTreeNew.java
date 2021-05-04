@@ -10,6 +10,8 @@ public class BinaryTreeNew {
             private TreeNode right;
             public TreeNode(int data){
                 this.data=data;
+                this.left = null;
+                this.right = null;
             }
 
             public String createBinary(){
@@ -21,26 +23,22 @@ public class BinaryTreeNew {
                 TreeNode sixth = new TreeNode(new Random().nextInt(99-9)+1);
                 StringBuilder sb = new StringBuilder();
                 root = first;
-                sb.append(root);
+                sb.append(root).append('\n');
                 first.left = second;
-                sb.append(first);
+                sb.append(first).append('\n');
                 first.right = third;
                 second.left = fourth;
                 second.right = fifth;
-                sb.append(second);
+                sb.append(second).append('\n');
                 third.right = sixth;
-                sb.append(third);
+                sb.append(third).append('\n');
 //                System.out.printf("%s ", root.data);
-                System.out.println("Print in order->");
-                traverseInOrder(root);
+//                System.out.println("Print in order->");
+                String []tokens = sb.toString().split("\n");
+                for(int i = tokens.length - 1; i >= 0; --i)
+                    System.out.println(tokens[i]);
+
                 return (sb.toString());
-            }
-            public void traverseInOrder(TreeNode node) {
-                if (node != null) {
-                    traverseInOrder(node.left);
-                    System.out.print(" " + node.data);
-                    traverseInOrder(node.right);
-                }
             }
 
         }
