@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.197">
-    <testcase classname="To test my java practice test" name="Java Practice" time="0.09">
-        <system-out><![CDATA[Given I created Java String and Java Array List.............................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.256">
+    <testcase classname="Cucumber to do Java String manipulation" name="Java Practice" time="0.096">
+        <system-out>
+            <![CDATA[Given I created Java String and Java Array List and HashMap.................passed
 When Make them reverse......................................................passed
-Then Print the String.......................................................passed
-]]></system-out>
+Then Print the all the reverse Java String and Java Array List and HashMap..passed
+]]>
+        </system-out>
     </testcase>
 </testsuite>
