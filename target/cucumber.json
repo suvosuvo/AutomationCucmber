@@ -3,14 +3,14 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-05-04T15:48:10.475Z",
+        "start_timestamp": "2021-05-06T01:39:32.712Z",
         "before": [
           {
             "output": [
               "Java Practice"
             ],
             "result": {
-              "duration": 7126000,
+              "duration": 8317000,
               "status": "passed"
             },
             "match": {
@@ -26,10 +26,10 @@
           {
             "output": [
               "Java Practice",
-              "BinaryTree.BinaryTreeNew@2de366bb"
+              "BinaryTree.BinaryTreeNew@4b4dd216"
             ],
             "result": {
-              "duration": 2341000,
+              "duration": 1576000,
               "status": "passed"
             },
             "match": {
@@ -42,14 +42,16 @@
         "steps": [
           {
             "output": [
-              "Java PracticeThis is a Beautiful String"
+              "Java PracticeThis is a Beautiful String as TYHnZAgZdfYx\n",
+              "Java Practice[RoW40OxDva7o, qrxWo2vCb7Gt26C, vLYcYkZD1nkyVTHcN, Tfi10z5L, 1Ms4YRZF3GFmOEZmbMytbJu]\n",
+              "Java Practice{5647141684\u003dAVBREVfFypxZPIquUcWk, wewe\u003d87987}\n"
             ],
             "result": {
-              "duration": 3562000,
+              "duration": 5663000,
               "status": "passed"
             },
             "line": 3,
-            "name": "I created Java String",
+            "name": "I created Java String and Java Array List",
             "match": {
               "location": "stepDefinitions.Practicesteps.i_created_java_string()"
             },
@@ -57,11 +59,15 @@
           },
           {
             "output": [
-              "Java Practice\nString\nThis is a Beautiful String",
-              "Java Practice\nArrayList\n[suvo, mouli, adrija, om, 6908890, 768346647, 99087]"
+              "Java Practice\nString\nThis is a Beautiful String as TYHnZAgZdfYx",
+              "Java Practice\nArrayList\n[RoW40OxDva7o, qrxWo2vCb7Gt26C, vLYcYkZD1nkyVTHcN, Tfi10z5L, 1Ms4YRZF3GFmOEZmbMytbJu]",
+              "Java Practice\nhashmap\n{5647141684\u003dAVBREVfFypxZPIquUcWk, wewe\u003d87987}",
+              "Key : wewe\t\tValue : 87987",
+              "Key : 5647141684\t\tValue : AVBREVfFypxZPIquUcWk",
+              "Java Practice\nMake the HasMap Reverse\n{5647141684\u003dAVBREVfFypxZPIquUcWk, wewe\u003d87987}"
             ],
             "result": {
-              "duration": 2063000,
+              "duration": 12913000,
               "status": "passed"
             },
             "line": 4,
@@ -73,11 +79,12 @@
           },
           {
             "output": [
-              "Java Practice\nMake the String Reverse\ngnirtS lufituaeB a si sihT",
-              "Java Practice\nMake the ArrayList Reverse\n[ovus, iluom, ajirda, mo, 0988096, 746643867, 78099]"
+              "Java Practice\nMake the String Reverse\nxYfdZgAZnHYT sa gnirtS lufituaeB a si sihT",
+              "Java Practice\nMake the ArrayList Reverse\n[o7avDxO04WoR, C62tG7bCv2oWxrq, NcHTVykn1DZkYcYLv, L5z01ifT, uJbtyMbmZEOmFG3FZRY4sM1]",
+              "Java Practice\nMake the HasMap Reverse\n{5647141684\u003dAVBREVfFypxZPIquUcWk, wewe\u003d87987}"
             ],
             "result": {
-              "duration": 1871000,
+              "duration": 2732000,
               "status": "passed"
             },
             "line": 5,

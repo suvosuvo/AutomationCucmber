@@ -5,19 +5,25 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import io.cucumber.java.en.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
+import org.apache.commons.lang.RandomStringUtils;
+
+import java.util.*;
 
 public class Practicesteps {
 
     Utility utility = new Utility();
     BinaryTreeNew binaryTreeNew = new BinaryTreeNew();
-    String Str = "This is a Beautiful String";
+    String Str = "This is a Beautiful Alphanumeric String as "+ RandomStringUtils.random(12, true, true);;
     String Rev = "";
-    ArrayList<Object> arrayList = new ArrayList<Object>(Arrays.asList("suvo","mouli","adrija","om",6908890,768346647,99087));
+    ArrayList<Object> arrayList = new ArrayList<Object>(Arrays.asList(
+             RandomStringUtils.random(12, true, true)
+            ,RandomStringUtils.random(15, true, true)
+            ,RandomStringUtils.random(17, true, true)
+            ,RandomStringUtils.random(8, true, true)
+            ,RandomStringUtils.random(23, true, true)));
+
     ArrayList<Object> revArrayList = new ArrayList<Object>();
-    HashMap<String,Integer> hashMap = new HashMap<String,Integer>();
+    HashMap<Object,Object> hashMap = new HashMap<Object,Object>();
     private Scenario scenario;
 
     @Before
@@ -25,13 +31,21 @@ public class Practicesteps {
         this.scenario = scenario;
         System.out.println(scenario.getName());
         scenario.log(scenario.getName());
+        hashMap.put( RandomStringUtils.random(10, false, true)
+                     ,RandomStringUtils.random(20, true, false));
+        hashMap.put( RandomStringUtils.random(10, false, true)
+                    ,RandomStringUtils.random(20, true, false));
+        hashMap.put( RandomStringUtils.random(10, false, true)
+                    ,RandomStringUtils.random(20, true, false));
     }
 
 
-    @Given("I created Java String")
+    @Given("I created Java String and Java Array List and HashMap")
     public void i_created_java_string() {
-        System.out.println(Str);
-        scenario.log(scenario.getName()+Str);
+        scenario.log(scenario.getName()+Str+"\n");
+        scenario.log(scenario.getName()+arrayList+"\n");
+        scenario.log(scenario.getName()+hashMap+"\n");
+
     }
 
     @When("Make them reverse")
@@ -42,15 +56,24 @@ public class Practicesteps {
         for(Object i : arrayList) {
             revArrayList.add(utility.getRevString(i.toString()));
         }
-//        hashMap.put("Shsah",122);
-//        hashMap.put("wewe",87987);
 
+        scenario.log(scenario.getName()+"\nhashmap\n"+hashMap);
+        Iterator it = hashMap.entrySet().iterator();
+        // convert to ArrayList of key set
+        List<Object> alKeys = new ArrayList<Object>(hashMap.keySet());
+        Collections.reverse(alKeys);
+        scenario.log(scenario.getName()+"\niterate Hashmap using reverse order of keys\n");
+        for (Object strKey : alKeys) {
+            scenario.log("Key : " + strKey + "\t\t"
+                    + "Value : "
+                    + hashMap.get(strKey));
+        }
     }
-    @Then("Print the String")
+    @Then("Print the all the reverse Java String and Java Array List and HashMap")
     public void print_the_string() {
         scenario.log(scenario.getName()+"\nMake the String Reverse\n"+Rev);
         scenario.log(scenario.getName()+"\nMake the ArrayList Reverse\n"+revArrayList);
-//        scenario.log(scenario.getName()+"\n"+hashMap);
+
     }
     @After
     public void teardown(){

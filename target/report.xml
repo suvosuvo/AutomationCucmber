@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.192">
-    <testcase classname="To test my java practice test" name="Java Practice" time="0.078">
-        <system-out><![CDATA[Given I created Java String.................................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.197">
+    <testcase classname="To test my java practice test" name="Java Practice" time="0.09">
+        <system-out><![CDATA[Given I created Java String and Java Array List.............................passed
 When Make them reverse......................................................passed
 Then Print the String.......................................................passed
 ]]></system-out>
