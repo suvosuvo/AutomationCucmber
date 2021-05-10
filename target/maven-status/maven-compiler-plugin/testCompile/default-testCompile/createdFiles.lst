@@ -1,2 +1,3 @@
+stepDefinitions/WebPracticesteps.class
 testRunner/Testrunner.class
-stepDefinitions/Practicesteps.class
+stepDefinitions/JavaPracticesteps.class

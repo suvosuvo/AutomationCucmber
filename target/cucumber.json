@@ -3,18 +3,30 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-05-06T13:22:28.565Z",
+        "start_timestamp": "2021-05-10T21:20:28.701Z",
         "before": [
           {
             "output": [
               "Java Practice"
             ],
             "result": {
-              "duration": 10779000,
+              "duration": 6062000,
               "status": "passed"
             },
             "match": {
-              "location": "stepDefinitions.Practicesteps.init(io.cucumber.java.Scenario)"
+              "location": "stepDefinitions.WebPracticesteps.init(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "output": [
+              "Java Practice"
+            ],
+            "result": {
+              "duration": 2544000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.JavaPracticesteps.init(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -26,14 +38,24 @@
           {
             "output": [
               "Java Practice",
-              "BinaryTree.BinaryTreeNew@16fb356"
+              "Java Practice",
+              "BinaryTree.BinaryTreeNew@7249dadf"
             ],
             "result": {
-              "duration": 1089000,
+              "duration": 3319000,
               "status": "passed"
             },
             "match": {
-              "location": "stepDefinitions.Practicesteps.teardown()"
+              "location": "stepDefinitions.JavaPracticesteps.teardown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 369000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.WebPracticesteps.teardown()"
             }
           }
         ],
@@ -42,55 +64,55 @@
         "steps": [
           {
             "output": [
-              "Java PracticeThis is a Beautiful Alphanumeric String as Xw7OraKLnH46\n",
-              "Java Practice[5lG8f0sAHj0E, vUScUGxurPDLLR8, QWMk37PNvnYdlPHuz, u4iF6hbM, o60rrOFqJ3rmvg0KO8GeF3O]\n",
-              "Java Practice{2444119625\u003dXrKwcjBGuPJmuUewygKZ, 8647001600\u003dAYVcocMTcoVtQeyGySUL, 7736056092\u003dQlCkrJovCKESbRBvLkeB}\n"
+              "Java PracticeThis is a Beautiful Alphanumeric String as jXaAhqSlytNA\n",
+              "Java Practice[XhRozXCKW8j6, bnl1Ca86IOgbfUA, Fz5hhz5jiwFCjGpbB, mfnIZBhm, GKoBvcSIBP6kRK0CjktE7Cr]\n",
+              "Java Practice{6172816476\u003dJWxrCElfilLeeFmpBuVX, 9003718878\u003dhEUuNFAoDcnYDpKEXCzA, 4069714268\u003djvEIaYuyxiVRWtfJmkHD}\n"
             ],
             "result": {
-              "duration": 5733000,
+              "duration": 9812000,
               "status": "passed"
             },
             "line": 3,
             "name": "I created Java String and Java Array List and HashMap",
             "match": {
-              "location": "stepDefinitions.Practicesteps.i_created_java_string()"
+              "location": "stepDefinitions.JavaPracticesteps.i_created_java_string()"
             },
             "keyword": "Given "
           },
           {
             "output": [
-              "Java Practice\nString\nThis is a Beautiful Alphanumeric String as Xw7OraKLnH46",
-              "Java Practice\nArrayList\n[5lG8f0sAHj0E, vUScUGxurPDLLR8, QWMk37PNvnYdlPHuz, u4iF6hbM, o60rrOFqJ3rmvg0KO8GeF3O]",
-              "Java Practice\nhashmap\n{2444119625\u003dXrKwcjBGuPJmuUewygKZ, 8647001600\u003dAYVcocMTcoVtQeyGySUL, 7736056092\u003dQlCkrJovCKESbRBvLkeB}",
+              "Java Practice\nString\nThis is a Beautiful Alphanumeric String as jXaAhqSlytNA",
+              "Java Practice\nArrayList\n[XhRozXCKW8j6, bnl1Ca86IOgbfUA, Fz5hhz5jiwFCjGpbB, mfnIZBhm, GKoBvcSIBP6kRK0CjktE7Cr]",
+              "Java Practice\nhashmap\n{6172816476\u003dJWxrCElfilLeeFmpBuVX, 9003718878\u003dhEUuNFAoDcnYDpKEXCzA, 4069714268\u003djvEIaYuyxiVRWtfJmkHD}",
               "Java Practice\niterate Hashmap using reverse order of keys\n",
-              "Key : 7736056092\t\tValue : QlCkrJovCKESbRBvLkeB",
-              "Key : 8647001600\t\tValue : AYVcocMTcoVtQeyGySUL",
-              "Key : 2444119625\t\tValue : XrKwcjBGuPJmuUewygKZ"
+              "Key : 4069714268\t\tValue : jvEIaYuyxiVRWtfJmkHD",
+              "Key : 9003718878\t\tValue : hEUuNFAoDcnYDpKEXCzA",
+              "Key : 6172816476\t\tValue : JWxrCElfilLeeFmpBuVX"
             ],
             "result": {
-              "duration": 5239000,
+              "duration": 7037000,
               "status": "passed"
             },
             "line": 4,
             "name": "Make them reverse",
             "match": {
-              "location": "stepDefinitions.Practicesteps.make_them_reverse()"
+              "location": "stepDefinitions.JavaPracticesteps.make_them_reverse()"
             },
             "keyword": "When "
           },
           {
             "output": [
-              "Java Practice\nMake the String Reverse\n64HnLKarO7wX sa gnirtS ciremunahplA lufituaeB a si sihT",
-              "Java Practice\nMake the ArrayList Reverse\n[E0jHAs0f8Gl5, 8RLLDPruxGUcSUv, zuHPldYnvNP73kMWQ, Mbh6Fi4u, O3FeG8OK0gvmr3JqFOrr06o]"
+              "Java Practice\nMake the String Reverse\nANtylSqhAaXj sa gnirtS ciremunahplA lufituaeB a si sihT",
+              "Java Practice\nMake the ArrayList Reverse\n[6j8WKCXzoRhX, AUfbgOI68aC1lnb, BbpGjCFwij5zhh5zF, mhBZInfm, rC7EtkjC0KRk6PBIScvBoKG]"
             ],
             "result": {
-              "duration": 1425000,
+              "duration": 1706000,
               "status": "passed"
             },
             "line": 5,
             "name": "Print the all the reverse Java String and Java Array List and HashMap",
             "match": {
-              "location": "stepDefinitions.Practicesteps.print_the_string()"
+              "location": "stepDefinitions.JavaPracticesteps.print_the_string()"
             },
             "keyword": "Then "
           }
@@ -102,6 +124,133 @@
     "id": "cucumber-to-do-java-string-manipulation",
     "keyword": "Feature",
     "uri": "file:src/test/resources/Feature/TestDemo.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-10T21:20:28.807Z",
+        "before": [
+          {
+            "output": [
+              "WebUI Build Object Repo From a Page"
+            ],
+            "result": {
+              "duration": 1278000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.WebPracticesteps.init(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "output": [
+              "WebUI Build Object Repo From a Page"
+            ],
+            "result": {
+              "duration": 1035000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.JavaPracticesteps.init(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "WebUI Build Object Repo From a Page",
+        "description": "",
+        "id": "cucumber-to-do-build-own-object-repository-dynamically;webui-build-object-repo-from-a-page",
+        "after": [
+          {
+            "output": [
+              "WebUI Build Object Repo From a Page",
+              "WebUI Build Object Repo From a Page",
+              "BinaryTree.BinaryTreeNew@255d9277"
+            ],
+            "result": {
+              "duration": 1288000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.JavaPracticesteps.teardown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 229000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.WebPracticesteps.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "output": [
+              "WebUI Build Object Repo From a Page\nWeb Browser Title\n#1 Free CRM customer relationship management software cloud"
+            ],
+            "result": {
+              "duration": 3508112000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "open the Browser",
+            "match": {
+              "location": "stepDefinitions.WebPracticesteps.open_the_browser(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "SiteName"
+                ]
+              },
+              {
+                "cells": [
+                  "http://www.freecrm.com"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "WebUI Build Object Repo From a Page\nAll Links From WebSite\n{\u003dAPPS, https://www.freecrm.com/about.html\u003dABOUT, https://itunes.apple.com/us/app/cogmento/id1291380634?mt\u003d8\u003d, https://www.freecrm.com/hipaa.html\u003dHIPAA Medical CRM, https://www.freecrm.com/callcenter.html\u003dCall Center CRM, https://www.freecrm.com/is.html\u003dIndependent Sales CRM, https://support.cogmento.com/webinars-and-videos\u003dSUPPORT, https://freecrm.com/\u003dYOUR BUSINESS CLOUD PARTNER\n FREECRM, https://www.freecrm.com/compare.html\u003dCOMPARE, https://www.freecrm.com/#\u003d, https://www.freecrm.com/dental.html\u003dDental CRM, https://www.freecrm.com/auto.html\u003dAutomotive CRM, https://www.freecrm.com/privacy.html\u003dPrivacy Policy, https://www.freecrm.com/cb.html\u003dContractor Builder CRM, https://ui.cogmento.com/\u003dLOG IN, https://register.freecrm.com/register/\u003d SIGN UP, https://www.freecrm.com/crmcloud.html\u003dRestaurant CRM, https://www.freecrm.com/insurance.html\u003dInsurance CRM, https://www.freecrm.com/re.html\u003dReal Estate CRM, https://www.freecrm.com/terms.html\u003dTerms of Use, https://apps.apple.com/us/app/cogmento/id1291380634\u003d, https://play.google.com/store/apps/details?id\u003dcom.cogmento.app\u0026pcampaignid\u003dpcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1\u003d, https://apps.apple.com/us/developer/cogmento-inc/id1291380633?itsct\u003dapps_box\u0026itscg\u003d30200\u003d, https://www.freecrm.com/ps.html\u003dProfessional Services CRM, https://play.google.com/store/apps/details?id\u003dcom.cogmento.app\u003d, https://www.freecrm.com/pricing.html\u003dPRICING}"
+            ],
+            "result": {
+              "duration": 2203316000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "store all Links",
+            "match": {
+              "location": "stepDefinitions.WebPracticesteps.store_all_links()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 435000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "store all staticText",
+            "match": {
+              "location": "stepDefinitions.WebPracticesteps.store_all_static_text()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Cucumber to do Build own Object repository Dynamically",
+    "description": "",
+    "id": "cucumber-to-do-build-own-object-repository-dynamically",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feature/UI.feature",
     "tags": []
   }
 ]

@@ -1,15 +1,19 @@
 package stepDefinitions;
 
-import BinaryTree.*;
+import BinaryTree.BinaryTreeNew;
+import BinaryTree.Utility;
+import Browser.LaunchBrowser;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
-import io.cucumber.java.en.*;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.apache.commons.lang.RandomStringUtils;
 
 import java.util.*;
 
-public class Practicesteps {
+public class JavaPracticesteps extends LaunchBrowser {
 
     Utility utility = new Utility();
     BinaryTreeNew binaryTreeNew = new BinaryTreeNew();
@@ -37,6 +41,7 @@ public class Practicesteps {
                     ,RandomStringUtils.random(20, true, false));
         hashMap.put( RandomStringUtils.random(10, false, true)
                     ,RandomStringUtils.random(20, true, false));
+
     }
 
 
@@ -47,7 +52,6 @@ public class Practicesteps {
         scenario.log(scenario.getName()+hashMap+"\n");
 
     }
-
     @When("Make them reverse")
     public void make_them_reverse() {
         scenario.log(scenario.getName()+"\nString\n"+Str);
@@ -78,9 +82,10 @@ public class Practicesteps {
     @After
     public void teardown(){
         this.scenario = scenario;
-        System.out.println(scenario.getName());
+        scenario.log(scenario.getName());
         scenario.log(scenario.getName());
         scenario.log(binaryTreeNew.toString());
+
     }
 
 
