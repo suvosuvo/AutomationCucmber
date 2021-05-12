@@ -3,14 +3,161 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-05-10T21:20:28.701Z",
+        "start_timestamp": "2021-05-12T18:47:10.607Z",
+        "before": [
+          {
+            "output": [
+              "MobileUI Build Object Repo From a Page"
+            ],
+            "result": {
+              "duration": 6113000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.WebPracticesteps.init(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "output": [
+              "MobileUI Build Object Repo From a Page"
+            ],
+            "result": {
+              "duration": 2631000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.JavaPracticesteps.init(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "MobileUI Build Object Repo From a Page",
+        "description": "",
+        "id": "cucumber-to-do-test-mobile-ui;mobileui-build-object-repo-from-a-page",
+        "after": [
+          {
+            "output": [
+              "MobileUI Build Object Repo From a Page",
+              "MobileUI Build Object Repo From a Page",
+              "BinaryTree.BinaryTreeNew@67784537"
+            ],
+            "result": {
+              "duration": 2868000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.JavaPracticesteps.teardown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 640000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.WebPracticesteps.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "output": [
+              "MobileUI Build Object Repo From a Page\nWeb Browser Title\n#1 Free CRM customer relationship management software cloud"
+            ],
+            "result": {
+              "duration": 2995877000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "open the Browser",
+            "match": {
+              "location": "stepDefinitions.WebPracticesteps.open_the_browser(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "SiteName",
+                  "Device"
+                ]
+              },
+              {
+                "cells": [
+                  "http://www.freecrm.com",
+                  "Mobile"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "MobileUI Build Object Repo From a Page\nAll Links From WebSite\nhttps://freecrm.com/       ********* FREECRM*********\nhttps://freecrm.com/       *********FREECRM*********\nhttps://www.freecrm.com/about.html       *********ABOUT*********\nhttps://www.freecrm.com/#       *********FREE CRM*********\nhttps://www.freecrm.com/crmcloud.html       *********CRM for Any Business*********\nhttps://www.freecrm.com/hipaa.html       *********HIPAA CRM *********\nhttps://www.freecrm.com/dental.html       *********Dental CRM*********\nhttps://www.freecrm.com/auto.html       *********Automotive CRM*********\nhttps://www.freecrm.com/callcenter.html       *********Call Center CRM*********\nhttps://www.freecrm.com/insurance.html       *********Insurance CRM*********\nhttps://www.freecrm.com/re.html       *********Real Estate CRM*********\nhttps://www.freecrm.com/ps.html       *********Professional Services CRM*********\nhttps://www.freecrm.com/cb.html       *********Contractor Builder CRM*********\nhttps://www.freecrm.com/is.html       *********Independent Sales CRM*********\n\u003ca href\u003d\"\"\u003eApps\u003c/a\u003e-------------BROKEN LINK\nhttps://play.google.com/store/apps/details?id\u003dcom.cogmento.app       *********Android*********\nhttps://apps.apple.com/us/app/cogmento/id1291380634       *********iPhone / iPad*********\nhttps://www.freecrm.com/compare.html       *********COMPARE*********\nhttps://www.freecrm.com/pricing.html       *********PRICING*********\nhttps://itunes.apple.com/us/app/cogmento/id1291380634?mt\u003d8       ******************\nhttps://play.google.com/store/apps/details?id\u003dcom.cogmento.app       ******************\nhttps://support.cogmento.com/webinars-and-videos       *********SUPPORT*********\nhttps://ui.cogmento.com/       ******************\nhttps://register.freecrm.com/register/       ********* SIGN UP*********\nhttps://register.freecrm.com/register/       ********* SIGN UP*********\nhttps://register.freecrm.com/register/       ********* SIGN UP*********\nhttps://register.freecrm.com/register/       ********* SIGN UP*********\nhttps://register.freecrm.com/register/       ********* SIGN UP*********\nhttps://register.freecrm.com/register/       ********* SIGN UP*********\nhttps://freecrm.com/       *********YOUR BUSINESS CLOUD PARTNER\n FREECRM*********\nhttps://play.google.com/store/apps/details?id\u003dcom.cogmento.app\u0026pcampaignid\u003dpcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1       ******************\nhttps://apps.apple.com/us/developer/cogmento-inc/id1291380633?itsct\u003dapps_box\u0026itscg\u003d30200       ******************\nhttps://www.freecrm.com/crmcloud.html       *********Sales CRM*********\nhttps://www.freecrm.com/hipaa.html       *********HIPAA Medical CRM*********\nhttps://www.freecrm.com/dental.html       *********Dental CRM*********\nhttps://www.freecrm.com/auto.html       *********Automotive CRM*********\nhttps://www.freecrm.com/callcenter.html       *********Call Center CRM*********\nhttps://www.freecrm.com/insurance.html       *********Insurance CRM*********\nhttps://www.freecrm.com/re.html       *********Real Estate CRM*********\nhttps://www.freecrm.com/ps.html       *********Professional Services CRM*********\nhttps://www.freecrm.com/cb.html       *********Contractor Builder CRM*********\nhttps://www.freecrm.com/is.html       *********Independent Sales CRM*********\nhttps://www.freecrm.com/crmcloud.html       *********NPO Nonprofit CRM*********\nhttps://www.freecrm.com/crmcloud.html       *********NGO Nongovernment CRM*********\nhttps://www.freecrm.com/crmcloud.html       *********Wealth \u0026 Finance CRM*********\nhttps://www.freecrm.com/crmcloud.html       *********Hospitality CRM*********\nhttps://www.freecrm.com/crmcloud.html       *********Restaurant CRM*********\nhttps://www.freecrm.com/privacy.html       *********Privacy Policy*********\nhttps://www.freecrm.com/terms.html       *********Terms of Use*********\noffset-top-35 offset-md-top-57       *********Convert leads into accounts faster with the world\u0027s #1 CRM software. Grow your customer base, find new ones, and close faster from anywhere. Quickly follow up on leads, identify key contacts, and more. See a comfortable, customizable view of all of the details of sales at the touch of a button. Manage your pipeline and speed up your sales team.*********\noffset-top-35 offset-md-top-57       *********Support every customer on every channel everywhere. Personalize customer care, close cases faster, and deliver support everywhere. Collect and organize all of your support channels and customer information on a single page to quickly help customers — route questions to the right agent and allocate work based on availability \u0026 expertise.*********\noffset-top-35 offset-md-top-57       *********Reach out and engage your clients and nurture relationships. Personalize your email marketing, engage with mobile and influential social network marketing. Enable non-marketers to inform, engage in marketing quickly, and sell to their consumers at scale. Personalize the message and speak to people in their journey.*********\ntxt-gray-light offset-top-75 offset-md-top-87       *********Grow every part of your business, monitor and manage everything from sales leads to support tickets and channel marketing to email campaigns, all from any desktop or device using our cloud-based software. We have everything you need to organize, track, and nurture your leads and customers. The power of a customer relationship management system is the ability to quickly identify a lead from a prospect or an existing customer. Free CRM software automates the tasks salespeople dislike and makes it easy for everyone. The best way to get started with CRM technology is to sign up and test it out on some of your data right now. Getting started with FreeCRM.com is easy if you have a CSV or Excel file with your leads or contacts; export from your existing system and then import into our CRM fast and easy.*********\ntxt-gray-light offset-top-10       *********A CRM makes your team more efficient, identifying prospects and leads and closing more sales. On average, companies realize a 30% increase in sales by using FreeCRM. FreeCRM can also cut your time to close by as much as 50%. Put your company in this category and implement Free CRM now. Drive revenue growth; CRM powers your business when you streamline your configure, price, and quote process. Easily manage subscriptions, invoices, and payments. But there\u0027s more: a CRM can automate many things in your business, like tasks, documents, and support.*********\ntxt-gray-light offset-top-10       *********Find customers faster, win more customers, keep them happy, and connect everything. And it is not just sales; easy-to-use marketing automation and customer service tools boost engagement and happiness. Easy setup, manage leads, opportunities \u0026 accounts, create custom dashboards \u0026 reports, deliver social and email support, save time with customer service tools. Easily route the right customer service request to the proper agent and manage your knowledge base all in the CRM system.*********\ntxt-gray-light offset-top-10       *********Know every contact in your key accounts. Get a complete view of your customers, including activity history, key contacts, customer communications, and discussions with your co-workers. Customers matter, but spreadsheets, emails, and sticky notes are a hard way to manage them. CRM centralizes your data so you can manage the sales process, help customers faster, and market smarter. With the CRM tool, it is easy to segment and slice and dice your customers or prospects and convert more leads to sales.*********\ntxt-gray-lighter offset-top-75 offset-md-top-87       *********Add as many employees as you wish to the CRM and automate your business like never before. Please take a closer look at what CRM is and how it helps find, win, and keep customers. Manage your sales pipeline and speed up your closing time with Free CRM. Interactions tracked in the CRM give you a bird\u0027s eye view, and deals are displayed on the dashboard for total visibility into everyone\u0027s progress and obstacles. Enterprise-level security and ongoing support to help you grow. Small businesses can grow faster with all of the tools to fill the sales pipeline through smarter marketing, improved sales productivity, and customer service.*********\noffset-top-23       *********Our company offers professional Free CRM services to boost sales and automate marketing and get more customers. CRM helps your whole team organize and keep track of all of your important corporate data.*********\noffset-top-23       *********Try our mobile CRM applications for Android and iPhone and get your data on mobile on the web. Download and install our CRM apps and log in from anywhere to access your CRM data.*********\noffset-top-22       *********Sales CRM\nHIPAA Medical CRM\nDental CRM\nAutomotive CRM\nCall Center CRM\nInsurance CRM\nReal Estate CRM\nProfessional Services CRM\nContractor Builder CRM\nIndependent Sales CRM\nNPO Nonprofit CRM\nNGO Nongovernment CRM\nWealth \u0026 Finance CRM\nHospitality CRM\nRestaurant CRM\n*********\nprivacy       *********FreeCRM.com © 2021 - Privacy Policy - Terms of Use*********\niTunes       *********https://www.freecrm.com/images/Itunes.png*********\nAndroid       *********https://www.freecrm.com/images/Android.png*********\nfree crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********\nfree crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********\nfree crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********\nfree crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********\nfree crm customer lakewoods       *********https://www.freecrm.com/images/index-12-150x150.png*********\nfree crm customer household       *********https://www.freecrm.com/images/index-13-150x150.png*********\nfree crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********\nfree crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********\nfree crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********\nfree crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********\nGet it on Google Play       *********https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png*********\nDownload on the App Store       *********https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size\u003d250x83\u0026h\u003d95ead71555e15d4e25dc1db901e9e7b4*********\n"
+            ],
+            "result": {
+              "duration": 2791899000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "store all Links",
+            "match": {
+              "location": "stepDefinitions.WebPracticesteps.store_all_links()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "MobileUI Build Object Repo From a Page\nAll Text From WebSite\noffset-top-35 offset-md-top-57       *********Convert leads into accounts faster with the world\u0027s #1 CRM software. Grow your customer base, find new ones, and close faster from anywhere. Quickly follow up on leads, identify key contacts, and more. See a comfortable, customizable view of all of the details of sales at the touch of a button. Manage your pipeline and speed up your sales team.*********\noffset-top-35 offset-md-top-57       *********Support every customer on every channel everywhere. Personalize customer care, close cases faster, and deliver support everywhere. Collect and organize all of your support channels and customer information on a single page to quickly help customers — route questions to the right agent and allocate work based on availability \u0026 expertise.*********\noffset-top-35 offset-md-top-57       *********Reach out and engage your clients and nurture relationships. Personalize your email marketing, engage with mobile and influential social network marketing. Enable non-marketers to inform, engage in marketing quickly, and sell to their consumers at scale. Personalize the message and speak to people in their journey.*********\ntxt-gray-light offset-top-75 offset-md-top-87       *********Grow every part of your business, monitor and manage everything from sales leads to support tickets and channel marketing to email campaigns, all from any desktop or device using our cloud-based software. We have everything you need to organize, track, and nurture your leads and customers. The power of a customer relationship management system is the ability to quickly identify a lead from a prospect or an existing customer. Free CRM software automates the tasks salespeople dislike and makes it easy for everyone. The best way to get started with CRM technology is to sign up and test it out on some of your data right now. Getting started with FreeCRM.com is easy if you have a CSV or Excel file with your leads or contacts; export from your existing system and then import into our CRM fast and easy.*********\ntxt-gray-light offset-top-10       *********A CRM makes your team more efficient, identifying prospects and leads and closing more sales. On average, companies realize a 30% increase in sales by using FreeCRM. FreeCRM can also cut your time to close by as much as 50%. Put your company in this category and implement Free CRM now. Drive revenue growth; CRM powers your business when you streamline your configure, price, and quote process. Easily manage subscriptions, invoices, and payments. But there\u0027s more: a CRM can automate many things in your business, like tasks, documents, and support.*********\ntxt-gray-light offset-top-10       *********Find customers faster, win more customers, keep them happy, and connect everything. And it is not just sales; easy-to-use marketing automation and customer service tools boost engagement and happiness. Easy setup, manage leads, opportunities \u0026 accounts, create custom dashboards \u0026 reports, deliver social and email support, save time with customer service tools. Easily route the right customer service request to the proper agent and manage your knowledge base all in the CRM system.*********\ntxt-gray-light offset-top-10       *********Know every contact in your key accounts. Get a complete view of your customers, including activity history, key contacts, customer communications, and discussions with your co-workers. Customers matter, but spreadsheets, emails, and sticky notes are a hard way to manage them. CRM centralizes your data so you can manage the sales process, help customers faster, and market smarter. With the CRM tool, it is easy to segment and slice and dice your customers or prospects and convert more leads to sales.*********\ntxt-gray-lighter offset-top-75 offset-md-top-87       *********Add as many employees as you wish to the CRM and automate your business like never before. Please take a closer look at what CRM is and how it helps find, win, and keep customers. Manage your sales pipeline and speed up your closing time with Free CRM. Interactions tracked in the CRM give you a bird\u0027s eye view, and deals are displayed on the dashboard for total visibility into everyone\u0027s progress and obstacles. Enterprise-level security and ongoing support to help you grow. Small businesses can grow faster with all of the tools to fill the sales pipeline through smarter marketing, improved sales productivity, and customer service.*********\noffset-top-23       *********Our company offers professional Free CRM services to boost sales and automate marketing and get more customers. CRM helps your whole team organize and keep track of all of your important corporate data.*********\noffset-top-23       *********Try our mobile CRM applications for Android and iPhone and get your data on mobile on the web. Download and install our CRM apps and log in from anywhere to access your CRM data.*********\noffset-top-22       *********Sales CRM\nHIPAA Medical CRM\nDental CRM\nAutomotive CRM\nCall Center CRM\nInsurance CRM\nReal Estate CRM\nProfessional Services CRM\nContractor Builder CRM\nIndependent Sales CRM\nNPO Nonprofit CRM\nNGO Nongovernment CRM\nWealth \u0026 Finance CRM\nHospitality CRM\nRestaurant CRM\n*********\nprivacy       *********FreeCRM.com © 2021 - Privacy Policy - Terms of Use*********\niTunes       *********https://www.freecrm.com/images/Itunes.png*********\nAndroid       *********https://www.freecrm.com/images/Android.png*********\nfree crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********\nfree crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********\nfree crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********\nfree crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********\nfree crm customer lakewoods       *********https://www.freecrm.com/images/index-12-150x150.png*********\nfree crm customer household       *********https://www.freecrm.com/images/index-13-150x150.png*********\nfree crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********\nfree crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********\nfree crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********\nfree crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********\nGet it on Google Play       *********https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png*********\nDownload on the App Store       *********https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size\u003d250x83\u0026h\u003d95ead71555e15d4e25dc1db901e9e7b4*********\n"
+            ],
+            "result": {
+              "duration": 692688000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "store all staticText",
+            "match": {
+              "location": "stepDefinitions.WebPracticesteps.store_all_static_text()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "MobileUI Build Object Repo From a Page\nAll Image From WebSite\niTunes       *********https://www.freecrm.com/images/Itunes.png*********\nAndroid       *********https://www.freecrm.com/images/Android.png*********\nfree crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********\nfree crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********\nfree crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********\nfree crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********\nfree crm customer lakewoods       *********https://www.freecrm.com/images/index-12-150x150.png*********\nfree crm customer household       *********https://www.freecrm.com/images/index-13-150x150.png*********\nfree crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********\nfree crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********\nfree crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********\nfree crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********\nGet it on Google Play       *********https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png*********\nDownload on the App Store       *********https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size\u003d250x83\u0026h\u003d95ead71555e15d4e25dc1db901e9e7b4*********\n"
+            ],
+            "result": {
+              "duration": 451348000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "store all image",
+            "match": {
+              "location": "stepDefinitions.WebPracticesteps.store_all_image()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Cucumber to do Test Mobile UI",
+    "description": "",
+    "id": "cucumber-to-do-test-mobile-ui",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feature/MobileUI.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-12T18:47:17.635Z",
         "before": [
           {
             "output": [
               "Java Practice"
             ],
             "result": {
-              "duration": 6062000,
+              "duration": 564000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +169,7 @@
               "Java Practice"
             ],
             "result": {
-              "duration": 2544000,
+              "duration": 761000,
               "status": "passed"
             },
             "match": {
@@ -39,10 +186,10 @@
             "output": [
               "Java Practice",
               "Java Practice",
-              "BinaryTree.BinaryTreeNew@7249dadf"
+              "BinaryTree.BinaryTreeNew@78861d9e"
             ],
             "result": {
-              "duration": 3319000,
+              "duration": 2616000,
               "status": "passed"
             },
             "match": {
@@ -51,7 +198,7 @@
           },
           {
             "result": {
-              "duration": 369000,
+              "duration": 339000,
               "status": "passed"
             },
             "match": {
@@ -64,12 +211,12 @@
         "steps": [
           {
             "output": [
-              "Java PracticeThis is a Beautiful Alphanumeric String as jXaAhqSlytNA\n",
-              "Java Practice[XhRozXCKW8j6, bnl1Ca86IOgbfUA, Fz5hhz5jiwFCjGpbB, mfnIZBhm, GKoBvcSIBP6kRK0CjktE7Cr]\n",
-              "Java Practice{6172816476\u003dJWxrCElfilLeeFmpBuVX, 9003718878\u003dhEUuNFAoDcnYDpKEXCzA, 4069714268\u003djvEIaYuyxiVRWtfJmkHD}\n"
+              "Java PracticeThis is a Beautiful Alphanumeric String as 3WqlI18S0hNL\n",
+              "Java Practice[72Vssz32BFef, 4q8ARkh6UISpz86, ulR6aaOtd1YKkq6ym, r9pFiLxh, dlKrPv430H1eQWMRe1B6xId]\n",
+              "Java Practice{4999837360\u003dBMpxxZYmEzISjkyVqgPb, 7650063868\u003dmERxBrCmQDehJpVtarjW, 0317686054\u003dWLIgrAYBGgvxCgrReJfe}\n"
             ],
             "result": {
-              "duration": 9812000,
+              "duration": 1171000,
               "status": "passed"
             },
             "line": 3,
@@ -81,16 +228,16 @@
           },
           {
             "output": [
-              "Java Practice\nString\nThis is a Beautiful Alphanumeric String as jXaAhqSlytNA",
-              "Java Practice\nArrayList\n[XhRozXCKW8j6, bnl1Ca86IOgbfUA, Fz5hhz5jiwFCjGpbB, mfnIZBhm, GKoBvcSIBP6kRK0CjktE7Cr]",
-              "Java Practice\nhashmap\n{6172816476\u003dJWxrCElfilLeeFmpBuVX, 9003718878\u003dhEUuNFAoDcnYDpKEXCzA, 4069714268\u003djvEIaYuyxiVRWtfJmkHD}",
+              "Java Practice\nString\nThis is a Beautiful Alphanumeric String as 3WqlI18S0hNL",
+              "Java Practice\nArrayList\n[72Vssz32BFef, 4q8ARkh6UISpz86, ulR6aaOtd1YKkq6ym, r9pFiLxh, dlKrPv430H1eQWMRe1B6xId]",
+              "Java Practice\nhashmap\n{4999837360\u003dBMpxxZYmEzISjkyVqgPb, 7650063868\u003dmERxBrCmQDehJpVtarjW, 0317686054\u003dWLIgrAYBGgvxCgrReJfe}",
               "Java Practice\niterate Hashmap using reverse order of keys\n",
-              "Key : 4069714268\t\tValue : jvEIaYuyxiVRWtfJmkHD",
-              "Key : 9003718878\t\tValue : hEUuNFAoDcnYDpKEXCzA",
-              "Key : 6172816476\t\tValue : JWxrCElfilLeeFmpBuVX"
+              "Key : 0317686054\t\tValue : WLIgrAYBGgvxCgrReJfe",
+              "Key : 7650063868\t\tValue : mERxBrCmQDehJpVtarjW",
+              "Key : 4999837360\t\tValue : BMpxxZYmEzISjkyVqgPb"
             ],
             "result": {
-              "duration": 7037000,
+              "duration": 4523000,
               "status": "passed"
             },
             "line": 4,
@@ -102,17 +249,47 @@
           },
           {
             "output": [
-              "Java Practice\nMake the String Reverse\nANtylSqhAaXj sa gnirtS ciremunahplA lufituaeB a si sihT",
-              "Java Practice\nMake the ArrayList Reverse\n[6j8WKCXzoRhX, AUfbgOI68aC1lnb, BbpGjCFwij5zhh5zF, mhBZInfm, rC7EtkjC0KRk6PBIScvBoKG]"
+              "Java Practice\nMake the String Reverse\nLNh0S81IlqW3 sa gnirtS ciremunahplA lufituaeB a si sihT",
+              "Java Practice\nMake the ArrayList Reverse\n[feFB23zssV27, 68zpSIU6hkRA8q4, my6qkKY1dtOaa6Rlu, hxLiFp9r, dIx6B1eRMWQe1H034vPrKld]"
             ],
             "result": {
-              "duration": 1706000,
+              "duration": 1437000,
               "status": "passed"
             },
             "line": 5,
             "name": "Print the all the reverse Java String and Java Array List and HashMap",
             "match": {
               "location": "stepDefinitions.JavaPracticesteps.print_the_string()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "Java Practice\nPrint the Char Occurrence \u0027f\u0027 in a generic String \u0027This is a Beautiful Alphanumeric String as 3WqlI18S0hNL\u0027\n1"
+            ],
+            "result": {
+              "duration": 1324000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Print Count the Number of Occurrences of a generic Character in a generic String",
+            "match": {
+              "location": "stepDefinitions.JavaPracticesteps.print_count_the_number_of_occurrences_of_a_generic_character_in_a_generic_string()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "Java Practice\nPrint the Vowel occurrence in a generic String \u0027This is a Beautiful Alphanumeric String as 3WqlI18S0hNL\u0027\n16"
+            ],
+            "result": {
+              "duration": 787000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Print Count the Number of Vowel of a generic Character in a generic String",
+            "match": {
+              "location": "stepDefinitions.JavaPracticesteps.print_count_the_number_of_vowel_of_a_generic_character_in_a_generic_string()"
             },
             "keyword": "Then "
           }
@@ -123,21 +300,21 @@
     "description": "",
     "id": "cucumber-to-do-java-string-manipulation",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/Feature/TestDemo.feature",
+    "uri": "file:src/test/resources/Feature/StringManupulationJava.feature",
     "tags": []
   },
   {
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-05-10T21:20:28.807Z",
+        "start_timestamp": "2021-05-12T18:47:17.668Z",
         "before": [
           {
             "output": [
               "WebUI Build Object Repo From a Page"
             ],
             "result": {
-              "duration": 1278000,
+              "duration": 514000,
               "status": "passed"
             },
             "match": {
@@ -149,7 +326,7 @@
               "WebUI Build Object Repo From a Page"
             ],
             "result": {
-              "duration": 1035000,
+              "duration": 474000,
               "status": "passed"
             },
             "match": {
@@ -166,10 +343,10 @@
             "output": [
               "WebUI Build Object Repo From a Page",
               "WebUI Build Object Repo From a Page",
-              "BinaryTree.BinaryTreeNew@255d9277"
+              "BinaryTree.BinaryTreeNew@5f9f1886"
             ],
             "result": {
-              "duration": 1288000,
+              "duration": 4132000,
               "status": "passed"
             },
             "match": {
@@ -178,7 +355,7 @@
           },
           {
             "result": {
-              "duration": 229000,
+              "duration": 252000,
               "status": "passed"
             },
             "match": {
@@ -194,7 +371,7 @@
               "WebUI Build Object Repo From a Page\nWeb Browser Title\n#1 Free CRM customer relationship management software cloud"
             ],
             "result": {
-              "duration": 3508112000,
+              "duration": 2689945000,
               "status": "passed"
             },
             "line": 3,
@@ -205,12 +382,14 @@
             "rows": [
               {
                 "cells": [
-                  "SiteName"
+                  "SiteName",
+                  "Device"
                 ]
               },
               {
                 "cells": [
-                  "http://www.freecrm.com"
+                  "http://www.freecrm.com",
+                  "Browser"
                 ]
               }
             ],
@@ -218,10 +397,10 @@
           },
           {
             "output": [
-              "WebUI Build Object Repo From a Page\nAll Links From WebSite\n{\u003dAPPS, https://www.freecrm.com/about.html\u003dABOUT, https://itunes.apple.com/us/app/cogmento/id1291380634?mt\u003d8\u003d, https://www.freecrm.com/hipaa.html\u003dHIPAA Medical CRM, https://www.freecrm.com/callcenter.html\u003dCall Center CRM, https://www.freecrm.com/is.html\u003dIndependent Sales CRM, https://support.cogmento.com/webinars-and-videos\u003dSUPPORT, https://freecrm.com/\u003dYOUR BUSINESS CLOUD PARTNER\n FREECRM, https://www.freecrm.com/compare.html\u003dCOMPARE, https://www.freecrm.com/#\u003d, https://www.freecrm.com/dental.html\u003dDental CRM, https://www.freecrm.com/auto.html\u003dAutomotive CRM, https://www.freecrm.com/privacy.html\u003dPrivacy Policy, https://www.freecrm.com/cb.html\u003dContractor Builder CRM, https://ui.cogmento.com/\u003dLOG IN, https://register.freecrm.com/register/\u003d SIGN UP, https://www.freecrm.com/crmcloud.html\u003dRestaurant CRM, https://www.freecrm.com/insurance.html\u003dInsurance CRM, https://www.freecrm.com/re.html\u003dReal Estate CRM, https://www.freecrm.com/terms.html\u003dTerms of Use, https://apps.apple.com/us/app/cogmento/id1291380634\u003d, https://play.google.com/store/apps/details?id\u003dcom.cogmento.app\u0026pcampaignid\u003dpcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1\u003d, https://apps.apple.com/us/developer/cogmento-inc/id1291380633?itsct\u003dapps_box\u0026itscg\u003d30200\u003d, https://www.freecrm.com/ps.html\u003dProfessional Services CRM, https://play.google.com/store/apps/details?id\u003dcom.cogmento.app\u003d, https://www.freecrm.com/pricing.html\u003dPRICING}"
+              "WebUI Build Object Repo From a Page\nAll Links From WebSite\nhttps://freecrm.com/       *********YOUR BUSINESS CLOUD PARTNER\n FREECRM*********\nhttps://freecrm.com/       *********your business cloud partner FreeCRM*********\nhttps://www.freecrm.com/about.html       *********ABOUT*********\nhttps://www.freecrm.com/#       *********FREE CRM*********\nhttps://www.freecrm.com/crmcloud.html       ******************\nhttps://www.freecrm.com/hipaa.html       ******************\nhttps://www.freecrm.com/dental.html       ******************\nhttps://www.freecrm.com/auto.html       ******************\nhttps://www.freecrm.com/callcenter.html       ******************\nhttps://www.freecrm.com/insurance.html       ******************\nhttps://www.freecrm.com/re.html       ******************\nhttps://www.freecrm.com/ps.html       ******************\nhttps://www.freecrm.com/cb.html       ******************\nhttps://www.freecrm.com/is.html       ******************\n\u003ca href\u003d\"\"\u003eApps\u003c/a\u003e-------------BROKEN LINK\nhttps://play.google.com/store/apps/details?id\u003dcom.cogmento.app       ******************\nhttps://apps.apple.com/us/app/cogmento/id1291380634       ******************\nhttps://www.freecrm.com/compare.html       *********COMPARE*********\nhttps://www.freecrm.com/pricing.html       *********PRICING*********\nhttps://itunes.apple.com/us/app/cogmento/id1291380634?mt\u003d8       ******************\nhttps://play.google.com/store/apps/details?id\u003dcom.cogmento.app       ******************\nhttps://support.cogmento.com/webinars-and-videos       *********SUPPORT*********\nhttps://ui.cogmento.com/       *********LOG IN*********\nhttps://register.freecrm.com/register/       ********* SIGN UP*********\nhttps://register.freecrm.com/register/       ********* SIGN UP*********\nhttps://register.freecrm.com/register/       ********* SIGN UP*********\nhttps://register.freecrm.com/register/       ********* SIGN UP*********\nhttps://register.freecrm.com/register/       ********* SIGN UP*********\nhttps://register.freecrm.com/register/       ********* SIGN UP*********\nhttps://freecrm.com/       *********YOUR BUSINESS CLOUD PARTNER\n FREECRM*********\nhttps://play.google.com/store/apps/details?id\u003dcom.cogmento.app\u0026pcampaignid\u003dpcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1       ******************\nhttps://apps.apple.com/us/developer/cogmento-inc/id1291380633?itsct\u003dapps_box\u0026itscg\u003d30200       ******************\nhttps://www.freecrm.com/crmcloud.html       *********Sales CRM*********\nhttps://www.freecrm.com/hipaa.html       *********HIPAA Medical CRM*********\nhttps://www.freecrm.com/dental.html       *********Dental CRM*********\nhttps://www.freecrm.com/auto.html       *********Automotive CRM*********\nhttps://www.freecrm.com/callcenter.html       *********Call Center CRM*********\nhttps://www.freecrm.com/insurance.html       *********Insurance CRM*********\nhttps://www.freecrm.com/re.html       *********Real Estate CRM*********\nhttps://www.freecrm.com/ps.html       *********Professional Services CRM*********\nhttps://www.freecrm.com/cb.html       *********Contractor Builder CRM*********\nhttps://www.freecrm.com/is.html       *********Independent Sales CRM*********\nhttps://www.freecrm.com/crmcloud.html       *********NPO Nonprofit CRM*********\nhttps://www.freecrm.com/crmcloud.html       *********NGO Nongovernment CRM*********\nhttps://www.freecrm.com/crmcloud.html       *********Wealth \u0026 Finance CRM*********\nhttps://www.freecrm.com/crmcloud.html       *********Hospitality CRM*********\nhttps://www.freecrm.com/crmcloud.html       *********Restaurant CRM*********\nhttps://www.freecrm.com/privacy.html       *********Privacy Policy*********\nhttps://www.freecrm.com/terms.html       *********Terms of Use*********\nhttps://www.freecrm.com/#       ******************\noffset-top-35 offset-md-top-57       *********Convert leads into accounts faster with the world\u0027s #1 CRM software. Grow your customer base, find new ones, and close faster from anywhere. Quickly follow up on leads, identify key contacts, and more. See a comfortable, customizable view of all of the details of sales at the touch of a button. Manage your pipeline and speed up your sales team.*********\noffset-top-35 offset-md-top-57       *********Support every customer on every channel everywhere. Personalize customer care, close cases faster, and deliver support everywhere. Collect and organize all of your support channels and customer information on a single page to quickly help customers — route questions to the right agent and allocate work based on availability \u0026 expertise.*********\noffset-top-35 offset-md-top-57       *********Reach out and engage your clients and nurture relationships. Personalize your email marketing, engage with mobile and influential social network marketing. Enable non-marketers to inform, engage in marketing quickly, and sell to their consumers at scale. Personalize the message and speak to people in their journey.*********\ntxt-gray-light offset-top-75 offset-md-top-87       *********Grow every part of your business, monitor and manage everything from sales leads to support tickets and channel marketing to email campaigns, all from any desktop or device using our cloud-based software. We have everything you need to organize, track, and nurture your leads and customers. The power of a customer relationship management system is the ability to quickly identify a lead from a prospect or an existing customer. Free CRM software automates the tasks salespeople dislike and makes it easy for everyone. The best way to get started with CRM technology is to sign up and test it out on some of your data right now. Getting started with FreeCRM.com is easy if you have a CSV or Excel file with your leads or contacts; export from your existing system and then import into our CRM fast and easy.*********\ntxt-gray-light offset-top-10       *********A CRM makes your team more efficient, identifying prospects and leads and closing more sales. On average, companies realize a 30% increase in sales by using FreeCRM. FreeCRM can also cut your time to close by as much as 50%. Put your company in this category and implement Free CRM now. Drive revenue growth; CRM powers your business when you streamline your configure, price, and quote process. Easily manage subscriptions, invoices, and payments. But there\u0027s more: a CRM can automate many things in your business, like tasks, documents, and support.*********\ntxt-gray-light offset-top-10       *********Find customers faster, win more customers, keep them happy, and connect everything. And it is not just sales; easy-to-use marketing automation and customer service tools boost engagement and happiness. Easy setup, manage leads, opportunities \u0026 accounts, create custom dashboards \u0026 reports, deliver social and email support, save time with customer service tools. Easily route the right customer service request to the proper agent and manage your knowledge base all in the CRM system.*********\ntxt-gray-light offset-top-10       *********Know every contact in your key accounts. Get a complete view of your customers, including activity history, key contacts, customer communications, and discussions with your co-workers. Customers matter, but spreadsheets, emails, and sticky notes are a hard way to manage them. CRM centralizes your data so you can manage the sales process, help customers faster, and market smarter. With the CRM tool, it is easy to segment and slice and dice your customers or prospects and convert more leads to sales.*********\ntxt-gray-lighter offset-top-75 offset-md-top-87       *********Add as many employees as you wish to the CRM and automate your business like never before. Please take a closer look at what CRM is and how it helps find, win, and keep customers. Manage your sales pipeline and speed up your closing time with Free CRM. Interactions tracked in the CRM give you a bird\u0027s eye view, and deals are displayed on the dashboard for total visibility into everyone\u0027s progress and obstacles. Enterprise-level security and ongoing support to help you grow. Small businesses can grow faster with all of the tools to fill the sales pipeline through smarter marketing, improved sales productivity, and customer service.*********\noffset-top-23       *********Our company offers professional Free CRM services to boost sales and automate marketing and get more customers. CRM helps your whole team organize and keep track of all of your important corporate data.*********\noffset-top-23       *********Try our mobile CRM applications for Android and iPhone and get your data on mobile on the web. Download and install our CRM apps and log in from anywhere to access your CRM data.*********\noffset-top-22       *********Sales CRM\nHIPAA Medical CRM\nDental CRM\nAutomotive CRM\nCall Center CRM\nInsurance CRM\nReal Estate CRM\nProfessional Services CRM\nContractor Builder CRM\nIndependent Sales CRM\nNPO Nonprofit CRM\nNGO Nongovernment CRM\nWealth \u0026 Finance CRM\nHospitality CRM\nRestaurant CRM\n*********\nprivacy       *********FreeCRM.com © 2021 - Privacy Policy - Terms of Use*********\niTunes       *********https://www.freecrm.com/images/Itunes.png*********\nAndroid       *********https://www.freecrm.com/images/Android.png*********\nfree crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********\nfree crm customer lakewoods       *********https://www.freecrm.com/images/index-12-150x150.png*********\nfree crm customer household       *********https://www.freecrm.com/images/index-13-150x150.png*********\nfree crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********\nfree crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********\nfree crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********\nfree crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********\nfree crm customer lakewoods       *********https://www.freecrm.com/images/index-12-150x150.png*********\nfree crm customer household       *********https://www.freecrm.com/images/index-13-150x150.png*********\nfree crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********\nfree crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********\nfree crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********\nfree crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********\nfree crm customer lakewoods       *********https://www.freecrm.com/images/index-12-150x150.png*********\nfree crm customer household       *********https://www.freecrm.com/images/index-13-150x150.png*********\nfree crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********\nGet it on Google Play       *********https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png*********\nDownload on the App Store       *********https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size\u003d250x83\u0026h\u003d95ead71555e15d4e25dc1db901e9e7b4*********\n"
             ],
             "result": {
-              "duration": 2203316000,
+              "duration": 2473191000,
               "status": "passed"
             },
             "line": 6,
@@ -232,14 +411,32 @@
             "keyword": "Then "
           },
           {
+            "output": [
+              "WebUI Build Object Repo From a Page\nAll Text From WebSite\noffset-top-35 offset-md-top-57       *********Convert leads into accounts faster with the world\u0027s #1 CRM software. Grow your customer base, find new ones, and close faster from anywhere. Quickly follow up on leads, identify key contacts, and more. See a comfortable, customizable view of all of the details of sales at the touch of a button. Manage your pipeline and speed up your sales team.*********\noffset-top-35 offset-md-top-57       *********Support every customer on every channel everywhere. Personalize customer care, close cases faster, and deliver support everywhere. Collect and organize all of your support channels and customer information on a single page to quickly help customers — route questions to the right agent and allocate work based on availability \u0026 expertise.*********\noffset-top-35 offset-md-top-57       *********Reach out and engage your clients and nurture relationships. Personalize your email marketing, engage with mobile and influential social network marketing. Enable non-marketers to inform, engage in marketing quickly, and sell to their consumers at scale. Personalize the message and speak to people in their journey.*********\ntxt-gray-light offset-top-75 offset-md-top-87       *********Grow every part of your business, monitor and manage everything from sales leads to support tickets and channel marketing to email campaigns, all from any desktop or device using our cloud-based software. We have everything you need to organize, track, and nurture your leads and customers. The power of a customer relationship management system is the ability to quickly identify a lead from a prospect or an existing customer. Free CRM software automates the tasks salespeople dislike and makes it easy for everyone. The best way to get started with CRM technology is to sign up and test it out on some of your data right now. Getting started with FreeCRM.com is easy if you have a CSV or Excel file with your leads or contacts; export from your existing system and then import into our CRM fast and easy.*********\ntxt-gray-light offset-top-10       *********A CRM makes your team more efficient, identifying prospects and leads and closing more sales. On average, companies realize a 30% increase in sales by using FreeCRM. FreeCRM can also cut your time to close by as much as 50%. Put your company in this category and implement Free CRM now. Drive revenue growth; CRM powers your business when you streamline your configure, price, and quote process. Easily manage subscriptions, invoices, and payments. But there\u0027s more: a CRM can automate many things in your business, like tasks, documents, and support.*********\ntxt-gray-light offset-top-10       *********Find customers faster, win more customers, keep them happy, and connect everything. And it is not just sales; easy-to-use marketing automation and customer service tools boost engagement and happiness. Easy setup, manage leads, opportunities \u0026 accounts, create custom dashboards \u0026 reports, deliver social and email support, save time with customer service tools. Easily route the right customer service request to the proper agent and manage your knowledge base all in the CRM system.*********\ntxt-gray-light offset-top-10       *********Know every contact in your key accounts. Get a complete view of your customers, including activity history, key contacts, customer communications, and discussions with your co-workers. Customers matter, but spreadsheets, emails, and sticky notes are a hard way to manage them. CRM centralizes your data so you can manage the sales process, help customers faster, and market smarter. With the CRM tool, it is easy to segment and slice and dice your customers or prospects and convert more leads to sales.*********\ntxt-gray-lighter offset-top-75 offset-md-top-87       *********Add as many employees as you wish to the CRM and automate your business like never before. Please take a closer look at what CRM is and how it helps find, win, and keep customers. Manage your sales pipeline and speed up your closing time with Free CRM. Interactions tracked in the CRM give you a bird\u0027s eye view, and deals are displayed on the dashboard for total visibility into everyone\u0027s progress and obstacles. Enterprise-level security and ongoing support to help you grow. Small businesses can grow faster with all of the tools to fill the sales pipeline through smarter marketing, improved sales productivity, and customer service.*********\noffset-top-23       *********Our company offers professional Free CRM services to boost sales and automate marketing and get more customers. CRM helps your whole team organize and keep track of all of your important corporate data.*********\noffset-top-23       *********Try our mobile CRM applications for Android and iPhone and get your data on mobile on the web. Download and install our CRM apps and log in from anywhere to access your CRM data.*********\noffset-top-22       *********Sales CRM\nHIPAA Medical CRM\nDental CRM\nAutomotive CRM\nCall Center CRM\nInsurance CRM\nReal Estate CRM\nProfessional Services CRM\nContractor Builder CRM\nIndependent Sales CRM\nNPO Nonprofit CRM\nNGO Nongovernment CRM\nWealth \u0026 Finance CRM\nHospitality CRM\nRestaurant CRM\n*********\nprivacy       *********FreeCRM.com © 2021 - Privacy Policy - Terms of Use*********\niTunes       *********https://www.freecrm.com/images/Itunes.png*********\nAndroid       *********https://www.freecrm.com/images/Android.png*********\nfree crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********\nfree crm customer lakewoods       *********https://www.freecrm.com/images/index-12-150x150.png*********\nfree crm customer household       *********https://www.freecrm.com/images/index-13-150x150.png*********\nfree crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********\nfree crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********\nfree crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********\nfree crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********\nfree crm customer lakewoods       *********https://www.freecrm.com/images/index-12-150x150.png*********\nfree crm customer household       *********https://www.freecrm.com/images/index-13-150x150.png*********\nfree crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********\nfree crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********\nfree crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********\nfree crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********\nfree crm customer lakewoods       *********https://www.freecrm.com/images/index-12-150x150.png*********\nfree crm customer household       *********https://www.freecrm.com/images/index-13-150x150.png*********\nfree crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********\nGet it on Google Play       *********https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png*********\nDownload on the App Store       *********https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size\u003d250x83\u0026h\u003d95ead71555e15d4e25dc1db901e9e7b4*********\n"
+            ],
             "result": {
-              "duration": 435000,
+              "duration": 789774000,
               "status": "passed"
             },
             "line": 7,
             "name": "store all staticText",
             "match": {
               "location": "stepDefinitions.WebPracticesteps.store_all_static_text()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "WebUI Build Object Repo From a Page\nAll Image From WebSite\niTunes       *********https://www.freecrm.com/images/Itunes.png*********\nAndroid       *********https://www.freecrm.com/images/Android.png*********\nfree crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********\nfree crm customer lakewoods       *********https://www.freecrm.com/images/index-12-150x150.png*********\nfree crm customer household       *********https://www.freecrm.com/images/index-13-150x150.png*********\nfree crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********\nfree crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********\nfree crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********\nfree crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********\nfree crm customer lakewoods       *********https://www.freecrm.com/images/index-12-150x150.png*********\nfree crm customer household       *********https://www.freecrm.com/images/index-13-150x150.png*********\nfree crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********\nfree crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********\nfree crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********\nfree crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********\nfree crm customer lakewoods       *********https://www.freecrm.com/images/index-12-150x150.png*********\nfree crm customer household       *********https://www.freecrm.com/images/index-13-150x150.png*********\nfree crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********\nGet it on Google Play       *********https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png*********\nDownload on the App Store       *********https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size\u003d250x83\u0026h\u003d95ead71555e15d4e25dc1db901e9e7b4*********\n"
+            ],
+            "result": {
+              "duration": 575082000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "store all image",
+            "match": {
+              "location": "stepDefinitions.WebPracticesteps.store_all_image()"
             },
             "keyword": "Then "
           }
@@ -250,7 +447,7 @@
     "description": "",
     "id": "cucumber-to-do-build-own-object-repository-dynamically",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/Feature/UI.feature",
+    "uri": "file:src/test/resources/Feature/WebUI.feature",
     "tags": []
   }
 ]

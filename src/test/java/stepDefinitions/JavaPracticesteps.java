@@ -3,6 +3,7 @@ package stepDefinitions;
 import BinaryTree.BinaryTreeNew;
 import BinaryTree.Utility;
 import Browser.LaunchBrowser;
+import com.google.gson.internal.bind.util.ISO8601Utils;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -19,6 +20,9 @@ public class JavaPracticesteps extends LaunchBrowser {
     BinaryTreeNew binaryTreeNew = new BinaryTreeNew();
     String Str = "This is a Beautiful Alphanumeric String as "+ RandomStringUtils.random(12, true, true);;
     String Rev = "";
+    char c = (char)(new Random().nextInt(26) + 'a');
+
+
     ArrayList<Object> arrayList = new ArrayList<Object>(Arrays.asList(
              RandomStringUtils.random(12, true, true)
             ,RandomStringUtils.random(15, true, true)
@@ -79,6 +83,17 @@ public class JavaPracticesteps extends LaunchBrowser {
         scenario.log(scenario.getName()+"\nMake the ArrayList Reverse\n"+revArrayList);
 
     }
+    @Then("Print Count the Number of Occurrences of a generic Character in a generic String")
+    public void print_count_the_number_of_occurrences_of_a_generic_character_in_a_generic_string() {
+        scenario.log(scenario.getName()+"\nPrint the Char Occurrence '"+c+"' in a generic String '"+Str+"'\n"
+                +utility.getCountChrOccurrence(Str,c));
+    }
+    @Then("Print Count the Number of Vowel of a generic Character in a generic String")
+    public void print_count_the_number_of_vowel_of_a_generic_character_in_a_generic_string() {
+        scenario.log(scenario.getName()+"\nPrint the Vowel occurrence in a generic String '"+Str+"'\n"
+                +utility.getCountVowelOccurrence(Str.toLowerCase()));
+    }
+
     @After
     public void teardown(){
         this.scenario = scenario;

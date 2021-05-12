@@ -10,4 +10,10 @@ public class Utility {
         }
         return reverseStr;
     }
+    public long getCountChrOccurrence(String in_str,char c) {
+        return (in_str.chars().filter(e->(char)e == c).count()) ;
+    }
+    public long getCountVowelOccurrence(String in_str) {
+        return (in_str.chars().filter(e->(char)e == 'a' || (char)e == 'e' || (char)e == 'i' || (char)e == 'o' || (char)e == 'u').count()) ;
+    }
 }

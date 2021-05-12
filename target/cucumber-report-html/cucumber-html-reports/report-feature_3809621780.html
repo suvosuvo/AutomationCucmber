@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1.0-SNAPSHOT) - Feature: Cucumber to do Test Mobile UI</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>ExecuteAutomation</td>
+        <td>1.0-SNAPSHOT</td>
+      <td>12 May 2021, 14:47</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">Cucumber to do Test Mobile UI</td>
+          <td      class="passed"    >4</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">4</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="6931812000">6.931</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">Cucumber to do Test Mobile UI</span>
+
+
+</div>
+
+        <div class="description indention"></div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">6.931</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">MobileUI Build Object Repo From a Page</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-2" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.WebPracticesteps.init(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+          </div>
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-3">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-3" class="collapse collapsable-details " >
+          
+          <pre><p>MobileUI Build Object Repo From a Page</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.JavaPracticesteps.init(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+          </div>
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-4">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-4" class="collapse collapsable-details " >
+          
+          <pre><p>MobileUI Build Object Repo From a Page</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">open the Browser</span>
+
+  <span class="lead-duration duration">2.995</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>SiteName</td>
+                  <td>Device</td>
+              </tr>
+              <tr>
+                  <td>http://www.freecrm.com</td>
+                  <td>Mobile</td>
+              </tr>
+          </table>
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-6">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-6" class="collapse collapsable-details " >
+          
+          <pre><p>MobileUI Build Object Repo From a Page
+Web Browser Title
+#1 Free CRM customer relationship management software cloud</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">store all Links</span>
+
+  <span class="lead-duration duration">2.791</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-7">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-7" class="collapse collapsable-details " >
+          
+          <pre><p>MobileUI Build Object Repo From a Page
+All Links From WebSite
+https://freecrm.com/       ********* FREECRM*********
+https://freecrm.com/       *********FREECRM*********
+https://www.freecrm.com/about.html       *********ABOUT*********
+https://www.freecrm.com/#       *********FREE CRM*********
+https://www.freecrm.com/crmcloud.html       *********CRM for Any Business*********
+https://www.freecrm.com/hipaa.html       *********HIPAA CRM *********
+https://www.freecrm.com/dental.html       *********Dental CRM*********
+https://www.freecrm.com/auto.html       *********Automotive CRM*********
+https://www.freecrm.com/callcenter.html       *********Call Center CRM*********
+https://www.freecrm.com/insurance.html       *********Insurance CRM*********
+https://www.freecrm.com/re.html       *********Real Estate CRM*********
+https://www.freecrm.com/ps.html       *********Professional Services CRM*********
+https://www.freecrm.com/cb.html       *********Contractor Builder CRM*********
+https://www.freecrm.com/is.html       *********Independent Sales CRM*********
+&lt;a href=&quot;&quot;&gt;Apps&lt;/a&gt;-------------BROKEN LINK
+https://play.google.com/store/apps/details?id=com.cogmento.app       *********Android*********
+https://apps.apple.com/us/app/cogmento/id1291380634       *********iPhone / iPad*********
+https://www.freecrm.com/compare.html       *********COMPARE*********
+https://www.freecrm.com/pricing.html       *********PRICING*********
+https://itunes.apple.com/us/app/cogmento/id1291380634?mt=8       ******************
+https://play.google.com/store/apps/details?id=com.cogmento.app       ******************
+https://support.cogmento.com/webinars-and-videos       *********SUPPORT*********
+https://ui.cogmento.com/       ******************
+https://register.freecrm.com/register/       ********* SIGN UP*********
+https://register.freecrm.com/register/       ********* SIGN UP*********
+https://register.freecrm.com/register/       ********* SIGN UP*********
+https://register.freecrm.com/register/       ********* SIGN UP*********
+https://register.freecrm.com/register/       ********* SIGN UP*********
+https://register.freecrm.com/register/       ********* SIGN UP*********
+https://freecrm.com/       *********YOUR BUSINESS CLOUD PARTNER
+ FREECRM*********
+https://play.google.com/store/apps/details?id=com.cogmento.app&amp;pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1       ******************
+https://apps.apple.com/us/developer/cogmento-inc/id1291380633?itsct=apps_box&amp;itscg=30200       ******************
+https://www.freecrm.com/crmcloud.html       *********Sales CRM*********
+https://www.freecrm.com/hipaa.html       *********HIPAA Medical CRM*********
+https://www.freecrm.com/dental.html       *********Dental CRM*********
+https://www.freecrm.com/auto.html       *********Automotive CRM*********
+https://www.freecrm.com/callcenter.html       *********Call Center CRM*********
+https://www.freecrm.com/insurance.html       *********Insurance CRM*********
+https://www.freecrm.com/re.html       *********Real Estate CRM*********
+https://www.freecrm.com/ps.html       *********Professional Services CRM*********
+https://www.freecrm.com/cb.html       *********Contractor Builder CRM*********
+https://www.freecrm.com/is.html       *********Independent Sales CRM*********
+https://www.freecrm.com/crmcloud.html       *********NPO Nonprofit CRM*********
+https://www.freecrm.com/crmcloud.html       *********NGO Nongovernment CRM*********
+https://www.freecrm.com/crmcloud.html       *********Wealth &amp; Finance CRM*********
+https://www.freecrm.com/crmcloud.html       *********Hospitality CRM*********
+https://www.freecrm.com/crmcloud.html       *********Restaurant CRM*********
+https://www.freecrm.com/privacy.html       *********Privacy Policy*********
+https://www.freecrm.com/terms.html       *********Terms of Use*********
+offset-top-35 offset-md-top-57       *********Convert leads into accounts faster with the world's #1 CRM software. Grow your customer base, find new ones, and close faster from anywhere. Quickly follow up on leads, identify key contacts, and more. See a comfortable, customizable view of all of the details of sales at the touch of a button. Manage your pipeline and speed up your sales team.*********
+offset-top-35 offset-md-top-57       *********Support every customer on every channel everywhere. Personalize customer care, close cases faster, and deliver support everywhere. Collect and organize all of your support channels and customer information on a single page to quickly help customers &mdash; route questions to the right agent and allocate work based on availability &amp; expertise.*********
+offset-top-35 offset-md-top-57       *********Reach out and engage your clients and nurture relationships. Personalize your email marketing, engage with mobile and influential social network marketing. Enable non-marketers to inform, engage in marketing quickly, and sell to their consumers at scale. Personalize the message and speak to people in their journey.*********
+txt-gray-light offset-top-75 offset-md-top-87       *********Grow every part of your business, monitor and manage everything from sales leads to support tickets and channel marketing to email campaigns, all from any desktop or device using our cloud-based software. We have everything you need to organize, track, and nurture your leads and customers. The power of a customer relationship management system is the ability to quickly identify a lead from a prospect or an existing customer. Free CRM software automates the tasks salespeople dislike and makes it easy for everyone. The best way to get started with CRM technology is to sign up and test it out on some of your data right now. Getting started with FreeCRM.com is easy if you have a CSV or Excel file with your leads or contacts; export from your existing system and then import into our CRM fast and easy.*********
+txt-gray-light offset-top-10       *********A CRM makes your team more efficient, identifying prospects and leads and closing more sales. On average, companies realize a 30% increase in sales by using FreeCRM. FreeCRM can also cut your time to close by as much as 50%. Put your company in this category and implement Free CRM now. Drive revenue growth; CRM powers your business when you streamline your configure, price, and quote process. Easily manage subscriptions, invoices, and payments. But there's more: a CRM can automate many things in your business, like tasks, documents, and support.*********
+txt-gray-light offset-top-10       *********Find customers faster, win more customers, keep them happy, and connect everything. And it is not just sales; easy-to-use marketing automation and customer service tools boost engagement and happiness. Easy setup, manage leads, opportunities &amp; accounts, create custom dashboards &amp; reports, deliver social and email support, save time with customer service tools. Easily route the right customer service request to the proper agent and manage your knowledge base all in the CRM system.*********
+txt-gray-light offset-top-10       *********Know every contact in your key accounts. Get a complete view of your customers, including activity history, key contacts, customer communications, and discussions with your co-workers. Customers matter, but spreadsheets, emails, and sticky notes are a hard way to manage them. CRM centralizes your data so you can manage the sales process, help customers faster, and market smarter. With the CRM tool, it is easy to segment and slice and dice your customers or prospects and convert more leads to sales.*********
+txt-gray-lighter offset-top-75 offset-md-top-87       *********Add as many employees as you wish to the CRM and automate your business like never before. Please take a closer look at what CRM is and how it helps find, win, and keep customers. Manage your sales pipeline and speed up your closing time with Free CRM. Interactions tracked in the CRM give you a bird's eye view, and deals are displayed on the dashboard for total visibility into everyone's progress and obstacles. Enterprise-level security and ongoing support to help you grow. Small businesses can grow faster with all of the tools to fill the sales pipeline through smarter marketing, improved sales productivity, and customer service.*********
+offset-top-23       *********Our company offers professional Free CRM services to boost sales and automate marketing and get more customers. CRM helps your whole team organize and keep track of all of your important corporate data.*********
+offset-top-23       *********Try our mobile CRM applications for Android and iPhone and get your data on mobile on the web. Download and install our CRM apps and log in from anywhere to access your CRM data.*********
+offset-top-22       *********Sales CRM
+HIPAA Medical CRM
+Dental CRM
+Automotive CRM
+Call Center CRM
+Insurance CRM
+Real Estate CRM
+Professional Services CRM
+Contractor Builder CRM
+Independent Sales CRM
+NPO Nonprofit CRM
+NGO Nongovernment CRM
+Wealth &amp; Finance CRM
+Hospitality CRM
+Restaurant CRM
+*********
+privacy       *********FreeCRM.com &copy; 2021 - Privacy Policy - Terms of Use*********
+iTunes       *********https://www.freecrm.com/images/Itunes.png*********
+Android       *********https://www.freecrm.com/images/Android.png*********
+free crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********
+free crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********
+free crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********
+free crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********
+free crm customer lakewoods       *********https://www.freecrm.com/images/index-12-150x150.png*********
+free crm customer household       *********https://www.freecrm.com/images/index-13-150x150.png*********
+free crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********
+free crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********
+free crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********
+free crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********
+Get it on Google Play       *********https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png*********
+Download on the App Store       *********https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&amp;h=95ead71555e15d4e25dc1db901e9e7b4*********
+</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">store all staticText</span>
+
+  <span class="lead-duration duration">0.692</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-8">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-8" class="collapse collapsable-details " >
+          
+          <pre><p>MobileUI Build Object Repo From a Page
+All Text From WebSite
+offset-top-35 offset-md-top-57       *********Convert leads into accounts faster with the world's #1 CRM software. Grow your customer base, find new ones, and close faster from anywhere. Quickly follow up on leads, identify key contacts, and more. See a comfortable, customizable view of all of the details of sales at the touch of a button. Manage your pipeline and speed up your sales team.*********
+offset-top-35 offset-md-top-57       *********Support every customer on every channel everywhere. Personalize customer care, close cases faster, and deliver support everywhere. Collect and organize all of your support channels and customer information on a single page to quickly help customers &mdash; route questions to the right agent and allocate work based on availability &amp; expertise.*********
+offset-top-35 offset-md-top-57       *********Reach out and engage your clients and nurture relationships. Personalize your email marketing, engage with mobile and influential social network marketing. Enable non-marketers to inform, engage in marketing quickly, and sell to their consumers at scale. Personalize the message and speak to people in their journey.*********
+txt-gray-light offset-top-75 offset-md-top-87       *********Grow every part of your business, monitor and manage everything from sales leads to support tickets and channel marketing to email campaigns, all from any desktop or device using our cloud-based software. We have everything you need to organize, track, and nurture your leads and customers. The power of a customer relationship management system is the ability to quickly identify a lead from a prospect or an existing customer. Free CRM software automates the tasks salespeople dislike and makes it easy for everyone. The best way to get started with CRM technology is to sign up and test it out on some of your data right now. Getting started with FreeCRM.com is easy if you have a CSV or Excel file with your leads or contacts; export from your existing system and then import into our CRM fast and easy.*********
+txt-gray-light offset-top-10       *********A CRM makes your team more efficient, identifying prospects and leads and closing more sales. On average, companies realize a 30% increase in sales by using FreeCRM. FreeCRM can also cut your time to close by as much as 50%. Put your company in this category and implement Free CRM now. Drive revenue growth; CRM powers your business when you streamline your configure, price, and quote process. Easily manage subscriptions, invoices, and payments. But there's more: a CRM can automate many things in your business, like tasks, documents, and support.*********
+txt-gray-light offset-top-10       *********Find customers faster, win more customers, keep them happy, and connect everything. And it is not just sales; easy-to-use marketing automation and customer service tools boost engagement and happiness. Easy setup, manage leads, opportunities &amp; accounts, create custom dashboards &amp; reports, deliver social and email support, save time with customer service tools. Easily route the right customer service request to the proper agent and manage your knowledge base all in the CRM system.*********
+txt-gray-light offset-top-10       *********Know every contact in your key accounts. Get a complete view of your customers, including activity history, key contacts, customer communications, and discussions with your co-workers. Customers matter, but spreadsheets, emails, and sticky notes are a hard way to manage them. CRM centralizes your data so you can manage the sales process, help customers faster, and market smarter. With the CRM tool, it is easy to segment and slice and dice your customers or prospects and convert more leads to sales.*********
+txt-gray-lighter offset-top-75 offset-md-top-87       *********Add as many employees as you wish to the CRM and automate your business like never before. Please take a closer look at what CRM is and how it helps find, win, and keep customers. Manage your sales pipeline and speed up your closing time with Free CRM. Interactions tracked in the CRM give you a bird's eye view, and deals are displayed on the dashboard for total visibility into everyone's progress and obstacles. Enterprise-level security and ongoing support to help you grow. Small businesses can grow faster with all of the tools to fill the sales pipeline through smarter marketing, improved sales productivity, and customer service.*********
+offset-top-23       *********Our company offers professional Free CRM services to boost sales and automate marketing and get more customers. CRM helps your whole team organize and keep track of all of your important corporate data.*********
+offset-top-23       *********Try our mobile CRM applications for Android and iPhone and get your data on mobile on the web. Download and install our CRM apps and log in from anywhere to access your CRM data.*********
+offset-top-22       *********Sales CRM
+HIPAA Medical CRM
+Dental CRM
+Automotive CRM
+Call Center CRM
+Insurance CRM
+Real Estate CRM
+Professional Services CRM
+Contractor Builder CRM
+Independent Sales CRM
+NPO Nonprofit CRM
+NGO Nongovernment CRM
+Wealth &amp; Finance CRM
+Hospitality CRM
+Restaurant CRM
+*********
+privacy       *********FreeCRM.com &copy; 2021 - Privacy Policy - Terms of Use*********
+iTunes       *********https://www.freecrm.com/images/Itunes.png*********
+Android       *********https://www.freecrm.com/images/Android.png*********
+free crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********
+free crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********
+free crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********
+free crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********
+free crm customer lakewoods       *********https://www.freecrm.com/images/index-12-150x150.png*********
+free crm customer household       *********https://www.freecrm.com/images/index-13-150x150.png*********
+free crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********
+free crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********
+free crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********
+free crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********
+Get it on Google Play       *********https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png*********
+Download on the App Store       *********https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&amp;h=95ead71555e15d4e25dc1db901e9e7b4*********
+</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">store all image</span>
+
+  <span class="lead-duration duration">0.451</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-9">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-9" class="collapse collapsable-details " >
+          
+          <pre><p>MobileUI Build Object Repo From a Page
+All Image From WebSite
+iTunes       *********https://www.freecrm.com/images/Itunes.png*********
+Android       *********https://www.freecrm.com/images/Android.png*********
+free crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********
+free crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********
+free crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********
+free crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********
+free crm customer lakewoods       *********https://www.freecrm.com/images/index-12-150x150.png*********
+free crm customer household       *********https://www.freecrm.com/images/index-13-150x150.png*********
+free crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********
+free crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********
+free crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********
+free crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********
+Get it on Google Play       *********https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png*********
+Download on the App Store       *********https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&amp;h=95ead71555e15d4e25dc1db901e9e7b4*********
+</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-10">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-10" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.JavaPracticesteps.teardown()</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+          </div>
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-11">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-11" class="collapse collapsable-details " >
+          
+          <pre><p>MobileUI Build Object Repo From a Page</p><p>MobileUI Build Object Repo From a Page</p><p>BinaryTree.BinaryTreeNew@67784537</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.WebPracticesteps.teardown()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
