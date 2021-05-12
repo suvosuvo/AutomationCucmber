@@ -8,6 +8,8 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import io.cucumber.java.en.*;
 import org.apache.commons.lang.RandomStringUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 
 import java.io.IOException;
 import java.util.*;
@@ -50,12 +52,18 @@ public class WebPracticesteps extends LaunchBrowser {
     @Then("store all image")
     public void store_all_image() {
         scenario.log(scenario.getName()+"\nAll Image From WebSite\n"+getAllWebDataFromBrowser("img"));
-        closeBrowser();
     }
 
     @After
-    public void teardown(){
-
+    public void teardown(Scenario scenario){
+        try {
+            this.scenario = scenario;
+            scenario.attach(((TakesScreenshot) webDriver).getScreenshotAs(OutputType.BYTES), "image/png", "ScreenShot");
+            closeBrowser();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
 

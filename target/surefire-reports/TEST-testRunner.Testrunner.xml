@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="testRunner.Testrunner" time="13.692" errors="0" skipped="0">
+<testsuite tests="3" failures="0" name="testRunner.Testrunner" time="14.701" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="15.0.2+7"/>
@@ -57,7 +57,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="Cucumber to do Test Mobile UI" name="MobileUI Build Object Repo From a Page" time="7.118"/>
-  <testcase classname="Cucumber to do Java String manipulation" name="Java Practice" time="0.028"/>
-  <testcase classname="Cucumber to do Build own Object repository Dynamically" name="WebUI Build Object Repo From a Page" time="6.546"/>
+  <testcase classname="Cucumber to do Test Mobile UI" name="MobileUI Build Object Repo From a Page" time="7.561"/>
+  <testcase classname="Cucumber to do Java String manipulation" name="Java Practice" time="0.029"/>
+  <testcase classname="WebUI Cucumber to do Build own Object repository Dynamically" name="WebUI Build Object Repo From a Page" time="7.111"/>
 </testsuite>

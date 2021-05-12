@@ -1,4 +1,4 @@
-Feature: Cucumber to do Build own Object repository Dynamically
+Feature: WebUI Cucumber to do Build own Object repository Dynamically
     Scenario: WebUI Build Object Repo From a Page
         Given open the Browser
         |SiteName| Device |

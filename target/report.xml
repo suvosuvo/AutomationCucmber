@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="13.724">
-    <testcase classname="Cucumber to do Test Mobile UI" name="MobileUI Build Object Repo From a Page" time="7.019">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="14.744">
+    <testcase classname="Cucumber to do Test Mobile UI" name="MobileUI Build Object Repo From a Page" time="7.445">
         <system-out><![CDATA[Given open the Browser......................................................passed
 Then store all Links........................................................passed
 Then store all staticText...................................................passed
 Then store all image........................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Cucumber to do Java String manipulation" name="Java Practice" time="0.025">
+    <testcase classname="Cucumber to do Java String manipulation" name="Java Practice" time="0.027">
         <system-out><![CDATA[Given I created Java String and Java Array List and HashMap.................passed
 When Make them reverse......................................................passed
 Then Print the all the reverse Java String and Java Array List and HashMap..passed
@@ -15,7 +15,7 @@ Then Print Count the Number of Occurrences of a generic Character in a generic S
 Then Print Count the Number of Vowel of a generic Character in a generic String.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Cucumber to do Build own Object repository Dynamically" name="WebUI Build Object Repo From a Page" time="6.54">
+    <testcase classname="WebUI Cucumber to do Build own Object repository Dynamically" name="WebUI Build Object Repo From a Page" time="7.108">
         <system-out><![CDATA[Given open the Browser......................................................passed
 Then store all Links........................................................passed
 Then store all staticText...................................................passed
