@@ -4,6 +4,7 @@ import BinaryTree.BinaryTreeNew;
 import BinaryTree.Utility;
 import Browser.LaunchBrowser;
 import com.google.gson.internal.bind.util.ISO8601Utils;
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -18,7 +19,7 @@ public class JavaPracticesteps extends LaunchBrowser {
 
     Utility utility = new Utility();
     BinaryTreeNew binaryTreeNew = new BinaryTreeNew();
-    String Str = "This is a Beautiful Alphanumeric String as "+ RandomStringUtils.random(12, true, true);;
+    String Str = "This is a Beautiful is Alphanumeric String as a "+ RandomStringUtils.random(12, true, true);;
     String Rev = "";
     char c = (char)(new Random().nextInt(26) + 'a');
 
@@ -93,6 +94,33 @@ public class JavaPracticesteps extends LaunchBrowser {
         scenario.log(scenario.getName()+"\nPrint the Vowel occurrence in a generic String '"+Str+"'\n"
                 +utility.getCountVowelOccurrence(Str.toLowerCase()));
     }
+    @Then("Print delete duplicate string in a generic Character in a generic String")
+    public void print_delete_duplicate_string_in_a_generic_character_in_a_generic_string() {
+        scenario.log(scenario.getName()+"\nPrint the duplicate in a generic String '"+Str+"'\n"
+                +utility.getDuplicateDelete(Str.toLowerCase()));
+    }
+    @Then("Print Date format for input date DDMMYYYY")
+    public void print_date_format_for_input_date(DataTable dataTable) {
+        List<Map<String,String>> row = dataTable.asMaps(String.class,String.class);
+        Map<String,String> requestMap = new HashMap<>();
+        requestMap.putAll(row.get(0));
+        scenario.log(scenario.getName()+"\nPrint the Data Format String '"+requestMap.get("Date")+"'\n"
+                +utility.getDataFormat(requestMap.get("Date").toLowerCase()));
+    }
+
+    @Then("count the array elements that divide the sum of other elements")
+    public void count_the_array_elements_that_divide_the_sum_of_other_elements() {
+        ArrayList<Object> arrayElementList = new ArrayList<Object>(Arrays.asList(
+                new Random().nextInt(59-9)+1
+                ,new Random().nextInt(79-9)+1
+                ,new Random().nextInt(89-9)+1
+                ,new Random().nextInt(99-9)+1
+                ,new Random().nextInt(999-9)+1));
+
+//        scenario.log(scenario.getName()+"\ncount the array elements "+arrayElementList.size()+" that divide the sum of other elements\n"
+//                +utility.getCountElement(arrayElementList));
+    }
+
 
     @After
     public void teardown(){

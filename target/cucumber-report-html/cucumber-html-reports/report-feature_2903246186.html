@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1.0-SNAPSHOT) - Feature: Cucumber to Validate any API CRUD Functions from Ergast Data API site</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>ExecuteAutomation</td>
+        <td>1.0-SNAPSHOT</td>
+      <td>18 May 2021, 12:54</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">Cucumber to Validate any API CRUD Functions from Ergast Data API site</td>
+          <td      class="passed"    >1</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="1908374000">1.908</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">Cucumber to Validate any API CRUD Functions from Ergast Data API site</span>
+
+
+</div>
+
+        <div class="description indention"></div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">1.908</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">API Automation</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-2" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.WebPracticesteps.init(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.014</span>
+
+          </div>
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-3">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-3" class="collapse collapsable-details " >
+          
+          <pre><p>API Automation</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.APIPracticesteps.init(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-4">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-4" class="collapse collapsable-details " >
+          
+          <pre><p>API Automation</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepDefinitions.JavaPracticesteps.init(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+          </div>
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-5">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-5" class="collapse collapsable-details " >
+          
+          <pre><p>API Automation</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Get Call from API</span>
+
+  <span class="lead-duration duration">1.908</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>EndPoint</td>
+              </tr>
+              <tr>
+                  <td>https://ergast.com/api/f1/drivers.json?callback=myParser</td>
+              </tr>
+          </table>
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-7">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-7" class="collapse collapsable-details " >
+          
+          <pre><p>API Automation
+EndPoint
+myParser({&quot;MRData&quot;:{&quot;xmlns&quot;:&quot;http:\/\/ergast.com\/mrd\/1.4&quot;,&quot;series&quot;:&quot;f1&quot;,&quot;url&quot;:&quot;http://ergast.com/api/f1/drivers.json&quot;,&quot;limit&quot;:&quot;30&quot;,&quot;offset&quot;:&quot;0&quot;,&quot;total&quot;:&quot;853&quot;,&quot;DriverTable&quot;:{&quot;Drivers&quot;:[{&quot;driverId&quot;:&quot;abate&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/Carlo_Mario_Abate&quot;,&quot;givenName&quot;:&quot;Carlo&quot;,&quot;familyName&quot;:&quot;Abate&quot;,&quot;dateOfBirth&quot;:&quot;1932-07-10&quot;,&quot;nationality&quot;:&quot;Italian&quot;},{&quot;driverId&quot;:&quot;abecassis&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/George_Abecassis&quot;,&quot;givenName&quot;:&quot;George&quot;,&quot;familyName&quot;:&quot;Abecassis&quot;,&quot;dateOfBirth&quot;:&quot;1913-03-21&quot;,&quot;nationality&quot;:&quot;British&quot;},{&quot;driverId&quot;:&quot;acheson&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/Kenny_Acheson&quot;,&quot;givenName&quot;:&quot;Kenny&quot;,&quot;familyName&quot;:&quot;Acheson&quot;,&quot;dateOfBirth&quot;:&quot;1957-11-27&quot;,&quot;nationality&quot;:&quot;British&quot;},{&quot;driverId&quot;:&quot;adams&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/Philippe_Adams&quot;,&quot;givenName&quot;:&quot;Philippe&quot;,&quot;familyName&quot;:&quot;Adams&quot;,&quot;dateOfBirth&quot;:&quot;1969-11-19&quot;,&quot;nationality&quot;:&quot;Belgian&quot;},{&quot;driverId&quot;:&quot;ader&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/Walt_Ader&quot;,&quot;givenName&quot;:&quot;Walt&quot;,&quot;familyName&quot;:&quot;Ader&quot;,&quot;dateOfBirth&quot;:&quot;1913-12-15&quot;,&quot;nationality&quot;:&quot;American&quot;},{&quot;driverId&quot;:&quot;adolff&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/Kurt_Adolff&quot;,&quot;givenName&quot;:&quot;Kurt&quot;,&quot;familyName&quot;:&quot;Adolff&quot;,&quot;dateOfBirth&quot;:&quot;1921-11-05&quot;,&quot;nationality&quot;:&quot;German&quot;},{&quot;driverId&quot;:&quot;agabashian&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/Fred_Agabashian&quot;,&quot;givenName&quot;:&quot;Fred&quot;,&quot;familyName&quot;:&quot;Agabashian&quot;,&quot;dateOfBirth&quot;:&quot;1913-08-21&quot;,&quot;nationality&quot;:&quot;American&quot;},{&quot;driverId&quot;:&quot;ahrens&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/Kurt_Ahrens,_Jr.&quot;,&quot;givenName&quot;:&quot;Kurt&quot;,&quot;familyName&quot;:&quot;Ahrens&quot;,&quot;dateOfBirth&quot;:&quot;1940-04-19&quot;,&quot;nationality&quot;:&quot;German&quot;},{&quot;driverId&quot;:&quot;aitken&quot;,&quot;permanentNumber&quot;:&quot;89&quot;,&quot;code&quot;:&quot;AIT&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/Jack_Aitken&quot;,&quot;givenName&quot;:&quot;Jack&quot;,&quot;familyName&quot;:&quot;Aitken&quot;,&quot;dateOfBirth&quot;:&quot;1995-09-23&quot;,&quot;nationality&quot;:&quot;British&quot;},{&quot;driverId&quot;:&quot;albers&quot;,&quot;code&quot;:&quot;ALB&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/Christijan_Albers&quot;,&quot;givenName&quot;:&quot;Christijan&quot;,&quot;familyName&quot;:&quot;Albers&quot;,&quot;dateOfBirth&quot;:&quot;1979-04-16&quot;,&quot;nationality&quot;:&quot;Dutch&quot;},{&quot;driverId&quot;:&quot;albon&quot;,&quot;permanentNumber&quot;:&quot;23&quot;,&quot;code&quot;:&quot;ALB&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/Alexander_Albon&quot;,&quot;givenName&quot;:&quot;Alexander&quot;,&quot;familyName&quot;:&quot;Albon&quot;,&quot;dateOfBirth&quot;:&quot;1996-03-23&quot;,&quot;nationality&quot;:&quot;Thai&quot;},{&quot;driverId&quot;:&quot;alboreto&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/Michele_Alboreto&quot;,&quot;givenName&quot;:&quot;Michele&quot;,&quot;familyName&quot;:&quot;Alboreto&quot;,&quot;dateOfBirth&quot;:&quot;1956-12-23&quot;,&quot;nationality&quot;:&quot;Italian&quot;},{&quot;driverId&quot;:&quot;alesi&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/Jean_Alesi&quot;,&quot;givenName&quot;:&quot;Jean&quot;,&quot;familyName&quot;:&quot;Alesi&quot;,&quot;dateOfBirth&quot;:&quot;1964-06-11&quot;,&quot;nationality&quot;:&quot;French&quot;},{&quot;driverId&quot;:&quot;alguersuari&quot;,&quot;code&quot;:&quot;ALG&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/Jaime_Alguersuari&quot;,&quot;givenName&quot;:&quot;Jaime&quot;,&quot;familyName&quot;:&quot;Alguersuari&quot;,&quot;dateOfBirth&quot;:&quot;1990-03-23&quot;,&quot;nationality&quot;:&quot;Spanish&quot;},{&quot;driverId&quot;:&quot;alliot&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/Philippe_Alliot&quot;,&quot;givenName&quot;:&quot;Philippe&quot;,&quot;familyName&quot;:&quot;Alliot&quot;,&quot;dateOfBirth&quot;:&quot;1954-07-27&quot;,&quot;nationality&quot;:&quot;French&quot;},{&quot;driverId&quot;:&quot;allison&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/Cliff_Allison&quot;,&quot;givenName&quot;:&quot;Cliff&quot;,&quot;familyName&quot;:&quot;Allison&quot;,&quot;dateOfBirth&quot;:&quot;1932-02-08&quot;,&quot;nationality&quot;:&quot;British&quot;},{&quot;driverId&quot;:&quot;alonso&quot;,&quot;permanentNumber&quot;:&quot;14&quot;,&quot;code&quot;:&quot;ALO&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/Fernando_Alonso&quot;,&quot;givenName&quot;:&quot;Fernando&quot;,&quot;familyName&quot;:&quot;Alonso&quot;,&quot;dateOfBirth&quot;:&quot;1981-07-29&quot;,&quot;nationality&quot;:&quot;Spanish&quot;},{&quot;driverId&quot;:&quot;amati&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/Giovanna_Amati&quot;,&quot;givenName&quot;:&quot;Giovanna&quot;,&quot;familyName&quot;:&quot;Amati&quot;,&quot;dateOfBirth&quot;:&quot;1959-07-20&quot;,&quot;nationality&quot;:&quot;Italian&quot;},{&quot;driverId&quot;:&quot;amick&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/Red_Amick&quot;,&quot;givenName&quot;:&quot;Red&quot;,&quot;familyName&quot;:&quot;Amick&quot;,&quot;dateOfBirth&quot;:&quot;1929-01-19&quot;,&quot;nationality&quot;:&quot;American&quot;},{&quot;driverId&quot;:&quot;george_amick&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/George_Amick&quot;,&quot;givenName&quot;:&quot;George&quot;,&quot;familyName&quot;:&quot;Amick&quot;,&quot;dateOfBirth&quot;:&quot;1924-10-24&quot;,&quot;nationality&quot;:&quot;American&quot;},{&quot;driverId&quot;:&quot;amon&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/Chris_Amon&quot;,&quot;givenName&quot;:&quot;Chris&quot;,&quot;familyName&quot;:&quot;Amon&quot;,&quot;dateOfBirth&quot;:&quot;1943-07-20&quot;,&quot;nationality&quot;:&quot;New Zealander&quot;},{&quot;driverId&quot;:&quot;anderson&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/Bob_Anderson_(racing_driver)&quot;,&quot;givenName&quot;:&quot;Bob&quot;,&quot;familyName&quot;:&quot;Anderson&quot;,&quot;dateOfBirth&quot;:&quot;1931-05-19&quot;,&quot;nationality&quot;:&quot;British&quot;},{&quot;driverId&quot;:&quot;andersson&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/Conny_Andersson_(racing_driver)&quot;,&quot;givenName&quot;:&quot;Conny&quot;,&quot;familyName&quot;:&quot;Andersson&quot;,&quot;dateOfBirth&quot;:&quot;1939-12-28&quot;,&quot;nationality&quot;:&quot;Swedish&quot;},{&quot;driverId&quot;:&quot;andretti&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/Michael_Andretti&quot;,&quot;givenName&quot;:&quot;Michael&quot;,&quot;familyName&quot;:&quot;Andretti&quot;,&quot;dateOfBirth&quot;:&quot;1962-10-05&quot;,&quot;nationality&quot;:&quot;American&quot;},{&quot;driverId&quot;:&quot;mario_andretti&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/Mario_Andretti&quot;,&quot;givenName&quot;:&quot;Mario&quot;,&quot;familyName&quot;:&quot;Andretti&quot;,&quot;dateOfBirth&quot;:&quot;1940-02-28&quot;,&quot;nationality&quot;:&quot;American&quot;},{&quot;driverId&quot;:&quot;andrews&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/Keith_Andrews_(driver)&quot;,&quot;givenName&quot;:&quot;Keith&quot;,&quot;familyName&quot;:&quot;Andrews&quot;,&quot;dateOfBirth&quot;:&quot;1920-06-15&quot;,&quot;nationality&quot;:&quot;American&quot;},{&quot;driverId&quot;:&quot;apicella&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/Marco_Apicella&quot;,&quot;givenName&quot;:&quot;Marco&quot;,&quot;familyName&quot;:&quot;Apicella&quot;,&quot;dateOfBirth&quot;:&quot;1965-10-07&quot;,&quot;nationality&quot;:&quot;Italian&quot;},{&quot;driverId&quot;:&quot;armi&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/Frank_Armi&quot;,&quot;givenName&quot;:&quot;Frank&quot;,&quot;familyName&quot;:&quot;Armi&quot;,&quot;dateOfBirth&quot;:&quot;1918-10-12&quot;,&quot;nationality&quot;:&quot;American&quot;},{&quot;driverId&quot;:&quot;arnold&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/Chuck_Arnold&quot;,&quot;givenName&quot;:&quot;Chuck&quot;,&quot;familyName&quot;:&quot;Arnold&quot;,&quot;dateOfBirth&quot;:&quot;1926-05-30&quot;,&quot;nationality&quot;:&quot;American&quot;},{&quot;driverId&quot;:&quot;arnoux&quot;,&quot;url&quot;:&quot;http:\/\/en.wikipedia.org\/wiki\/Ren%C3%A9_Arnoux&quot;,&quot;givenName&quot;:&quot;Ren&eacute;&quot;,&quot;familyName&quot;:&quot;Arnoux&quot;,&quot;dateOfBirth&quot;:&quot;1948-07-04&quot;,&quot;nationality&quot;:&quot;French&quot;}]}}})</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-8" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.JavaPracticesteps.teardown()</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+          </div>
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-9">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-9" class="collapse collapsable-details " >
+          
+          <pre><p>API Automation</p><p>API Automation</p><p>BinaryTree.BinaryTreeNew@7739aac4</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.APIPracticesteps.teardown(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepDefinitions.WebPracticesteps.teardown(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

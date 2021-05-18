@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="14.744">
-    <testcase classname="Cucumber to do Test Mobile UI" name="MobileUI Build Object Repo From a Page" time="7.445">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="16.619">
+    <testcase classname="Cucumber to Validate any API CRUD Functions from Ergast Data API site" name="API Automation" time="1.992">
+        <system-out><![CDATA[Given Get Call from API.....................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Cucumber to do Test Mobile UI" name="MobileUI Build Object Repo From a Page" time="7.475">
         <system-out><![CDATA[Given open the Browser......................................................passed
 Then store all Links........................................................passed
 Then store all staticText...................................................passed
@@ -13,9 +17,12 @@ When Make them reverse......................................................pass
 Then Print the all the reverse Java String and Java Array List and HashMap..passed
 Then Print Count the Number of Occurrences of a generic Character in a generic String.passed
 Then Print Count the Number of Vowel of a generic Character in a generic String.passed
+Then Print delete duplicate string in a generic Character in a generic String.passed
+Then Print Date format for input date DDMMYYYY..............................passed
+Then count the array elements that divide the sum of other elements.........passed
 ]]></system-out>
     </testcase>
-    <testcase classname="WebUI Cucumber to do Build own Object repository Dynamically" name="WebUI Build Object Repo From a Page" time="7.108">
+    <testcase classname="WebUI Cucumber to do Build own Object repository Dynamically" name="WebUI Build Object Repo From a Page" time="6.966">
         <system-out><![CDATA[Given open the Browser......................................................passed
 Then store all Links........................................................passed
 Then store all staticText...................................................passed

@@ -1,63 +1,961 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="testRunner.Testrunner" time="14.701" errors="0" skipped="0">
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="testRunner.Testrunner" time="22.136" tests="4" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="java.vm.version" value="15.0.2+7"/>
-    <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/15.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/mouli/SeleniumCucumber"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="path.separator" value=":"/>
-    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="user.country" value="US"/>
-    <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/mouli/SeleniumCucumber"/>
-    <property name="java.vm.compressedOopsMode" value="Zero based"/>
-    <property name="java.runtime.version" value="15.0.2+7"/>
-    <property name="os.arch" value="x86_64"/>
-    <property name="java.io.tmpdir" value="/var/folders/z_/lfcjd5dx14b5thzx9pqpyhkm0000gn/T/"/>
-    <property name="line.separator" value="
-"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.8.1/libexec/bin/m2.conf"/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/Users/mouli/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
-    <property name="maven.conf" value="/usr/local/Cellar/maven/3.8.1/libexec/conf"/>
-    <property name="jdk.debug" value="release"/>
-    <property name="java.class.version" value="59.0"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="11.3.1"/>
-    <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.8.1/libexec/lib/jansi-native"/>
-    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="user.home" value="/Users/mouli"/>
-    <property name="user.timezone" value="America/New_York"/>
-    <property name="file.encoding" value="UTF-8"/>
     <property name="java.specification.version" value="15"/>
-    <property name="user.name" value="mouli"/>
-    <property name="java.class.path" value="/usr/local/Cellar/maven/3.8.1/libexec/boot/plexus-classworlds-2.6.0.jar"/>
-    <property name="java.vm.specification.version" value="15"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/mouli/SeleniumCucumber/target/test-classes:/Users/mouli/SeleniumCucumber/target/classes:/Users/mouli/.m2/repository/io/cucumber/cucumber-core/6.10.3/cucumber-core-6.10.3.jar:/Users/mouli/.m2/repository/io/cucumber/cucumber-gherkin/6.10.3/cucumber-gherkin-6.10.3.jar:/Users/mouli/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.10.3/cucumber-gherkin-messages-6.10.3.jar:/Users/mouli/.m2/repository/io/cucumber/messages/15.0.0/messages-15.0.0.jar:/Users/mouli/.m2/repository/io/cucumber/tag-expressions/3.0.1/tag-expressions-3.0.1.jar:/Users/mouli/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/mouli/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/mouli/.m2/repository/io/cucumber/cucumber-plugin/6.10.3/cucumber-plugin-6.10.3.jar:/Users/mouli/.m2/repository/io/cucumber/docstring/6.10.3/docstring-6.10.3.jar:/Users/mouli/.m2/repository/io/cucumber/html-formatter/13.0.0/html-formatter-13.0.0.jar:/Users/mouli/.m2/repository/io/cucumber/create-meta/4.0.0/create-meta-4.0.0.jar:/Users/mouli/.m2/repository/org/apiguardian/apiguardian-api/1.1.1/apiguardian-api-1.1.1.jar:/Users/mouli/.m2/repository/io/cucumber/cucumber-html/0.2.7/cucumber-html-0.2.7.jar:/Users/mouli/.m2/repository/net/sourceforge/cobertura/cobertura/2.1.1/cobertura-2.1.1.jar:/Users/mouli/.m2/repository/org/ow2/asm/asm/5.0.1/asm-5.0.1.jar:/Users/mouli/.m2/repository/org/ow2/asm/asm-tree/5.0.1/asm-tree-5.0.1.jar:/Users/mouli/.m2/repository/org/ow2/asm/asm-commons/5.0.1/asm-commons-5.0.1.jar:/Users/mouli/.m2/repository/org/ow2/asm/asm-util/5.0.1/asm-util-5.0.1.jar:/Users/mouli/.m2/repository/org/ow2/asm/asm-analysis/5.0.1/asm-analysis-5.0.1.jar:/Users/mouli/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar:/Users/mouli/.m2/repository/jaxen/jaxen/1.1.4/jaxen-1.1.4.jar:/Users/mouli/.m2/repository/org/apache/ant/ant/1.8.3/ant-1.8.3.jar:/Users/mouli/.m2/repository/org/apache/ant/ant-launcher/1.8.3/ant-launcher-1.8.3.jar:/Users/mouli/.m2/repository/org/apache/ant/ant-junit/1.8.3/ant-junit-1.8.3.jar:/Users/mouli/.m2/repository/org/mortbay/jetty/servlet-api-2.5/6.1.14/servlet-api-2.5-6.1.14.jar:/Users/mouli/.m2/repository/org/mortbay/jetty/jetty/6.1.14/jetty-6.1.14.jar:/Users/mouli/.m2/repository/org/mortbay/jetty/jetty-util/6.1.14/jetty-util-6.1.14.jar:/Users/mouli/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/Users/mouli/.m2/repository/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13.jar:/Users/mouli/.m2/repository/ch/qos/logback/logback-core/1.0.13/logback-core-1.0.13.jar:/Users/mouli/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar:/Users/mouli/.m2/repository/io/cucumber/cucumber-java/6.10.3/cucumber-java-6.10.3.jar:/Users/mouli/.m2/repository/io/cucumber/cucumber-junit/6.10.3/cucumber-junit-6.10.3.jar:/Users/mouli/.m2/repository/net/masterthought/cucumber-reporting/5.5.3/cucumber-reporting-5.5.3.jar:/Users/mouli/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.1/jackson-databind-2.12.1.jar:/Users/mouli/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.1/jackson-annotations-2.12.1.jar:/Users/mouli/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.1/jackson-core-2.12.1.jar:/Users/mouli/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.1/jackson-datatype-jsr310-2.12.1.jar:/Users/mouli/.m2/repository/org/apache/velocity/velocity-engine-core/2.2/velocity-engine-core-2.2.jar:/Users/mouli/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/mouli/.m2/repository/joda-time/joda-time/2.10.9/joda-time-2.10.9.jar:/Users/mouli/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/mouli/.m2/repository/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar:/Users/mouli/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20200713.1/owasp-java-html-sanitizer-20200713.1.jar:/Users/mouli/.m2/repository/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar:/Users/mouli/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/mouli/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/mouli/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/Users/mouli/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/mouli/.m2/repository/io/cucumber/gherkin/18.1.1/gherkin-18.1.1.jar:/Users/mouli/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/mouli/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/mouli/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/mouli/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/mouli/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/mouli/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/mouli/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/mouli/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/mouli/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/mouli/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/mouli/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/mouli/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/mouli/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/mouli/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/mouli/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/mouli/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/mouli/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/mouli/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/mouli/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/mouli/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/mouli/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/mouli/.m2/repository/io/cucumber/cucumber-picocontainer/4.2.6/cucumber-picocontainer-4.2.6.jar:/Users/mouli/.m2/repository/org/picocontainer/picocontainer/2.15/picocontainer-2.15.jar:/Users/mouli/.m2/repository/tech/grasshopper/extentreports-cucumber6-adapter/2.8.1/extentreports-cucumber6-adapter-2.8.1.jar:/Users/mouli/.m2/repository/com/aventstack/extentreports/5.0.6/extentreports-5.0.6.jar:/Users/mouli/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/Users/mouli/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/mouli/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/Users/mouli/.m2/repository/tech/grasshopper/extent-pdf-report/1.7.1/extent-pdf-report-1.7.1.jar:/Users/mouli/.m2/repository/tech/grasshopper/cucumber-pdf-report/2.2.1/cucumber-pdf-report-2.2.1.jar:/Users/mouli/.m2/repository/org/apache/pdfbox/pdfbox/2.0.22/pdfbox-2.0.22.jar:/Users/mouli/.m2/repository/org/apache/pdfbox/fontbox/2.0.22/fontbox-2.0.22.jar:/Users/mouli/.m2/repository/org/knowm/xchart/xchart/3.8.0/xchart-3.8.0.jar:/Users/mouli/.m2/repository/de/erichseifert/vectorgraphics2d/VectorGraphics2D/0.13/VectorGraphics2D-0.13.jar:/Users/mouli/.m2/repository/de/rototor/pdfbox/graphics2d/0.30/graphics2d-0.30.jar:/Users/mouli/.m2/repository/com/madgag/animated-gif-lib/1.4/animated-gif-lib-1.4.jar:/Users/mouli/.m2/repository/org/yaml/snakeyaml/1.28/snakeyaml-1.28.jar:/Users/mouli/.m2/repository/tech/grasshopper/table-layout/1.2.0/table-layout-1.2.0.jar:/Users/mouli/.m2/repository/com/aventstack/klov-reporter/5.0.6/klov-reporter-5.0.6.jar:/Users/mouli/.m2/repository/org/mongodb/bson/3.6.4/bson-3.6.4.jar:/Users/mouli/.m2/repository/org/mongodb/mongodb-driver/3.3.0/mongodb-driver-3.3.0.jar:/Users/mouli/.m2/repository/org/mongodb/mongodb-driver-core/3.3.0/mongodb-driver-core-3.3.0.jar:/Users/mouli/.m2/repository/info/cukes/cucumber-java/1.1.3/cucumber-java-1.1.3.jar:/Users/mouli/.m2/repository/info/cukes/cucumber-core/1.1.3/cucumber-core-1.1.3.jar:/Users/mouli/.m2/repository/org/springframework/spring-context/5.3.6/spring-context-5.3.6.jar:/Users/mouli/.m2/repository/org/springframework/spring-aop/5.3.6/spring-aop-5.3.6.jar:/Users/mouli/.m2/repository/org/springframework/spring-beans/5.3.6/spring-beans-5.3.6.jar:/Users/mouli/.m2/repository/org/springframework/spring-core/5.3.6/spring-core-5.3.6.jar:/Users/mouli/.m2/repository/org/springframework/spring-jcl/5.3.6/spring-jcl-5.3.6.jar:/Users/mouli/.m2/repository/org/springframework/spring-expression/5.3.6/spring-expression-5.3.6.jar:/Users/mouli/.m2/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar:/Users/mouli/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/mouli/.m2/repository/io/github/bonigarcia/webdrivermanager/4.4.1/webdrivermanager-4.4.1.jar:/Users/mouli/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/mouli/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.3/httpclient5-5.0.3.jar:/Users/mouli/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.2/httpcore5-5.0.2.jar:/Users/mouli/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0.2/httpcore5-h2-5.0.2.jar:/Users/mouli/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/mouli/.m2/repository/org/rauschig/jarchivelib/1.1.0/jarchivelib-1.1.0.jar:/Users/mouli/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:/Users/mouli/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/Users/mouli/.m2/repository/io/qameta/allure/allure-cucumber4-jvm/2.13.10/allure-cucumber4-jvm-2.13.10.jar:/Users/mouli/.m2/repository/io/qameta/allure/allure-java-commons/2.13.10/allure-java-commons-2.13.10.jar:/Users/mouli/.m2/repository/io/qameta/allure/allure-model/2.13.10/allure-model-2.13.10.jar:/Users/mouli/.m2/repository/org/apache/tika/tika-core/1.26/tika-core-1.26.jar:/Users/mouli/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/mouli/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/mouli/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/Users/mouli/.m2/repository/org/jooq/joor-java-8/0.9.14/joor-java-8-0.9.14.jar:/Users/mouli/.m2/repository/io/rest-assured/rest-assured/4.3.3/rest-assured-4.3.3.jar:/Users/mouli/.m2/repository/org/codehaus/groovy/groovy/3.0.7/groovy-3.0.7.jar:/Users/mouli/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.7/groovy-xml-3.0.7.jar:/Users/mouli/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/Users/mouli/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/mouli/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/Users/mouli/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/mouli/.m2/repository/io/rest-assured/json-path/4.3.3/json-path-4.3.3.jar:/Users/mouli/.m2/repository/org/codehaus/groovy/groovy-json/3.0.7/groovy-json-3.0.7.jar:/Users/mouli/.m2/repository/io/rest-assured/rest-assured-common/4.3.3/rest-assured-common-4.3.3.jar:/Users/mouli/.m2/repository/io/rest-assured/xml-path/4.3.3/xml-path-4.3.3.jar:/Users/mouli/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/mouli/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/mouli/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
-    <property name="java.home" value="/usr/local/Cellar/openjdk/15.0.2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="15"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="allure.link.issue.pattern" value="https://example.org/browse/{}"/>
+    <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/15.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/mouli/SeleniumCucumber/target/surefire/surefirebooter2528327404149401550.jar /Users/mouli/SeleniumCucumber/target/surefire 2021-05-18T12-53-57_682-jvmRun1 surefire5073623632504485912tmp surefire_010276523794337775975tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/mouli/SeleniumCucumber/target/test-classes:/Users/mouli/SeleniumCucumber/target/classes:/Users/mouli/.m2/repository/io/cucumber/cucumber-core/6.10.3/cucumber-core-6.10.3.jar:/Users/mouli/.m2/repository/io/cucumber/cucumber-gherkin/6.10.3/cucumber-gherkin-6.10.3.jar:/Users/mouli/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.10.3/cucumber-gherkin-messages-6.10.3.jar:/Users/mouli/.m2/repository/io/cucumber/messages/15.0.0/messages-15.0.0.jar:/Users/mouli/.m2/repository/io/cucumber/tag-expressions/3.0.1/tag-expressions-3.0.1.jar:/Users/mouli/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/mouli/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/mouli/.m2/repository/io/cucumber/cucumber-plugin/6.10.3/cucumber-plugin-6.10.3.jar:/Users/mouli/.m2/repository/io/cucumber/docstring/6.10.3/docstring-6.10.3.jar:/Users/mouli/.m2/repository/io/cucumber/html-formatter/13.0.0/html-formatter-13.0.0.jar:/Users/mouli/.m2/repository/io/cucumber/create-meta/4.0.0/create-meta-4.0.0.jar:/Users/mouli/.m2/repository/org/apiguardian/apiguardian-api/1.1.1/apiguardian-api-1.1.1.jar:/Users/mouli/.m2/repository/io/cucumber/cucumber-html/0.2.7/cucumber-html-0.2.7.jar:/Users/mouli/.m2/repository/net/sourceforge/cobertura/cobertura/2.1.1/cobertura-2.1.1.jar:/Users/mouli/.m2/repository/org/ow2/asm/asm/5.0.1/asm-5.0.1.jar:/Users/mouli/.m2/repository/org/ow2/asm/asm-tree/5.0.1/asm-tree-5.0.1.jar:/Users/mouli/.m2/repository/org/ow2/asm/asm-commons/5.0.1/asm-commons-5.0.1.jar:/Users/mouli/.m2/repository/org/ow2/asm/asm-util/5.0.1/asm-util-5.0.1.jar:/Users/mouli/.m2/repository/org/ow2/asm/asm-analysis/5.0.1/asm-analysis-5.0.1.jar:/Users/mouli/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar:/Users/mouli/.m2/repository/jaxen/jaxen/1.1.4/jaxen-1.1.4.jar:/Users/mouli/.m2/repository/org/apache/ant/ant/1.8.3/ant-1.8.3.jar:/Users/mouli/.m2/repository/org/apache/ant/ant-launcher/1.8.3/ant-launcher-1.8.3.jar:/Users/mouli/.m2/repository/org/apache/ant/ant-junit/1.8.3/ant-junit-1.8.3.jar:/Users/mouli/.m2/repository/org/mortbay/jetty/servlet-api-2.5/6.1.14/servlet-api-2.5-6.1.14.jar:/Users/mouli/.m2/repository/org/mortbay/jetty/jetty/6.1.14/jetty-6.1.14.jar:/Users/mouli/.m2/repository/org/mortbay/jetty/jetty-util/6.1.14/jetty-util-6.1.14.jar:/Users/mouli/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/Users/mouli/.m2/repository/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13.jar:/Users/mouli/.m2/repository/ch/qos/logback/logback-core/1.0.13/logback-core-1.0.13.jar:/Users/mouli/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar:/Users/mouli/.m2/repository/io/cucumber/cucumber-java/6.10.3/cucumber-java-6.10.3.jar:/Users/mouli/.m2/repository/io/cucumber/cucumber-junit/6.10.3/cucumber-junit-6.10.3.jar:/Users/mouli/.m2/repository/net/masterthought/cucumber-reporting/5.5.3/cucumber-reporting-5.5.3.jar:/Users/mouli/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.1/jackson-databind-2.12.1.jar:/Users/mouli/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.1/jackson-annotations-2.12.1.jar:/Users/mouli/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.1/jackson-core-2.12.1.jar:/Users/mouli/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.1/jackson-datatype-jsr310-2.12.1.jar:/Users/mouli/.m2/repository/org/apache/velocity/velocity-engine-core/2.2/velocity-engine-core-2.2.jar:/Users/mouli/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/mouli/.m2/repository/joda-time/joda-time/2.10.9/joda-time-2.10.9.jar:/Users/mouli/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/mouli/.m2/repository/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar:/Users/mouli/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20200713.1/owasp-java-html-sanitizer-20200713.1.jar:/Users/mouli/.m2/repository/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar:/Users/mouli/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/mouli/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/mouli/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/Users/mouli/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/mouli/.m2/repository/io/cucumber/gherkin/18.1.1/gherkin-18.1.1.jar:/Users/mouli/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/mouli/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/mouli/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/mouli/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/mouli/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/mouli/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/mouli/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/mouli/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/mouli/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/mouli/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/mouli/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/mouli/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/mouli/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/mouli/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/mouli/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/mouli/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/mouli/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/mouli/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/mouli/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/mouli/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/mouli/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/mouli/.m2/repository/io/cucumber/cucumber-picocontainer/4.2.6/cucumber-picocontainer-4.2.6.jar:/Users/mouli/.m2/repository/org/picocontainer/picocontainer/2.15/picocontainer-2.15.jar:/Users/mouli/.m2/repository/tech/grasshopper/extentreports-cucumber6-adapter/2.8.1/extentreports-cucumber6-adapter-2.8.1.jar:/Users/mouli/.m2/repository/com/aventstack/extentreports/5.0.6/extentreports-5.0.6.jar:/Users/mouli/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/Users/mouli/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/mouli/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/Users/mouli/.m2/repository/tech/grasshopper/extent-pdf-report/1.7.1/extent-pdf-report-1.7.1.jar:/Users/mouli/.m2/repository/tech/grasshopper/cucumber-pdf-report/2.2.1/cucumber-pdf-report-2.2.1.jar:/Users/mouli/.m2/repository/org/apache/pdfbox/pdfbox/2.0.22/pdfbox-2.0.22.jar:/Users/mouli/.m2/repository/org/apache/pdfbox/fontbox/2.0.22/fontbox-2.0.22.jar:/Users/mouli/.m2/repository/org/knowm/xchart/xchart/3.8.0/xchart-3.8.0.jar:/Users/mouli/.m2/repository/de/erichseifert/vectorgraphics2d/VectorGraphics2D/0.13/VectorGraphics2D-0.13.jar:/Users/mouli/.m2/repository/de/rototor/pdfbox/graphics2d/0.30/graphics2d-0.30.jar:/Users/mouli/.m2/repository/com/madgag/animated-gif-lib/1.4/animated-gif-lib-1.4.jar:/Users/mouli/.m2/repository/org/yaml/snakeyaml/1.28/snakeyaml-1.28.jar:/Users/mouli/.m2/repository/tech/grasshopper/table-layout/1.2.0/table-layout-1.2.0.jar:/Users/mouli/.m2/repository/com/aventstack/klov-reporter/5.0.6/klov-reporter-5.0.6.jar:/Users/mouli/.m2/repository/org/mongodb/bson/3.6.4/bson-3.6.4.jar:/Users/mouli/.m2/repository/org/mongodb/mongodb-driver/3.3.0/mongodb-driver-3.3.0.jar:/Users/mouli/.m2/repository/org/mongodb/mongodb-driver-core/3.3.0/mongodb-driver-core-3.3.0.jar:/Users/mouli/.m2/repository/info/cukes/cucumber-java/1.1.3/cucumber-java-1.1.3.jar:/Users/mouli/.m2/repository/info/cukes/cucumber-core/1.1.3/cucumber-core-1.1.3.jar:/Users/mouli/.m2/repository/org/springframework/spring-context/5.3.6/spring-context-5.3.6.jar:/Users/mouli/.m2/repository/org/springframework/spring-aop/5.3.6/spring-aop-5.3.6.jar:/Users/mouli/.m2/repository/org/springframework/spring-beans/5.3.6/spring-beans-5.3.6.jar:/Users/mouli/.m2/repository/org/springframework/spring-core/5.3.6/spring-core-5.3.6.jar:/Users/mouli/.m2/repository/org/springframework/spring-jcl/5.3.6/spring-jcl-5.3.6.jar:/Users/mouli/.m2/repository/org/springframework/spring-expression/5.3.6/spring-expression-5.3.6.jar:/Users/mouli/.m2/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar:/Users/mouli/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/mouli/.m2/repository/io/github/bonigarcia/webdrivermanager/4.4.1/webdrivermanager-4.4.1.jar:/Users/mouli/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/mouli/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.3/httpclient5-5.0.3.jar:/Users/mouli/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.2/httpcore5-5.0.2.jar:/Users/mouli/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0.2/httpcore5-h2-5.0.2.jar:/Users/mouli/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/mouli/.m2/repository/org/rauschig/jarchivelib/1.1.0/jarchivelib-1.1.0.jar:/Users/mouli/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:/Users/mouli/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/Users/mouli/.m2/repository/io/qameta/allure/allure-cucumber4-jvm/2.13.10/allure-cucumber4-jvm-2.13.10.jar:/Users/mouli/.m2/repository/io/qameta/allure/allure-java-commons/2.13.10/allure-java-commons-2.13.10.jar:/Users/mouli/.m2/repository/io/qameta/allure/allure-model/2.13.10/allure-model-2.13.10.jar:/Users/mouli/.m2/repository/org/apache/tika/tika-core/1.26/tika-core-1.26.jar:/Users/mouli/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/mouli/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/mouli/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/Users/mouli/.m2/repository/org/jooq/joor-java-8/0.9.14/joor-java-8-0.9.14.jar:/Users/mouli/.m2/repository/io/rest-assured/rest-assured/4.3.3/rest-assured-4.3.3.jar:/Users/mouli/.m2/repository/org/codehaus/groovy/groovy/3.0.7/groovy-3.0.7.jar:/Users/mouli/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.7/groovy-xml-3.0.7.jar:/Users/mouli/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/Users/mouli/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/mouli/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/Users/mouli/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/mouli/.m2/repository/io/rest-assured/json-path/4.3.3/json-path-4.3.3.jar:/Users/mouli/.m2/repository/org/codehaus/groovy/groovy-json/3.0.7/groovy-json-3.0.7.jar:/Users/mouli/.m2/repository/io/rest-assured/rest-assured-common/4.3.3/rest-assured-common-4.3.3.jar:/Users/mouli/.m2/repository/io/rest-assured/xml-path/4.3.3/xml-path-4.3.3.jar:/Users/mouli/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/mouli/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/mouli/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:"/>
+    <property name="allure.results.directory" value="/Users/mouli/SeleniumCucumber/target/allure-results"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/mouli"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="java.version" value="15.0.2"/>
-    <property name="java.vendor" value="N/A"/>
-    <property name="maven.home" value="/usr/local/Cellar/maven/3.8.1/libexec"/>
-    <property name="file.separator" value="/"/>
     <property name="java.version.date" value="2021-01-19"/>
-    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
-    <property name="sun.cpu.endian" value="little"/>
-    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.home" value="/usr/local/Cellar/openjdk/15.0.2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="allure.link.tms.pattern" value="https://example.org/browse/{}"/>
+    <property name="basedir" value="/Users/mouli/SeleniumCucumber"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/Users/mouli/SeleniumCucumber/target/surefire/surefirebooter2528327404149401550.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="15.0.2+7"/>
+    <property name="user.name" value="mouli"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="11.3.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/mouli/.m2/repository"/>
+    <property name="cucumber.options" value="--plugin io.qameta.allure.cucumber4jvm.AllureCucumber4Jvm"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/z_/lfcjd5dx14b5thzx9pqpyhkm0000gn/T/"/>
+    <property name="java.version" value="15.0.2"/>
+    <property name="user.dir" value="/Users/mouli/SeleniumCucumber"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.library.path" value="/Users/mouli/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="N/A"/>
+    <property name="java.vm.version" value="15.0.2+7"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase classname="Cucumber to do Test Mobile UI" name="MobileUI Build Object Repo From a Page" time="7.561"/>
-  <testcase classname="Cucumber to do Java String manipulation" name="Java Practice" time="0.029"/>
-  <testcase classname="WebUI Cucumber to do Build own Object repository Dynamically" name="WebUI Build Object Repo From a Page" time="7.111"/>
+  <testcase name="API Automation" classname="Cucumber to Validate any API CRUD Functions from Ergast Data API site" time="2.198">
+    <system-out><![CDATA[
+Scenario: API Automation  &amp#27;[90m# src/test/resources/Feature/API.feature:2&amp#27;[0m
+API Automation
+
+    API Automation
+
+API Automation
+
+    API Automation
+
+API Automation
+
+    API Automation
+
+[DEBUG] Get connection for route {s}->https://ergast.com:443
+[DEBUG] Connecting to ergast.com:443
+[DEBUG] CookieSpec selected: ignoreCookies
+[DEBUG] Auth cache not set in the context
+[DEBUG] Target auth state: UNCHALLENGED
+[DEBUG] Proxy auth state: UNCHALLENGED
+[DEBUG] Attempt 1 to execute request
+[DEBUG] Sending request: GET /api/f1/drivers.json?callback=myParser HTTP/1.1
+[DEBUG]  >> "GET /api/f1/drivers.json?callback=myParser HTTP/1.1[\r][\n]"
+[DEBUG]  >> "Accept: */*[\r][\n]"
+[DEBUG]  >> "Host: ergast.com[\r][\n]"
+[DEBUG]  >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG]  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/15.0.2)[\r][\n]"
+[DEBUG]  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG]  >> "[\r][\n]"
+[DEBUG] >> GET /api/f1/drivers.json?callback=myParser HTTP/1.1
+[DEBUG] >> Accept: */*
+[DEBUG] >> Host: ergast.com
+[DEBUG] >> Connection: Keep-Alive
+[DEBUG] >> User-Agent: Apache-HttpClient/4.5.3 (Java/15.0.2)
+[DEBUG] >> Accept-Encoding: gzip,deflate
+[DEBUG]  << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG]  << "Date: Tue, 18 May 2021 16:54:00 GMT[\r][\n]"
+[DEBUG]  << "Server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/5.4.16[\r][\n]"
+[DEBUG]  << "X-Powered-By: PHP/5.4.16[\r][\n]"
+[DEBUG]  << "Access-Control-Allow-Origin: *[\r][\n]"
+[DEBUG]  << "Content-Length: 5547[\r][\n]"
+[DEBUG]  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+[DEBUG]  << "Connection: Keep-Alive[\r][\n]"
+[DEBUG]  << "Content-Type: application/javascript; charset=utf-8[\r][\n]"
+[DEBUG]  << "[\r][\n]"
+[DEBUG] Receiving response: HTTP/1.1 200 OK
+[DEBUG] << HTTP/1.1 200 OK
+[DEBUG] << Date: Tue, 18 May 2021 16:54:00 GMT
+[DEBUG] << Server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/5.4.16
+[DEBUG] << X-Powered-By: PHP/5.4.16
+[DEBUG] << Access-Control-Allow-Origin: *
+[DEBUG] << Content-Length: 5547
+[DEBUG] << Keep-Alive: timeout=5, max=100
+[DEBUG] << Connection: Keep-Alive
+[DEBUG] << Content-Type: application/javascript; charset=utf-8
+[DEBUG] Connection can be kept alive for 5000 MILLISECONDS
+[DEBUG] Parsing response as: application/javascript; charset=utf-8
+[DEBUG] Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[DEBUG]  << "myParser({"MRData":{"xmlns":"http:\/\/ergast.com\/mrd\/1.4","series":"f1","url":"http://ergast.com/api/f1/drivers.json","limit":"30","offset":"0","total":"853","DriverTable":{"Drivers":[{"driverId":"abate","url":"http:\/\/en.wikipedia.org\/wiki\/Carlo_Mario_Abate","givenName":"Carlo","familyName":"Abate","dateOfBirth":"1932-07-10","nationality":"Italian"},{"driverId":"abecassis","url":"http:\/\/en.wikipedia.org\/wiki\/George_Abecassis","givenName":"George","familyName":"Abecassis","dateOfBirth":"1913-03-21","nationality":"British"},{"driverId":"acheson","url":"http:\/\/en.wikipedia.org\/wiki\/Kenny_Acheson","givenName":"Kenny","familyName":"Acheson","dateOfBirth":"1957-11-27","nationality":"British"},{"driverId":"adams","url":"http:\/\/en.wikipedia.org\/wiki\/Philippe_Adams","givenName":"Philippe","familyName":"Adams","dateOfBirth":"1969-11-19","nationality":"Belgian"},{"driverId":"ader","url":"http:\/\/en.wikipedia.org\/wiki\/Walt_Ader","givenName":"Walt","familyName":"Ader","dateOfBirth":"1913-12-15","nationality":"American"},{"driverId":"adolff","url":"http:\/\/en.wikipedia.org\/wiki\/Kurt_Adolff","givenName":"Kurt","familyName":"Adolff","dateOfBirth":"1921-11-05","nationality":"German"},{"driverId":"agabashian","url":"http:\/\/en.wikipedia.org\/wiki\/Fred_Agabashian","givenName":"Fred","familyName":"Agabashian","dateOfBirth":"1913-08-21","nationality":"American"},{"driverId":"ahrens","url":"http:\/\/en.wikipedia.org\/wiki\/Kurt_Ahrens,_Jr.","givenName":"Kurt","familyName":"Ahrens","dateOfBirth":"1940-04-19","nationality":"German"},{"driverId":"aitken","permanentNumber":"89","code":"AIT","url":"http:\/\/en.wikipedia.org\/wiki\/Jack_Aitken","givenName":"Jack","familyName":"Aitken","dateOfBirth":"1995-09-23","nationality":"British"},{"driverId":"albers","code":"ALB","url":"http:\/\/en.wikipedia.org\/wiki\/Christijan_Albers","givenName":"Christijan","familyName":"Albers","dateOfBirth":"1979-04-16","nationality":"Dutch"},{"driverId":"albon","permanentNumber":"23","code":"ALB","url":"http:\/\/en.wikipedia.org\/wiki\/Alexander_Albon","givenName":"Alexander","familyName":"Albon","dateOfBirth":"1996-03-23","nationality":"Thai"},{"driverId":"alboreto","url":"http:\/\/en.wikipedia.org\/wiki\/Michele_Alboreto","givenName":"Michele","familyName":"Alboreto","dateOfBirth":"1956-12-23","nationality":"Italian"},{"driverId":"alesi","url":"http:\/\/en.wikipedia.org\/wiki\/Jean_Alesi","givenName":"Jean","familyName":"Alesi","dateOfBirth":"1964-06-11","nationality":"French"},{"driverId":"alguersuari","code":"ALG","url":"http:\/\/en.wikipedia.org\/wiki\/Jaime_Alguersuari","givenName":"Jaime","familyName":"Alguersuari","dateOfBirth":"1990-03-23","nationality":"Spanish"},{"driverId":"alliot","url":"http:\/\/en.wikipedia.org\/wiki\/Philippe_Alliot","givenName":"Philippe","familyName":"Alliot","dateOfBirth":"1954-07-27","nationality":"French"},{"driverId":"allison","url":"http:\/\/en.wikipedia.org\/wiki\/Cliff_Allison","givenName":"Cliff","familyName":"Allison","dateOfBirth":"1932-02-08","nationality":"British"},{"driverId":"alonso","permanentNumber":"14","code":"ALO","url":"http:\/\/en.wikipedia.org\/wiki\/Fernando_Alonso","givenName":"Fernando","familyName":"Alonso","dateOfBirth":"1981-07-29","nationality":"Spanish"},{"driverId":"amati","url":"http:\/\/en.wikipedia.org\/wiki\/Giovanna_Amati","givenName":"Giovanna","familyName":"Amati","dateOfBirth":"1959-07-20","nationality":"Italian"},{"driverId":"amick","url":"http:\/\/en.wikipedia.org\/wiki\/Red_Amick","givenName":"Red","familyName":"Amick","dateOfBirth":"1929-01-19","nationality":"American"},{"driverId":"george_amick","url":"http:\/\/en.wikipedia.org\/wiki\/George_Amick","givenName":"George","familyName":"Amick","dateOfBirth":"1924-10-24","nationality":"American"},{"driverId":"amon","url":"http:\/\/en.wikipedia.org\/wiki\/Chris_Amon","givenName":"Chris","familyName":"Amon","dateOfBirth":"1943-07-20","nationality":"New Zealander"},{"driverId":"anderson","url":"http:\/\/en.wikipedia.org\/wiki\/Bob_Anderson_(racing_driver)","givenName":"Bob","familyName":"Anderson","dateOfBirth":"1931-05-19","nationality":"British"},{"driverId":"andersson","url":"http:\/\/en.wikipedia.org\/wiki\/Conny_Andersson_(racing_driver)","givenName":"Conny","familyName":"Andersson","dateOfBirth":"1939-12-28","nationality":"Swedish"},{"driverId":"andretti","url":"http:\/\/en.wikipedia.org\/wiki\/Michael_Andretti","givenName":"Michael","familyName":"Andretti","dateOfBirth":"1962-10-05","nationality":"American"},{"driverId":"mario_andretti","url":"http:\/\/en.wikipedia.org\/wiki\/Mario_Andretti","givenName":"Mario","familyName":"Andretti","dateOfBirth":"1940-02-28","nationality":"American"},{"driverId":"andrews","url":"http:\/\/en.wikipedia.org\/wiki\/Keith_Andrews_(driver)","givenName":"Keith","familyName":"Andrews","dateOfBirth":"1920-06-15","nationality":"American"},{"driverId":"apicella","url":"http:\/\/en.wikipedia.org\/wiki\/Marco_Apicella","givenName":"Marco","familyName":"Apicella","dateOfBirth":"1965-10-07","nationality":"Italian"},{"driverId":"armi","url":"http:\/\/en.wikipedia.org\/wiki\/Frank_Armi","givenName":"Frank","familyName":"Armi","dateOfBirth":"1918-10-12","nationality":"American"},{"driverId":"arnold","url":"http:\/\/en.wikipedia.org\/wiki\/Chuck_Arnold","givenName":"Chuck","familyName":"Arnold","dateOfBirth":"1926-05-30","nationality":"American"},{"driverId":"arnoux","url":"http:\/\/en.wikipedia.org\/wiki\/Ren%C3%A9_Arnoux","givenName":"Ren[0xc3][0xa9]","familyName":"Arnoux","dateOfBirth":"1948-07-04","nationality":"French"}]}}})"
+[DEBUG] Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2bd8f7db
+[DEBUG] Connection can be kept alive for 5000 MILLISECONDS
+HTTP/1.1 200 OK
+Date: Tue, 18 May 2021 16:54:00 GMT
+Server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/5.4.16
+X-Powered-By: PHP/5.4.16
+Access-Control-Allow-Origin: *
+Content-Length: 5547
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/javascript; charset=utf-8
+
+myParser({"MRData":{"xmlns":"http:\/\/ergast.com\/mrd\/1.4","series":"f1","url":"http://ergast.com/api/f1/drivers.json","limit":"30","offset":"0","total":"853","DriverTable":{"Drivers":[{"driverId":"abate","url":"http:\/\/en.wikipedia.org\/wiki\/Carlo_Mario_Abate","givenName":"Carlo","familyName":"Abate","dateOfBirth":"1932-07-10","nationality":"Italian"},{"driverId":"abecassis","url":"http:\/\/en.wikipedia.org\/wiki\/George_Abecassis","givenName":"George","familyName":"Abecassis","dateOfBirth":"1913-03-21","nationality":"British"},{"driverId":"acheson","url":"http:\/\/en.wikipedia.org\/wiki\/Kenny_Acheson","givenName":"Kenny","familyName":"Acheson","dateOfBirth":"1957-11-27","nationality":"British"},{"driverId":"adams","url":"http:\/\/en.wikipedia.org\/wiki\/Philippe_Adams","givenName":"Philippe","familyName":"Adams","dateOfBirth":"1969-11-19","nationality":"Belgian"},{"driverId":"ader","url":"http:\/\/en.wikipedia.org\/wiki\/Walt_Ader","givenName":"Walt","familyName":"Ader","dateOfBirth":"1913-12-15","nationality":"American"},{"driverId":"adolff","url":"http:\/\/en.wikipedia.org\/wiki\/Kurt_Adolff","givenName":"Kurt","familyName":"Adolff","dateOfBirth":"1921-11-05","nationality":"German"},{"driverId":"agabashian","url":"http:\/\/en.wikipedia.org\/wiki\/Fred_Agabashian","givenName":"Fred","familyName":"Agabashian","dateOfBirth":"1913-08-21","nationality":"American"},{"driverId":"ahrens","url":"http:\/\/en.wikipedia.org\/wiki\/Kurt_Ahrens,_Jr.","givenName":"Kurt","familyName":"Ahrens","dateOfBirth":"1940-04-19","nationality":"German"},{"driverId":"aitken","permanentNumber":"89","code":"AIT","url":"http:\/\/en.wikipedia.org\/wiki\/Jack_Aitken","givenName":"Jack","familyName":"Aitken","dateOfBirth":"1995-09-23","nationality":"British"},{"driverId":"albers","code":"ALB","url":"http:\/\/en.wikipedia.org\/wiki\/Christijan_Albers","givenName":"Christijan","familyName":"Albers","dateOfBirth":"1979-04-16","nationality":"Dutch"},{"driverId":"albon","permanentNumber":"23","code":"ALB","url":"http:\/\/en.wikipedia.org\/wiki\/Alexander_Albon","givenName":"Alexander","familyName":"Albon","dateOfBirth":"1996-03-23","nationality":"Thai"},{"driverId":"alboreto","url":"http:\/\/en.wikipedia.org\/wiki\/Michele_Alboreto","givenName":"Michele","familyName":"Alboreto","dateOfBirth":"1956-12-23","nationality":"Italian"},{"driverId":"alesi","url":"http:\/\/en.wikipedia.org\/wiki\/Jean_Alesi","givenName":"Jean","familyName":"Alesi","dateOfBirth":"1964-06-11","nationality":"French"},{"driverId":"alguersuari","code":"ALG","url":"http:\/\/en.wikipedia.org\/wiki\/Jaime_Alguersuari","givenName":"Jaime","familyName":"Alguersuari","dateOfBirth":"1990-03-23","nationality":"Spanish"},{"driverId":"alliot","url":"http:\/\/en.wikipedia.org\/wiki\/Philippe_Alliot","givenName":"Philippe","familyName":"Alliot","dateOfBirth":"1954-07-27","nationality":"French"},{"driverId":"allison","url":"http:\/\/en.wikipedia.org\/wiki\/Cliff_Allison","givenName":"Cliff","familyName":"Allison","dateOfBirth":"1932-02-08","nationality":"British"},{"driverId":"alonso","permanentNumber":"14","code":"ALO","url":"http:\/\/en.wikipedia.org\/wiki\/Fernando_Alonso","givenName":"Fernando","familyName":"Alonso","dateOfBirth":"1981-07-29","nationality":"Spanish"},{"driverId":"amati","url":"http:\/\/en.wikipedia.org\/wiki\/Giovanna_Amati","givenName":"Giovanna","familyName":"Amati","dateOfBirth":"1959-07-20","nationality":"Italian"},{"driverId":"amick","url":"http:\/\/en.wikipedia.org\/wiki\/Red_Amick","givenName":"Red","familyName":"Amick","dateOfBirth":"1929-01-19","nationality":"American"},{"driverId":"george_amick","url":"http:\/\/en.wikipedia.org\/wiki\/George_Amick","givenName":"George","familyName":"Amick","dateOfBirth":"1924-10-24","nationality":"American"},{"driverId":"amon","url":"http:\/\/en.wikipedia.org\/wiki\/Chris_Amon","givenName":"Chris","familyName":"Amon","dateOfBirth":"1943-07-20","nationality":"New Zealander"},{"driverId":"anderson","url":"http:\/\/en.wikipedia.org\/wiki\/Bob_Anderson_(racing_driver)","givenName":"Bob","familyName":"Anderson","dateOfBirth":"1931-05-19","nationality":"British"},{"driverId":"andersson","url":"http:\/\/en.wikipedia.org\/wiki\/Conny_Andersson_(racing_driver)","givenName":"Conny","familyName":"Andersson","dateOfBirth":"1939-12-28","nationality":"Swedish"},{"driverId":"andretti","url":"http:\/\/en.wikipedia.org\/wiki\/Michael_Andretti","givenName":"Michael","familyName":"Andretti","dateOfBirth":"1962-10-05","nationality":"American"},{"driverId":"mario_andretti","url":"http:\/\/en.wikipedia.org\/wiki\/Mario_Andretti","givenName":"Mario","familyName":"Andretti","dateOfBirth":"1940-02-28","nationality":"American"},{"driverId":"andrews","url":"http:\/\/en.wikipedia.org\/wiki\/Keith_Andrews_(driver)","givenName":"Keith","familyName":"Andrews","dateOfBirth":"1920-06-15","nationality":"American"},{"driverId":"apicella","url":"http:\/\/en.wikipedia.org\/wiki\/Marco_Apicella","givenName":"Marco","familyName":"Apicella","dateOfBirth":"1965-10-07","nationality":"Italian"},{"driverId":"armi","url":"http:\/\/en.wikipedia.org\/wiki\/Frank_Armi","givenName":"Frank","familyName":"Armi","dateOfBirth":"1918-10-12","nationality":"American"},{"driverId":"arnold","url":"http:\/\/en.wikipedia.org\/wiki\/Chuck_Arnold","givenName":"Chuck","familyName":"Arnold","dateOfBirth":"1926-05-30","nationality":"American"},{"driverId":"arnoux","url":"http:\/\/en.wikipedia.org\/wiki\/Ren%C3%A9_Arnoux","givenName":"René","familyName":"Arnoux","dateOfBirth":"1948-07-04","nationality":"French"}]}}})
+myParser({"MRData":{"xmlns":"http:\/\/ergast.com\/mrd\/1.4","series":"f1","url":"http://ergast.com/api/f1/drivers.json","limit":"30","offset":"0","total":"853","DriverTable":{"Drivers":[{"driverId":"abate","url":"http:\/\/en.wikipedia.org\/wiki\/Carlo_Mario_Abate","givenName":"Carlo","familyName":"Abate","dateOfBirth":"1932-07-10","nationality":"Italian"},{"driverId":"abecassis","url":"http:\/\/en.wikipedia.org\/wiki\/George_Abecassis","givenName":"George","familyName":"Abecassis","dateOfBirth":"1913-03-21","nationality":"British"},{"driverId":"acheson","url":"http:\/\/en.wikipedia.org\/wiki\/Kenny_Acheson","givenName":"Kenny","familyName":"Acheson","dateOfBirth":"1957-11-27","nationality":"British"},{"driverId":"adams","url":"http:\/\/en.wikipedia.org\/wiki\/Philippe_Adams","givenName":"Philippe","familyName":"Adams","dateOfBirth":"1969-11-19","nationality":"Belgian"},{"driverId":"ader","url":"http:\/\/en.wikipedia.org\/wiki\/Walt_Ader","givenName":"Walt","familyName":"Ader","dateOfBirth":"1913-12-15","nationality":"American"},{"driverId":"adolff","url":"http:\/\/en.wikipedia.org\/wiki\/Kurt_Adolff","givenName":"Kurt","familyName":"Adolff","dateOfBirth":"1921-11-05","nationality":"German"},{"driverId":"agabashian","url":"http:\/\/en.wikipedia.org\/wiki\/Fred_Agabashian","givenName":"Fred","familyName":"Agabashian","dateOfBirth":"1913-08-21","nationality":"American"},{"driverId":"ahrens","url":"http:\/\/en.wikipedia.org\/wiki\/Kurt_Ahrens,_Jr.","givenName":"Kurt","familyName":"Ahrens","dateOfBirth":"1940-04-19","nationality":"German"},{"driverId":"aitken","permanentNumber":"89","code":"AIT","url":"http:\/\/en.wikipedia.org\/wiki\/Jack_Aitken","givenName":"Jack","familyName":"Aitken","dateOfBirth":"1995-09-23","nationality":"British"},{"driverId":"albers","code":"ALB","url":"http:\/\/en.wikipedia.org\/wiki\/Christijan_Albers","givenName":"Christijan","familyName":"Albers","dateOfBirth":"1979-04-16","nationality":"Dutch"},{"driverId":"albon","permanentNumber":"23","code":"ALB","url":"http:\/\/en.wikipedia.org\/wiki\/Alexander_Albon","givenName":"Alexander","familyName":"Albon","dateOfBirth":"1996-03-23","nationality":"Thai"},{"driverId":"alboreto","url":"http:\/\/en.wikipedia.org\/wiki\/Michele_Alboreto","givenName":"Michele","familyName":"Alboreto","dateOfBirth":"1956-12-23","nationality":"Italian"},{"driverId":"alesi","url":"http:\/\/en.wikipedia.org\/wiki\/Jean_Alesi","givenName":"Jean","familyName":"Alesi","dateOfBirth":"1964-06-11","nationality":"French"},{"driverId":"alguersuari","code":"ALG","url":"http:\/\/en.wikipedia.org\/wiki\/Jaime_Alguersuari","givenName":"Jaime","familyName":"Alguersuari","dateOfBirth":"1990-03-23","nationality":"Spanish"},{"driverId":"alliot","url":"http:\/\/en.wikipedia.org\/wiki\/Philippe_Alliot","givenName":"Philippe","familyName":"Alliot","dateOfBirth":"1954-07-27","nationality":"French"},{"driverId":"allison","url":"http:\/\/en.wikipedia.org\/wiki\/Cliff_Allison","givenName":"Cliff","familyName":"Allison","dateOfBirth":"1932-02-08","nationality":"British"},{"driverId":"alonso","permanentNumber":"14","code":"ALO","url":"http:\/\/en.wikipedia.org\/wiki\/Fernando_Alonso","givenName":"Fernando","familyName":"Alonso","dateOfBirth":"1981-07-29","nationality":"Spanish"},{"driverId":"amati","url":"http:\/\/en.wikipedia.org\/wiki\/Giovanna_Amati","givenName":"Giovanna","familyName":"Amati","dateOfBirth":"1959-07-20","nationality":"Italian"},{"driverId":"amick","url":"http:\/\/en.wikipedia.org\/wiki\/Red_Amick","givenName":"Red","familyName":"Amick","dateOfBirth":"1929-01-19","nationality":"American"},{"driverId":"george_amick","url":"http:\/\/en.wikipedia.org\/wiki\/George_Amick","givenName":"George","familyName":"Amick","dateOfBirth":"1924-10-24","nationality":"American"},{"driverId":"amon","url":"http:\/\/en.wikipedia.org\/wiki\/Chris_Amon","givenName":"Chris","familyName":"Amon","dateOfBirth":"1943-07-20","nationality":"New Zealander"},{"driverId":"anderson","url":"http:\/\/en.wikipedia.org\/wiki\/Bob_Anderson_(racing_driver)","givenName":"Bob","familyName":"Anderson","dateOfBirth":"1931-05-19","nationality":"British"},{"driverId":"andersson","url":"http:\/\/en.wikipedia.org\/wiki\/Conny_Andersson_(racing_driver)","givenName":"Conny","familyName":"Andersson","dateOfBirth":"1939-12-28","nationality":"Swedish"},{"driverId":"andretti","url":"http:\/\/en.wikipedia.org\/wiki\/Michael_Andretti","givenName":"Michael","familyName":"Andretti","dateOfBirth":"1962-10-05","nationality":"American"},{"driverId":"mario_andretti","url":"http:\/\/en.wikipedia.org\/wiki\/Mario_Andretti","givenName":"Mario","familyName":"Andretti","dateOfBirth":"1940-02-28","nationality":"American"},{"driverId":"andrews","url":"http:\/\/en.wikipedia.org\/wiki\/Keith_Andrews_(driver)","givenName":"Keith","familyName":"Andrews","dateOfBirth":"1920-06-15","nationality":"American"},{"driverId":"apicella","url":"http:\/\/en.wikipedia.org\/wiki\/Marco_Apicella","givenName":"Marco","familyName":"Apicella","dateOfBirth":"1965-10-07","nationality":"Italian"},{"driverId":"armi","url":"http:\/\/en.wikipedia.org\/wiki\/Frank_Armi","givenName":"Frank","familyName":"Armi","dateOfBirth":"1918-10-12","nationality":"American"},{"driverId":"arnold","url":"http:\/\/en.wikipedia.org\/wiki\/Chuck_Arnold","givenName":"Chuck","familyName":"Arnold","dateOfBirth":"1926-05-30","nationality":"American"},{"driverId":"arnoux","url":"http:\/\/en.wikipedia.org\/wiki\/Ren%C3%A9_Arnoux","givenName":"René","familyName":"Arnoux","dateOfBirth":"1948-07-04","nationality":"French"}]}}})
+
+    API Automation
+    EndPoint
+    myParser({"MRData":{"xmlns":"http:\/\/ergast.com\/mrd\/1.4","series":"f1","url":"http://ergast.com/api/f1/drivers.json","limit":"30","offset":"0","total":"853","DriverTable":{"Drivers":[{"driverId":"abate","url":"http:\/\/en.wikipedia.org\/wiki\/Carlo_Mario_Abate","givenName":"Carlo","familyName":"Abate","dateOfBirth":"1932-07-10","nationality":"Italian"},{"driverId":"abecassis","url":"http:\/\/en.wikipedia.org\/wiki\/George_Abecassis","givenName":"George","familyName":"Abecassis","dateOfBirth":"1913-03-21","nationality":"British"},{"driverId":"acheson","url":"http:\/\/en.wikipedia.org\/wiki\/Kenny_Acheson","givenName":"Kenny","familyName":"Acheson","dateOfBirth":"1957-11-27","nationality":"British"},{"driverId":"adams","url":"http:\/\/en.wikipedia.org\/wiki\/Philippe_Adams","givenName":"Philippe","familyName":"Adams","dateOfBirth":"1969-11-19","nationality":"Belgian"},{"driverId":"ader","url":"http:\/\/en.wikipedia.org\/wiki\/Walt_Ader","givenName":"Walt","familyName":"Ader","dateOfBirth":"1913-12-15","nationality":"American"},{"driverId":"adolff","url":"http:\/\/en.wikipedia.org\/wiki\/Kurt_Adolff","givenName":"Kurt","familyName":"Adolff","dateOfBirth":"1921-11-05","nationality":"German"},{"driverId":"agabashian","url":"http:\/\/en.wikipedia.org\/wiki\/Fred_Agabashian","givenName":"Fred","familyName":"Agabashian","dateOfBirth":"1913-08-21","nationality":"American"},{"driverId":"ahrens","url":"http:\/\/en.wikipedia.org\/wiki\/Kurt_Ahrens,_Jr.","givenName":"Kurt","familyName":"Ahrens","dateOfBirth":"1940-04-19","nationality":"German"},{"driverId":"aitken","permanentNumber":"89","code":"AIT","url":"http:\/\/en.wikipedia.org\/wiki\/Jack_Aitken","givenName":"Jack","familyName":"Aitken","dateOfBirth":"1995-09-23","nationality":"British"},{"driverId":"albers","code":"ALB","url":"http:\/\/en.wikipedia.org\/wiki\/Christijan_Albers","givenName":"Christijan","familyName":"Albers","dateOfBirth":"1979-04-16","nationality":"Dutch"},{"driverId":"albon","permanentNumber":"23","code":"ALB","url":"http:\/\/en.wikipedia.org\/wiki\/Alexander_Albon","givenName":"Alexander","familyName":"Albon","dateOfBirth":"1996-03-23","nationality":"Thai"},{"driverId":"alboreto","url":"http:\/\/en.wikipedia.org\/wiki\/Michele_Alboreto","givenName":"Michele","familyName":"Alboreto","dateOfBirth":"1956-12-23","nationality":"Italian"},{"driverId":"alesi","url":"http:\/\/en.wikipedia.org\/wiki\/Jean_Alesi","givenName":"Jean","familyName":"Alesi","dateOfBirth":"1964-06-11","nationality":"French"},{"driverId":"alguersuari","code":"ALG","url":"http:\/\/en.wikipedia.org\/wiki\/Jaime_Alguersuari","givenName":"Jaime","familyName":"Alguersuari","dateOfBirth":"1990-03-23","nationality":"Spanish"},{"driverId":"alliot","url":"http:\/\/en.wikipedia.org\/wiki\/Philippe_Alliot","givenName":"Philippe","familyName":"Alliot","dateOfBirth":"1954-07-27","nationality":"French"},{"driverId":"allison","url":"http:\/\/en.wikipedia.org\/wiki\/Cliff_Allison","givenName":"Cliff","familyName":"Allison","dateOfBirth":"1932-02-08","nationality":"British"},{"driverId":"alonso","permanentNumber":"14","code":"ALO","url":"http:\/\/en.wikipedia.org\/wiki\/Fernando_Alonso","givenName":"Fernando","familyName":"Alonso","dateOfBirth":"1981-07-29","nationality":"Spanish"},{"driverId":"amati","url":"http:\/\/en.wikipedia.org\/wiki\/Giovanna_Amati","givenName":"Giovanna","familyName":"Amati","dateOfBirth":"1959-07-20","nationality":"Italian"},{"driverId":"amick","url":"http:\/\/en.wikipedia.org\/wiki\/Red_Amick","givenName":"Red","familyName":"Amick","dateOfBirth":"1929-01-19","nationality":"American"},{"driverId":"george_amick","url":"http:\/\/en.wikipedia.org\/wiki\/George_Amick","givenName":"George","familyName":"Amick","dateOfBirth":"1924-10-24","nationality":"American"},{"driverId":"amon","url":"http:\/\/en.wikipedia.org\/wiki\/Chris_Amon","givenName":"Chris","familyName":"Amon","dateOfBirth":"1943-07-20","nationality":"New Zealander"},{"driverId":"anderson","url":"http:\/\/en.wikipedia.org\/wiki\/Bob_Anderson_(racing_driver)","givenName":"Bob","familyName":"Anderson","dateOfBirth":"1931-05-19","nationality":"British"},{"driverId":"andersson","url":"http:\/\/en.wikipedia.org\/wiki\/Conny_Andersson_(racing_driver)","givenName":"Conny","familyName":"Andersson","dateOfBirth":"1939-12-28","nationality":"Swedish"},{"driverId":"andretti","url":"http:\/\/en.wikipedia.org\/wiki\/Michael_Andretti","givenName":"Michael","familyName":"Andretti","dateOfBirth":"1962-10-05","nationality":"American"},{"driverId":"mario_andretti","url":"http:\/\/en.wikipedia.org\/wiki\/Mario_Andretti","givenName":"Mario","familyName":"Andretti","dateOfBirth":"1940-02-28","nationality":"American"},{"driverId":"andrews","url":"http:\/\/en.wikipedia.org\/wiki\/Keith_Andrews_(driver)","givenName":"Keith","familyName":"Andrews","dateOfBirth":"1920-06-15","nationality":"American"},{"driverId":"apicella","url":"http:\/\/en.wikipedia.org\/wiki\/Marco_Apicella","givenName":"Marco","familyName":"Apicella","dateOfBirth":"1965-10-07","nationality":"Italian"},{"driverId":"armi","url":"http:\/\/en.wikipedia.org\/wiki\/Frank_Armi","givenName":"Frank","familyName":"Armi","dateOfBirth":"1918-10-12","nationality":"American"},{"driverId":"arnold","url":"http:\/\/en.wikipedia.org\/wiki\/Chuck_Arnold","givenName":"Chuck","familyName":"Arnold","dateOfBirth":"1926-05-30","nationality":"American"},{"driverId":"arnoux","url":"http:\/\/en.wikipedia.org\/wiki\/Ren%C3%A9_Arnoux","givenName":"René","familyName":"Arnoux","dateOfBirth":"1948-07-04","nationality":"French"}]}}})
+
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mGet Call from API&amp#27;[0m &amp#27;[90m# stepDefinitions.APIPracticesteps.get_call_from_api(io.cucumber.datatable.DataTable)&amp#27;[0m
+
+    API Automation
+
+
+    API Automation
+
+
+    BinaryTree.BinaryTreeNew@7739aac4
+
+]]></system-out>
+    <system-err><![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.webDriver" is null
+	at stepDefinitions.WebPracticesteps.teardown(WebPracticesteps.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:110)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:364)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:237)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:158)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]></system-err>
+  </testcase>
+  <testcase name="MobileUI Build Object Repo From a Page" classname="Cucumber to do Test Mobile UI" time="7.425">
+    <system-out><![CDATA[
+Scenario: MobileUI Build Object Repo From a Page &amp#27;[90m# src/test/resources/Feature/MobileUI.feature:2&amp#27;[0m
+MobileUI Build Object Repo From a Page
+
+    MobileUI Build Object Repo From a Page
+
+MobileUI Build Object Repo From a Page
+
+    MobileUI Build Object Repo From a Page
+
+MobileUI Build Object Repo From a Page
+
+    MobileUI Build Object Repo From a Page
+
+[DEBUG] Removing resolution chrome=90 from cache (expired on Tue May 18 12:08:57 EDT 2021)
+[DEBUG] ex-00000001: preparing request execution
+[DEBUG] Cookie spec selected: strict
+[DEBUG] Auth cache not set in the context
+[DEBUG] ex-00000001: target auth state: UNCHALLENGED
+[DEBUG] ex-00000001: proxy auth state: UNCHALLENGED
+[DEBUG] ex-00000001: acquiring connection with route {s}->https://raw.githubusercontent.com:443
+[DEBUG] ex-00000001: acquiring endpoint (3 MINUTES)
+[DEBUG] ex-00000001: endpoint lease request (3 MINUTES) [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 25]
+[DEBUG] ex-00000001: endpoint leased [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 25]
+[DEBUG] ex-00000001: acquired ep-00000000
+[DEBUG] ex-00000001: acquired endpoint ep-00000000
+[DEBUG] ex-00000001: opening connection {s}->https://raw.githubusercontent.com:443
+[DEBUG] ep-00000000: connecting endpoint (30 SECONDS)
+[DEBUG] ep-00000000: connecting endpoint to https://raw.githubusercontent.com:443 (30 SECONDS)
+[DEBUG] http-outgoing-0: connecting to raw.githubusercontent.com/185.199.111.133:443
+[DEBUG] Connecting socket to raw.githubusercontent.com/185.199.111.133:443 with timeout 30 SECONDS
+[DEBUG] Enabled protocols: [TLSv1.3, TLSv1.2]
+[DEBUG] Enabled cipher suites: [TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+[DEBUG] Starting handshake
+[DEBUG] Secure session established
+[DEBUG]  negotiated protocol: TLSv1.3
+[DEBUG]  negotiated cipher suite: TLS_AES_256_GCM_SHA384
+[DEBUG]  peer principal: CN=www.github.com, O="GitHub, Inc.", L=San Francisco, ST=California, C=US
+[DEBUG]  peer alternative names: [www.github.com, *.github.com, github.com, *.github.io, github.io, *.githubusercontent.com, githubusercontent.com]
+[DEBUG]  issuer principal: CN=DigiCert SHA2 High Assurance Server CA, OU=www.digicert.com, O=DigiCert Inc, C=US
+[DEBUG] http-outgoing-0: connection established 192.168.1.170:61242<->185.199.111.133:443
+[DEBUG] ep-00000000: connected http-outgoing-0
+[DEBUG] ep-00000000: endpoint connected
+[DEBUG] ex-00000001: executing GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1
+[DEBUG] ep-00000000: start execution ex-00000001
+[DEBUG] ep-00000000: executing exchange ex-00000001 over http-outgoing-0
+[DEBUG] http-outgoing-0 >> GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1
+[DEBUG] http-outgoing-0 >> user-agent: Apache-HttpClient/5.0
+[DEBUG] http-outgoing-0 >> accept-encoding: gzip, deflate, br
+[DEBUG] http-outgoing-0 >> cache-control: max-age=0
+[DEBUG] http-outgoing-0 >> connection: keep-alive
+[DEBUG] http-outgoing-0 >> Host: raw.githubusercontent.com
+[DEBUG] http-outgoing-0 >> "GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1[\r][\n]"
+[DEBUG] http-outgoing-0 >> "user-agent: Apache-HttpClient/5.0[\r][\n]"
+[DEBUG] http-outgoing-0 >> "accept-encoding: gzip, deflate, br[\r][\n]"
+[DEBUG] http-outgoing-0 >> "cache-control: max-age=0[\r][\n]"
+[DEBUG] http-outgoing-0 >> "connection: keep-alive[\r][\n]"
+[DEBUG] http-outgoing-0 >> "Host: raw.githubusercontent.com[\r][\n]"
+[DEBUG] http-outgoing-0 >> "[\r][\n]"
+[DEBUG] http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+[DEBUG] http-outgoing-0 << "Content-Length: 709[\r][\n]"
+[DEBUG] http-outgoing-0 << "Cache-Control: max-age=300[\r][\n]"
+[DEBUG] http-outgoing-0 << "Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox[\r][\n]"
+[DEBUG] http-outgoing-0 << "Content-Type: text/plain; charset=utf-8[\r][\n]"
+[DEBUG] http-outgoing-0 << "ETag: W/"176e34c141316893b4c57116358e915db99135774a91bd005078cf51d6a0a21d"[\r][\n]"
+[DEBUG] http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+[DEBUG] http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+[DEBUG] http-outgoing-0 << "X-Frame-Options: deny[\r][\n]"
+[DEBUG] http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+[DEBUG] http-outgoing-0 << "X-GitHub-Request-Id: D8EE:60D8:8BDC28:B72D8C:60A373C7[\r][\n]"
+[DEBUG] http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+[DEBUG] http-outgoing-0 << "Accept-Ranges: bytes[\r][\n]"
+[DEBUG] http-outgoing-0 << "Date: Tue, 18 May 2021 16:54:01 GMT[\r][\n]"
+[DEBUG] http-outgoing-0 << "Via: 1.1 varnish[\r][\n]"
+[DEBUG] http-outgoing-0 << "X-Served-By: cache-ewr18130-EWR[\r][\n]"
+[DEBUG] http-outgoing-0 << "X-Cache: HIT[\r][\n]"
+[DEBUG] http-outgoing-0 << "X-Cache-Hits: 1[\r][\n]"
+[DEBUG] http-outgoing-0 << "X-Timer: S1621356841.380656,VS0,VE1[\r][\n]"
+[DEBUG] http-outgoing-0 << "Vary: Authorization,Accept-Encoding[\r][\n]"
+[DEBUG] http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+[DEBUG] http-outgoing-0 << "X-Fastly-Request-ID: 7bd64a3b6a1b248e56cce64fb1cc74afd8e08aae[\r][\n]"
+[DEBUG] http-outgoing-0 << "Expires: Tue, 18 May 2021 16:59:01 GMT[\r][\n]"
+[DEBUG] http-outgoing-0 << "Source-Age: 242[\r][\n]"
+[DEBUG] http-outgoing-0 << "[\r][\n]"
+[DEBUG] http-outgoing-0 << HTTP/1.1 200 OK
+[DEBUG] http-outgoing-0 << Connection: keep-alive
+[DEBUG] http-outgoing-0 << Content-Length: 709
+[DEBUG] http-outgoing-0 << Cache-Control: max-age=300
+[DEBUG] http-outgoing-0 << Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+[DEBUG] http-outgoing-0 << Content-Type: text/plain; charset=utf-8
+[DEBUG] http-outgoing-0 << ETag: W/"176e34c141316893b4c57116358e915db99135774a91bd005078cf51d6a0a21d"
+[DEBUG] http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+[DEBUG] http-outgoing-0 << X-Content-Type-Options: nosniff
+[DEBUG] http-outgoing-0 << X-Frame-Options: deny
+[DEBUG] http-outgoing-0 << X-XSS-Protection: 1; mode=block
+[DEBUG] http-outgoing-0 << X-GitHub-Request-Id: D8EE:60D8:8BDC28:B72D8C:60A373C7
+[DEBUG] http-outgoing-0 << Content-Encoding: gzip
+[DEBUG] http-outgoing-0 << Accept-Ranges: bytes
+[DEBUG] http-outgoing-0 << Date: Tue, 18 May 2021 16:54:01 GMT
+[DEBUG] http-outgoing-0 << Via: 1.1 varnish
+[DEBUG] http-outgoing-0 << X-Served-By: cache-ewr18130-EWR
+[DEBUG] http-outgoing-0 << X-Cache: HIT
+[DEBUG] http-outgoing-0 << X-Cache-Hits: 1
+[DEBUG] http-outgoing-0 << X-Timer: S1621356841.380656,VS0,VE1
+[DEBUG] http-outgoing-0 << Vary: Authorization,Accept-Encoding
+[DEBUG] http-outgoing-0 << Access-Control-Allow-Origin: *
+[DEBUG] http-outgoing-0 << X-Fastly-Request-ID: 7bd64a3b6a1b248e56cce64fb1cc74afd8e08aae
+[DEBUG] http-outgoing-0 << Expires: Tue, 18 May 2021 16:59:01 GMT
+[DEBUG] http-outgoing-0 << Source-Age: 242
+[DEBUG] ex-00000001: connection can be kept alive for 3 MINUTES
+[DEBUG] http-outgoing-0 << "[0x1f][0xffffff8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xffffffb5]V]o[0xffffffda]0[0x14]}[0xffffffe7]W\QUj%[0x2][[0xffffffa9][0xffffffa6]i[0x12][0xf]4[0xffffffa3][0xffffffdd]4[0x10][0xc][0xffffffda]n[0xffffff93][0xfffffffc][0xffffffe2]&7[0xffffffc1]R[0x12]#;@[0xffffffbb]_?[0xffffffdb][0xfffffff9][0x18][0x9][0xffffffc9]`[\r]}[0xffffff8b][0xffffffed][0xffffffeb]s[0xffffff8e][0xffffffef]=[0xffffff8e][0xffffffef][0x19][0xffffffd8]<[0xc]i[0xffffffe4]JpiL[0xffffff9f][0xffffffa8][0xffffffc4][0xffffffd6][0x19][0xffffffdc]/[0xffffff99][0x4][0xffffff8f][0x5][0x8][0xe][0xffffff8f]b[0xffffffca]"[0x9][0xfffffff1]R[0xf][0xffffffd2][0xffffffd0][0xffffff98][0xffffffc3][0x13][0x2]>[0xffffffa3][0xffffffb3][0xffffff8e][0xffffffd1][0x5][0x16][0xffffff99]e[0xffffffb9][0xffffffc4] [0xffffffd0][0x3].\[0x14]:[0xffffffc8][0xffffffc5][0x18][0xffffff9d][0xffffffd8],nPH[0xffffffc6][0xffffffd5][0xffffff9a][0x7][0xffffffa8][0xffffffbe]}[0xffffff81][0x18][0xffffffc1][0xffffff93][0xffffffe0][[0xffffffa9][0x16][0x14][0xffffffe5][0xffffff85][0xffffffbd][0x14]<[0xffffffc4][0xe][0xffffffdc]2[0xffffff81][0x1e][0x7f][0xffffffee][0xffffffc0]t[0xffffff85][0xffffff82]v`[0xffffffe4][0xfffffffa]j[0xffffffd6][0xffffffac][0xffffffb2]ux[0xffffffa9][0xfffffff1]][0xffffffe6]y(0[0xffffff8a][0xffffff81][0xffffffeb][0xffffff98][0xffffff98]E>[0xffffffc8][0x17][0x19]c([0xffffffe1][0xffffffe2][0x7][0xffffff8b]\[0xffffff85][0xffffffda][0xffffff81]1[0xffffff8b][0xffffffd6][\n]"
+[DEBUG] http-outgoing-0 << "fB[0x1d][0xffffff98]..[[0xffffff8a]#[0xffffffa1]h[0xffffffa5][0xffffffc7][0xffffffe8]:f[0xffffffd8][0xffffffdd]&[0x1b][0xffffffba][0xffffffef][0xffffffde][0xf][0xffffff9c][0xffffffd0][0xffffffed][0xffffffaa]SA[0xffffffcf][0xffffff86]m[0xffffffc8][0x1c][0xffffff93][0x12][0xffffff93][0xffffff86][0xffffffed]R[0xfffffff1]ADC[0x1c][0xffffffb4][0xffffffcf]g[0xfffffff3][0xffffffe9][0xffffffdd]|8[0xffffffb9][0xfffffffd]:[0x1e]-.~~[0xfffffffc]p[0xfffffff9][0xffffff89][0xc][0x8]9'[0xffffffe4][0xffffff8e]s?@B[0x12][0x1e]B[0xffffff86][0xffffffab]U[0xffffffc0][0x1c][0xffffffa5][0xffffff8f]G[0xffffff84][0xffffffa4]l[\n]"
+[DEBUG] http-outgoing-0 << "[0xffffffbe][\r]>[0xffffffc6][0xfffffff0][0xffffff98]&[0xffffffa4][0xffffffb7][0xffffffa1][0xffffffc1][0xffffffba]^[0xffffffd4][0xffffffd5][0xffffff91][0xffffffa2][0xffffffc6]S{8[0x1e][0xffffffce]f[0xffffff9f][0xffffff87][0xfffffff7][0xffffffc3][0xffffffb7][0xffffffd4][0xffffffd3][0x7f]E[0xffffff92][0xffffffde]R[0xffffffcf][0xfffffff5]`>[0xffffffba][0xffffff83][0xffffffef][0xf][0xffffffa3][0xfffffff9]/[0xfffffff8][0xfffffff2][0xffffffcd]~ [0xb][0xffffffee][0xffffffc5][*0cK[0xffffffc9]n[0xffffffc6]7H[0x1d][0xffffff83][0xffffff97]y[0xffffffb1]U[0x6][\r][0xffffffb4]c[0xffffffb4][0xf]|[0xffffffb3][0xffffffd5]J[0xffffffa6][0xffffffc1][0xffffffb2][0xffffffea]6[0xffffff84][0xffffffd4][0xffffffd1][0xffffffe1][0xffffffbd][0xffffff9d][0xffffff83][0xffffffc8]^[0xffffffc2][0xffffff9b][0xffffff9a][0xffffffad]KW[0xffffffab][0xffffff9e][0xffffffad].[0xffffff91]r[0xffffffab][0xffffffec])/N[0x17][0xffffffc5][0xffffff80]]te[0xffffffd1][0xffffffd4][0xfffffffd]9[0xffffff91][0xffffff97][0xffffff8c][0xffffff9b][0xffffff99]4[0xffffffcb][0xffffffff][0xffffff84][0xffffffff]fA@3[0x12]B2[0xfffffff4]CI[0xffffffdf]Sq[0xffffffac]+k[0xffffffaf][0xffffffca][0xffffffe9][0xffffffa4][0xfffffff4]w[0xc][0xffffffd0].: %)[0xffffff93][0xffffffb5][0xffffffb5][0x7][0xffffffec][0xffffffb5][0xffffffd0][0x7f][0xffffff90][0xffffffc7]re3[0xfffffffc][0xffffffdc][0xb][0xffffffe9][0x4]X[0xffffff9b][0xfffffffd][0xffffffa0][0xffffffca][0xfffffffa][0xffffffa7],U[0xffffff95][0xffffffdf][0xffffffc5]R[0xffffffc5][0xffffffd6][0xffffffbf][0xffffffb6][0x1c][0x13][0xffffffd5][0xffffffe0][0xffffff84][0xffffffff][0xffffffa2][0x9]s[0x4][0xffffff97]*[0x13][0xffffff84]h[0xffffff9a][0xffffffd2]e[0xb][0xffffffa5][0xffffffa1];[0xffffff94][0xffffffec][0xffffffa2][0xffffffa6][0xffffffd7][0x14][0xfffffffd][\r][0xffffffe5][0xfffffff4]ko[0xfffffffe]_2[0xffffffc3][0xfffffff5][0xffffffcf][0xffffffab]o0[0xfffffff3]b[0xffffff87][0xffffffd9]NK[0xffffffcf]W[0xffffffdd]|[0x13]_Y[0xfffffff7][0xffffff9c][0xffffffd5][0xffffffd4][0xffffffb5][0xffffffaa][0xfffffffc][0xffffffc5][0x8](\|[0xfffffff3][0xffffffda][0xffffffe5],[0xffffffe6]][0xfffffffb][0x7f]7T=[0x2]3[0xffffffc1]}ACI[0xffffff88][0xffffffa1] $[0xffffffa0][0xffffffeb][0xffffffc8]Q[0xffffffbb][0xe][0xffffffa6][0xffffffbb]$[0xffffffa2]I[0xfffffff9]O&[0xffffffe2][0xffffffd8][0xffffffe7][0xffffffa7]*[0x13][\r][0xffffffa9][0xffffffaf][0x1b][0xffffff9c][0xffffffff]X[0xffffffea][0x12]w[0xffffffee]K3[0xffffffac][0xffffffb2]c[0x12]W[0xffffffe9]G[0xffffffc3]Ye[0xffffffc3]i[0x19],k[0xffffff8d]T[0x7f]U|[0xffffffe1][0xffffffd4][0xffffffc4]iL[0xffffff98][0xffffffc1]7x[0xfffffff3][0xb]Z[0x1a][0xffffffbf]?[0xffffffa7][0x16][0xffffffd4][0xffffffa4]-:[0xffffffb5][0xffffff96][0xfffffffa][0xffffff96](g:[0xffffffdc][\r]i[0xffffffc4][0xffffffdc]~[0xffffffd9][0xffffff8c][0xffffff95]6[0xffffffec];[0xffffffe6][0xffffffa9][0xffffffdb]t[0xffffff95]o[0xffffffaa][0xffffffed][0xffffff9f]tt[0xffffffa5]s3[0xffffff99]U[0xffffffe6][0xffffffb5][0xfffffff7]Q[0xffffffff][0x0][0xffffff84][0xffffffc0][0x11][0xffffffe5][0xffffffc4][0xc][0x0][0x0]"
+[DEBUG] ep-00000000: releasing valid endpoint
+[DEBUG] ep-00000000: releasing endpoint
+[DEBUG] ep-00000000: connection http-outgoing-0 can be kept alive for 3 MINUTES
+[DEBUG] ep-00000000: connection released [route: {s}->https://raw.githubusercontent.com:443][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
+[DEBUG] Detecting chrome version using online commands.properties
+[DEBUG] Running command on the shell: [/Applications/Google Chrome.app/Contents/MacOS/Google Chrome, --version]
+[DEBUG] Result: Google Chrome 90.0.4430.212
+[DEBUG] Resolution chrome90=90.0.4430.24 in cache (valid until 10:07:44 19/05/2021 EDT)
+[INFO] Using chromedriver 90.0.4430.24 (resolved driver for Chrome 90)
+[DEBUG] Storing resolution chrome=90 in cache (valid until 13:54:01 18/05/2021 EDT)
+[DEBUG] Driver chromedriver 90.0.4430.24 found in cache
+[INFO] Exporting webdriver.chrome.driver as /Users/mouli/.cache/selenium/chromedriver/mac64/90.0.4430.24/chromedriver
+
+    MobileUI Build Object Repo From a Page
+    Web Browser Title
+    #1 Free CRM customer relationship management software cloud
+
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mopen the Browser&amp#27;[0m                         &amp#27;[90m# stepDefinitions.WebPracticesteps.open_the_browser(io.cucumber.datatable.DataTable)&amp#27;[0m
+unknown tag
+{free crm customer california=https://www.freecrm.com/images/index-14-150x150.png, offset-top-23=Try our mobile CRM applications for Android and iPhone and get your data on mobile on the web. Download and install our CRM apps and log in from anywhere to access your CRM data., https://www.freecrm.com/about.html=ABOUT, https://itunes.apple.com/us/app/cogmento/id1291380634?mt=8=, offset-top-22=Sales CRM
+HIPAA Medical CRM
+Dental CRM
+Automotive CRM
+Call Center CRM
+Insurance CRM
+Real Estate CRM
+Professional Services CRM
+Contractor Builder CRM
+Independent Sales CRM
+NPO Nonprofit CRM
+NGO Nongovernment CRM
+Wealth & Finance CRM
+Hospitality CRM
+Restaurant CRM
+, https://www.freecrm.com/hipaa.html=HIPAA Medical CRM, privacy=FreeCRM.com © 2021 - Privacy Policy - Terms of Use, https://www.freecrm.com/callcenter.html=Call Center CRM, https://www.freecrm.com/is.html=Independent Sales CRM, https://support.cogmento.com/webinars-and-videos=SUPPORT, free crm customer original=https://www.freecrm.com/images/index-11-150x150.png, iTunes=https://www.freecrm.com/images/Itunes.png, https://freecrm.com/=YOUR BUSINESS CLOUD PARTNER
+ FREECRM, https://www.freecrm.com/compare.html=COMPARE, https://www.freecrm.com/#=FREE CRM, https://www.freecrm.com/dental.html=Dental CRM, https://www.freecrm.com/auto.html=Automotive CRM, https://www.freecrm.com/privacy.html=Privacy Policy, txt-gray-light offset-top-75 offset-md-top-87=Grow every part of your business, monitor and manage everything from sales leads to support tickets and channel marketing to email campaigns, all from any desktop or device using our cloud-based software. We have everything you need to organize, track, and nurture your leads and customers. The power of a customer relationship management system is the ability to quickly identify a lead from a prospect or an existing customer. Free CRM software automates the tasks salespeople dislike and makes it easy for everyone. The best way to get started with CRM technology is to sign up and test it out on some of your data right now. Getting started with FreeCRM.com is easy if you have a CSV or Excel file with your leads or contacts; export from your existing system and then import into our CRM fast and easy., Download on the App Store=https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&h=95ead71555e15d4e25dc1db901e9e7b4, https://www.freecrm.com/cb.html=Contractor Builder CRM, free crm customer household=https://www.freecrm.com/images/index-13-150x150.png, https://ui.cogmento.com/=, free crm customer 42 vantage=https://www.freecrm.com/images/index-10-150x150.png, https://register.freecrm.com/register/= SIGN UP, free crm customer jackson=https://www.freecrm.com/images/index-12-150x150.png, txt-gray-light offset-top-10=Know every contact in your key accounts. Get a complete view of your customers, including activity history, key contacts, customer communications, and discussions with your co-workers. Customers matter, but spreadsheets, emails, and sticky notes are a hard way to manage them. CRM centralizes your data so you can manage the sales process, help customers faster, and market smarter. With the CRM tool, it is easy to segment and slice and dice your customers or prospects and convert more leads to sales., Get it on Google Play=https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png, https://www.freecrm.com/crmcloud.html=Restaurant CRM, https://www.freecrm.com/insurance.html=Insurance CRM, Android=https://www.freecrm.com/images/Android.png, https://www.freecrm.com/re.html=Real Estate CRM, <a href="">Apps</a>=-------------BROKEN LINK, https://www.freecrm.com/terms.html=Terms of Use, https://apps.apple.com/us/app/cogmento/id1291380634=iPhone / iPad, https://play.google.com/store/apps/details?id=com.cogmento.app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1=, txt-gray-lighter offset-top-75 offset-md-top-87=Add as many employees as you wish to the CRM and automate your business like never before. Please take a closer look at what CRM is and how it helps find, win, and keep customers. Manage your sales pipeline and speed up your closing time with Free CRM. Interactions tracked in the CRM give you a bird's eye view, and deals are displayed on the dashboard for total visibility into everyone's progress and obstacles. Enterprise-level security and ongoing support to help you grow. Small businesses can grow faster with all of the tools to fill the sales pipeline through smarter marketing, improved sales productivity, and customer service., https://apps.apple.com/us/developer/cogmento-inc/id1291380633?itsct=apps_box&itscg=30200=, offset-top-35 offset-md-top-57=Reach out and engage your clients and nurture relationships. Personalize your email marketing, engage with mobile and influential social network marketing. Enable non-marketers to inform, engage in marketing quickly, and sell to their consumers at scale. Personalize the message and speak to people in their journey., free crm customer lakewoods=https://www.freecrm.com/images/index-12-150x150.png, https://www.freecrm.com/ps.html=Professional Services CRM, https://play.google.com/store/apps/details?id=com.cogmento.app=, https://www.freecrm.com/pricing.html=PRICING}
+
+    MobileUI Build Object Repo From a Page
+    All Links From WebSite
+    https://freecrm.com/       ********* FREECRM*********
+    https://freecrm.com/       *********FREECRM*********
+    https://www.freecrm.com/about.html       *********ABOUT*********
+    https://www.freecrm.com/#       *********FREE CRM*********
+    https://www.freecrm.com/crmcloud.html       *********CRM for Any Business*********
+    https://www.freecrm.com/hipaa.html       *********HIPAA CRM *********
+    https://www.freecrm.com/dental.html       *********Dental CRM*********
+    https://www.freecrm.com/auto.html       *********Automotive CRM*********
+    https://www.freecrm.com/callcenter.html       *********Call Center CRM*********
+    https://www.freecrm.com/insurance.html       *********Insurance CRM*********
+    https://www.freecrm.com/re.html       *********Real Estate CRM*********
+    https://www.freecrm.com/ps.html       *********Professional Services CRM*********
+    https://www.freecrm.com/cb.html       *********Contractor Builder CRM*********
+    https://www.freecrm.com/is.html       *********Independent Sales CRM*********
+    <a href="">Apps</a>-------------BROKEN LINK
+    https://play.google.com/store/apps/details?id=com.cogmento.app       *********Android*********
+    https://apps.apple.com/us/app/cogmento/id1291380634       *********iPhone / iPad*********
+    https://www.freecrm.com/compare.html       *********COMPARE*********
+    https://www.freecrm.com/pricing.html       *********PRICING*********
+    https://itunes.apple.com/us/app/cogmento/id1291380634?mt=8       ******************
+    https://play.google.com/store/apps/details?id=com.cogmento.app       ******************
+    https://support.cogmento.com/webinars-and-videos       *********SUPPORT*********
+    https://ui.cogmento.com/       ******************
+    https://register.freecrm.com/register/       ********* SIGN UP*********
+    https://register.freecrm.com/register/       ********* SIGN UP*********
+    https://register.freecrm.com/register/       ********* SIGN UP*********
+    https://register.freecrm.com/register/       ********* SIGN UP*********
+    https://register.freecrm.com/register/       ********* SIGN UP*********
+    https://register.freecrm.com/register/       ********* SIGN UP*********
+    https://freecrm.com/       *********YOUR BUSINESS CLOUD PARTNER
+     FREECRM*********
+    https://play.google.com/store/apps/details?id=com.cogmento.app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1       ******************
+    https://apps.apple.com/us/developer/cogmento-inc/id1291380633?itsct=apps_box&itscg=30200       ******************
+    https://www.freecrm.com/crmcloud.html       *********Sales CRM*********
+    https://www.freecrm.com/hipaa.html       *********HIPAA Medical CRM*********
+    https://www.freecrm.com/dental.html       *********Dental CRM*********
+    https://www.freecrm.com/auto.html       *********Automotive CRM*********
+    https://www.freecrm.com/callcenter.html       *********Call Center CRM*********
+    https://www.freecrm.com/insurance.html       *********Insurance CRM*********
+    https://www.freecrm.com/re.html       *********Real Estate CRM*********
+    https://www.freecrm.com/ps.html       *********Professional Services CRM*********
+    https://www.freecrm.com/cb.html       *********Contractor Builder CRM*********
+    https://www.freecrm.com/is.html       *********Independent Sales CRM*********
+    https://www.freecrm.com/crmcloud.html       *********NPO Nonprofit CRM*********
+    https://www.freecrm.com/crmcloud.html       *********NGO Nongovernment CRM*********
+    https://www.freecrm.com/crmcloud.html       *********Wealth & Finance CRM*********
+    https://www.freecrm.com/crmcloud.html       *********Hospitality CRM*********
+    https://www.freecrm.com/crmcloud.html       *********Restaurant CRM*********
+    https://www.freecrm.com/privacy.html       *********Privacy Policy*********
+    https://www.freecrm.com/terms.html       *********Terms of Use*********
+    offset-top-35 offset-md-top-57       *********Convert leads into accounts faster with the world's #1 CRM software. Grow your customer base, find new ones, and close faster from anywhere. Quickly follow up on leads, identify key contacts, and more. See a comfortable, customizable view of all of the details of sales at the touch of a button. Manage your pipeline and speed up your sales team.*********
+    offset-top-35 offset-md-top-57       *********Support every customer on every channel everywhere. Personalize customer care, close cases faster, and deliver support everywhere. Collect and organize all of your support channels and customer information on a single page to quickly help customers — route questions to the right agent and allocate work based on availability & expertise.*********
+    offset-top-35 offset-md-top-57       *********Reach out and engage your clients and nurture relationships. Personalize your email marketing, engage with mobile and influential social network marketing. Enable non-marketers to inform, engage in marketing quickly, and sell to their consumers at scale. Personalize the message and speak to people in their journey.*********
+    txt-gray-light offset-top-75 offset-md-top-87       *********Grow every part of your business, monitor and manage everything from sales leads to support tickets and channel marketing to email campaigns, all from any desktop or device using our cloud-based software. We have everything you need to organize, track, and nurture your leads and customers. The power of a customer relationship management system is the ability to quickly identify a lead from a prospect or an existing customer. Free CRM software automates the tasks salespeople dislike and makes it easy for everyone. The best way to get started with CRM technology is to sign up and test it out on some of your data right now. Getting started with FreeCRM.com is easy if you have a CSV or Excel file with your leads or contacts; export from your existing system and then import into our CRM fast and easy.*********
+    txt-gray-light offset-top-10       *********A CRM makes your team more efficient, identifying prospects and leads and closing more sales. On average, companies realize a 30% increase in sales by using FreeCRM. FreeCRM can also cut your time to close by as much as 50%. Put your company in this category and implement Free CRM now. Drive revenue growth; CRM powers your business when you streamline your configure, price, and quote process. Easily manage subscriptions, invoices, and payments. But there's more: a CRM can automate many things in your business, like tasks, documents, and support.*********
+    txt-gray-light offset-top-10       *********Find customers faster, win more customers, keep them happy, and connect everything. And it is not just sales; easy-to-use marketing automation and customer service tools boost engagement and happiness. Easy setup, manage leads, opportunities & accounts, create custom dashboards & reports, deliver social and email support, save time with customer service tools. Easily route the right customer service request to the proper agent and manage your knowledge base all in the CRM system.*********
+    txt-gray-light offset-top-10       *********Know every contact in your key accounts. Get a complete view of your customers, including activity history, key contacts, customer communications, and discussions with your co-workers. Customers matter, but spreadsheets, emails, and sticky notes are a hard way to manage them. CRM centralizes your data so you can manage the sales process, help customers faster, and market smarter. With the CRM tool, it is easy to segment and slice and dice your customers or prospects and convert more leads to sales.*********
+    txt-gray-lighter offset-top-75 offset-md-top-87       *********Add as many employees as you wish to the CRM and automate your business like never before. Please take a closer look at what CRM is and how it helps find, win, and keep customers. Manage your sales pipeline and speed up your closing time with Free CRM. Interactions tracked in the CRM give you a bird's eye view, and deals are displayed on the dashboard for total visibility into everyone's progress and obstacles. Enterprise-level security and ongoing support to help you grow. Small businesses can grow faster with all of the tools to fill the sales pipeline through smarter marketing, improved sales productivity, and customer service.*********
+    offset-top-23       *********Our company offers professional Free CRM services to boost sales and automate marketing and get more customers. CRM helps your whole team organize and keep track of all of your important corporate data.*********
+    offset-top-23       *********Try our mobile CRM applications for Android and iPhone and get your data on mobile on the web. Download and install our CRM apps and log in from anywhere to access your CRM data.*********
+    offset-top-22       *********Sales CRM
+    HIPAA Medical CRM
+    Dental CRM
+    Automotive CRM
+    Call Center CRM
+    Insurance CRM
+    Real Estate CRM
+    Professional Services CRM
+    Contractor Builder CRM
+    Independent Sales CRM
+    NPO Nonprofit CRM
+    NGO Nongovernment CRM
+    Wealth & Finance CRM
+    Hospitality CRM
+    Restaurant CRM
+    *********
+    privacy       *********FreeCRM.com © 2021 - Privacy Policy - Terms of Use*********
+    iTunes       *********https://www.freecrm.com/images/Itunes.png*********
+    Android       *********https://www.freecrm.com/images/Android.png*********
+    free crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********
+    free crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********
+    free crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********
+    free crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********
+    free crm customer lakewoods       *********https://www.freecrm.com/images/index-12-150x150.png*********
+    free crm customer household       *********https://www.freecrm.com/images/index-13-150x150.png*********
+    free crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********
+    free crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********
+    free crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********
+    free crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********
+    Get it on Google Play       *********https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png*********
+    Download on the App Store       *********https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&h=95ead71555e15d4e25dc1db901e9e7b4*********
+
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mstore all Links&amp#27;[0m                           &amp#27;[90m# stepDefinitions.WebPracticesteps.store_all_links()&amp#27;[0m
+unknown tag
+{free crm customer california=https://www.freecrm.com/images/index-14-150x150.png, free crm customer household=https://www.freecrm.com/images/index-13-150x150.png, free crm customer 42 vantage=https://www.freecrm.com/images/index-10-150x150.png, offset-top-23=Try our mobile CRM applications for Android and iPhone and get your data on mobile on the web. Download and install our CRM apps and log in from anywhere to access your CRM data., offset-top-22=Sales CRM
+HIPAA Medical CRM
+Dental CRM
+Automotive CRM
+Call Center CRM
+Insurance CRM
+Real Estate CRM
+Professional Services CRM
+Contractor Builder CRM
+Independent Sales CRM
+NPO Nonprofit CRM
+NGO Nongovernment CRM
+Wealth & Finance CRM
+Hospitality CRM
+Restaurant CRM
+, free crm customer jackson=https://www.freecrm.com/images/index-12-150x150.png, txt-gray-light offset-top-10=Know every contact in your key accounts. Get a complete view of your customers, including activity history, key contacts, customer communications, and discussions with your co-workers. Customers matter, but spreadsheets, emails, and sticky notes are a hard way to manage them. CRM centralizes your data so you can manage the sales process, help customers faster, and market smarter. With the CRM tool, it is easy to segment and slice and dice your customers or prospects and convert more leads to sales., Get it on Google Play=https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png, privacy=FreeCRM.com © 2021 - Privacy Policy - Terms of Use, Android=https://www.freecrm.com/images/Android.png, free crm customer original=https://www.freecrm.com/images/index-11-150x150.png, iTunes=https://www.freecrm.com/images/Itunes.png, txt-gray-lighter offset-top-75 offset-md-top-87=Add as many employees as you wish to the CRM and automate your business like never before. Please take a closer look at what CRM is and how it helps find, win, and keep customers. Manage your sales pipeline and speed up your closing time with Free CRM. Interactions tracked in the CRM give you a bird's eye view, and deals are displayed on the dashboard for total visibility into everyone's progress and obstacles. Enterprise-level security and ongoing support to help you grow. Small businesses can grow faster with all of the tools to fill the sales pipeline through smarter marketing, improved sales productivity, and customer service., offset-top-35 offset-md-top-57=Reach out and engage your clients and nurture relationships. Personalize your email marketing, engage with mobile and influential social network marketing. Enable non-marketers to inform, engage in marketing quickly, and sell to their consumers at scale. Personalize the message and speak to people in their journey., free crm customer lakewoods=https://www.freecrm.com/images/index-12-150x150.png, txt-gray-light offset-top-75 offset-md-top-87=Grow every part of your business, monitor and manage everything from sales leads to support tickets and channel marketing to email campaigns, all from any desktop or device using our cloud-based software. We have everything you need to organize, track, and nurture your leads and customers. The power of a customer relationship management system is the ability to quickly identify a lead from a prospect or an existing customer. Free CRM software automates the tasks salespeople dislike and makes it easy for everyone. The best way to get started with CRM technology is to sign up and test it out on some of your data right now. Getting started with FreeCRM.com is easy if you have a CSV or Excel file with your leads or contacts; export from your existing system and then import into our CRM fast and easy., Download on the App Store=https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&h=95ead71555e15d4e25dc1db901e9e7b4}
+
+    MobileUI Build Object Repo From a Page
+    All Text From WebSite
+    offset-top-35 offset-md-top-57       *********Convert leads into accounts faster with the world's #1 CRM software. Grow your customer base, find new ones, and close faster from anywhere. Quickly follow up on leads, identify key contacts, and more. See a comfortable, customizable view of all of the details of sales at the touch of a button. Manage your pipeline and speed up your sales team.*********
+    offset-top-35 offset-md-top-57       *********Support every customer on every channel everywhere. Personalize customer care, close cases faster, and deliver support everywhere. Collect and organize all of your support channels and customer information on a single page to quickly help customers — route questions to the right agent and allocate work based on availability & expertise.*********
+    offset-top-35 offset-md-top-57       *********Reach out and engage your clients and nurture relationships. Personalize your email marketing, engage with mobile and influential social network marketing. Enable non-marketers to inform, engage in marketing quickly, and sell to their consumers at scale. Personalize the message and speak to people in their journey.*********
+    txt-gray-light offset-top-75 offset-md-top-87       *********Grow every part of your business, monitor and manage everything from sales leads to support tickets and channel marketing to email campaigns, all from any desktop or device using our cloud-based software. We have everything you need to organize, track, and nurture your leads and customers. The power of a customer relationship management system is the ability to quickly identify a lead from a prospect or an existing customer. Free CRM software automates the tasks salespeople dislike and makes it easy for everyone. The best way to get started with CRM technology is to sign up and test it out on some of your data right now. Getting started with FreeCRM.com is easy if you have a CSV or Excel file with your leads or contacts; export from your existing system and then import into our CRM fast and easy.*********
+    txt-gray-light offset-top-10       *********A CRM makes your team more efficient, identifying prospects and leads and closing more sales. On average, companies realize a 30% increase in sales by using FreeCRM. FreeCRM can also cut your time to close by as much as 50%. Put your company in this category and implement Free CRM now. Drive revenue growth; CRM powers your business when you streamline your configure, price, and quote process. Easily manage subscriptions, invoices, and payments. But there's more: a CRM can automate many things in your business, like tasks, documents, and support.*********
+    txt-gray-light offset-top-10       *********Find customers faster, win more customers, keep them happy, and connect everything. And it is not just sales; easy-to-use marketing automation and customer service tools boost engagement and happiness. Easy setup, manage leads, opportunities & accounts, create custom dashboards & reports, deliver social and email support, save time with customer service tools. Easily route the right customer service request to the proper agent and manage your knowledge base all in the CRM system.*********
+    txt-gray-light offset-top-10       *********Know every contact in your key accounts. Get a complete view of your customers, including activity history, key contacts, customer communications, and discussions with your co-workers. Customers matter, but spreadsheets, emails, and sticky notes are a hard way to manage them. CRM centralizes your data so you can manage the sales process, help customers faster, and market smarter. With the CRM tool, it is easy to segment and slice and dice your customers or prospects and convert more leads to sales.*********
+    txt-gray-lighter offset-top-75 offset-md-top-87       *********Add as many employees as you wish to the CRM and automate your business like never before. Please take a closer look at what CRM is and how it helps find, win, and keep customers. Manage your sales pipeline and speed up your closing time with Free CRM. Interactions tracked in the CRM give you a bird's eye view, and deals are displayed on the dashboard for total visibility into everyone's progress and obstacles. Enterprise-level security and ongoing support to help you grow. Small businesses can grow faster with all of the tools to fill the sales pipeline through smarter marketing, improved sales productivity, and customer service.*********
+    offset-top-23       *********Our company offers professional Free CRM services to boost sales and automate marketing and get more customers. CRM helps your whole team organize and keep track of all of your important corporate data.*********
+    offset-top-23       *********Try our mobile CRM applications for Android and iPhone and get your data on mobile on the web. Download and install our CRM apps and log in from anywhere to access your CRM data.*********
+    offset-top-22       *********Sales CRM
+    HIPAA Medical CRM
+    Dental CRM
+    Automotive CRM
+    Call Center CRM
+    Insurance CRM
+    Real Estate CRM
+    Professional Services CRM
+    Contractor Builder CRM
+    Independent Sales CRM
+    NPO Nonprofit CRM
+    NGO Nongovernment CRM
+    Wealth & Finance CRM
+    Hospitality CRM
+    Restaurant CRM
+    *********
+    privacy       *********FreeCRM.com © 2021 - Privacy Policy - Terms of Use*********
+    iTunes       *********https://www.freecrm.com/images/Itunes.png*********
+    Android       *********https://www.freecrm.com/images/Android.png*********
+    free crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********
+    free crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********
+    free crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********
+    free crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********
+    free crm customer lakewoods       *********https://www.freecrm.com/images/index-12-150x150.png*********
+    free crm customer household       *********https://www.freecrm.com/images/index-13-150x150.png*********
+    free crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********
+    free crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********
+    free crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********
+    free crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********
+    Get it on Google Play       *********https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png*********
+    Download on the App Store       *********https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&h=95ead71555e15d4e25dc1db901e9e7b4*********
+
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mstore all staticText&amp#27;[0m                      &amp#27;[90m# stepDefinitions.WebPracticesteps.store_all_static_text()&amp#27;[0m
+unknown tag
+{free crm customer original=https://www.freecrm.com/images/index-11-150x150.png, iTunes=https://www.freecrm.com/images/Itunes.png, free crm customer california=https://www.freecrm.com/images/index-14-150x150.png, free crm customer household=https://www.freecrm.com/images/index-13-150x150.png, free crm customer 42 vantage=https://www.freecrm.com/images/index-10-150x150.png, free crm customer jackson=https://www.freecrm.com/images/index-12-150x150.png, Get it on Google Play=https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png, free crm customer lakewoods=https://www.freecrm.com/images/index-12-150x150.png, Download on the App Store=https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&h=95ead71555e15d4e25dc1db901e9e7b4, Android=https://www.freecrm.com/images/Android.png}
+
+    MobileUI Build Object Repo From a Page
+    All Image From WebSite
+    iTunes       *********https://www.freecrm.com/images/Itunes.png*********
+    Android       *********https://www.freecrm.com/images/Android.png*********
+    free crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********
+    free crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********
+    free crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********
+    free crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********
+    free crm customer lakewoods       *********https://www.freecrm.com/images/index-12-150x150.png*********
+    free crm customer household       *********https://www.freecrm.com/images/index-13-150x150.png*********
+    free crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********
+    free crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********
+    free crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********
+    free crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********
+    Get it on Google Play       *********https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png*********
+    Download on the App Store       *********https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&h=95ead71555e15d4e25dc1db901e9e7b4*********
+
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mstore all image&amp#27;[0m                           &amp#27;[90m# stepDefinitions.WebPracticesteps.store_all_image()&amp#27;[0m
+
+    MobileUI Build Object Repo From a Page
+
+
+    MobileUI Build Object Repo From a Page
+
+
+    BinaryTree.BinaryTreeNew@258291de
+
+
+    Embedding ScreenShot [image/png 362157 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 8530
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 18, 2021 12:54:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Java Practice" classname="Cucumber to do Java String manipulation" time="0.015">
+    <system-out><![CDATA[
+Scenario: Java Practice                                                                 &amp#27;[90m# src/test/resources/Feature/StringManupulationJava.feature:2&amp#27;[0m
+Java Practice
+
+    Java Practice
+
+Java Practice
+
+    Java Practice
+
+Java Practice
+
+    Java Practice
+
+
+    Java PracticeThis is a Beautiful is Alphanumeric String as a mpCOXLmDuHXp
+
+
+    Java Practice[3Yx4O2MD4y9p, e8Uqwmk9lBLsUqi, wN02MId1vXOVpGTJ0, 3Cq7B0tj, g4RIwCVOBzJ0no7tMxoktZ7]
+
+
+    Java Practice{3063578244=sRzlUCJqRLtncAranXQl, 2368342015=CiswtpadAQaxMPAglemW, 9298876090=chpiDfFrsdQFBhOZvsAw}
+
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI created Java String and Java Array List and HashMap&amp#27;[0m                           &amp#27;[90m# stepDefinitions.JavaPracticesteps.i_created_java_string()&amp#27;[0m
+
+    Java Practice
+    String
+    This is a Beautiful is Alphanumeric String as a mpCOXLmDuHXp
+
+
+    Java Practice
+    ArrayList
+    [3Yx4O2MD4y9p, e8Uqwmk9lBLsUqi, wN02MId1vXOVpGTJ0, 3Cq7B0tj, g4RIwCVOBzJ0no7tMxoktZ7]
+
+
+    Java Practice
+    hashmap
+    {3063578244=sRzlUCJqRLtncAranXQl, 2368342015=CiswtpadAQaxMPAglemW, 9298876090=chpiDfFrsdQFBhOZvsAw}
+
+
+    Java Practice
+    iterate Hashmap using reverse order of keys
+
+
+    Key : 9298876090		Value : chpiDfFrsdQFBhOZvsAw
+
+
+    Key : 2368342015		Value : CiswtpadAQaxMPAglemW
+
+
+    Key : 3063578244		Value : sRzlUCJqRLtncAranXQl
+
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mMake them reverse&amp#27;[0m                                                                &amp#27;[90m# stepDefinitions.JavaPracticesteps.make_them_reverse()&amp#27;[0m
+
+    Java Practice
+    Make the String Reverse
+    pXHuDmLXOCpm a sa gnirtS ciremunahplA si lufituaeB a si sihT
+
+
+    Java Practice
+    Make the ArrayList Reverse
+    [p9y4DM2O4xY3, iqUsLBl9kmwqU8e, 0JTGpVOXv1dIM20Nw, jt0B7qC3, 7ZtkoxMt7on0JzBOVCwIR4g]
+
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mPrint the all the reverse Java String and Java Array List and HashMap&amp#27;[0m            &amp#27;[90m# stepDefinitions.JavaPracticesteps.print_the_string()&amp#27;[0m
+
+    Java Practice
+    Print the Char Occurrence 'h' in a generic String 'This is a Beautiful is Alphanumeric String as a mpCOXLmDuHXp'
+    2
+
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mPrint Count the Number of Occurrences of a generic Character in a generic String&amp#27;[0m &amp#27;[90m# stepDefinitions.JavaPracticesteps.print_count_the_number_of_occurrences_of_a_generic_character_in_a_generic_string()&amp#27;[0m
+
+    Java Practice
+    Print the Vowel occurrence in a generic String 'This is a Beautiful is Alphanumeric String as a mpCOXLmDuHXp'
+    19
+
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mPrint Count the Number of Vowel of a generic Character in a generic String&amp#27;[0m       &amp#27;[90m# stepDefinitions.JavaPracticesteps.print_count_the_number_of_vowel_of_a_generic_character_in_a_generic_string()&amp#27;[0m
+
+    Java Practice
+    Print the duplicate in a generic String 'This is a Beautiful is Alphanumeric String as a mpCOXLmDuHXp'
+    this is a beautiful alphanumeric string as mpcoxlmduhxp
+
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mPrint delete duplicate string in a generic Character in a generic String&amp#27;[0m         &amp#27;[90m# stepDefinitions.JavaPracticesteps.print_delete_duplicate_string_in_a_generic_character_in_a_generic_string()&amp#27;[0m
+
+    Java Practice
+    Print the Data Format String '15112021'
+    15th NOV 2021
+
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mPrint Date format for input date DDMMYYYY&amp#27;[0m                                        &amp#27;[90m# stepDefinitions.JavaPracticesteps.print_date_format_for_input_date(io.cucumber.datatable.DataTable)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mcount the array elements that divide the sum of other elements&amp#27;[0m                   &amp#27;[90m# stepDefinitions.JavaPracticesteps.count_the_array_elements_that_divide_the_sum_of_other_elements()&amp#27;[0m
+
+    Java Practice
+
+
+    Java Practice
+
+
+    BinaryTree.BinaryTreeNew@37f0fb02
+
+]]></system-out>
+    <system-err><![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.webDriver" is null
+	at stepDefinitions.WebPracticesteps.teardown(WebPracticesteps.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:110)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:364)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:237)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:158)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]></system-err>
+  </testcase>
+  <testcase name="WebUI Build Object Repo From a Page" classname="WebUI Cucumber to do Build own Object repository Dynamically" time="6.956">
+    <system-out><![CDATA[
+Scenario: WebUI Build Object Repo From a Page &amp#27;[90m# src/test/resources/Feature/WebUI.feature:2&amp#27;[0m
+WebUI Build Object Repo From a Page
+
+    WebUI Build Object Repo From a Page
+
+WebUI Build Object Repo From a Page
+
+    WebUI Build Object Repo From a Page
+
+WebUI Build Object Repo From a Page
+
+    WebUI Build Object Repo From a Page
+
+[DEBUG] Resolution chrome=90 in cache (valid until 13:54:01 18/05/2021 EDT)
+[DEBUG] Resolution chrome90=90.0.4430.24 in cache (valid until 10:07:44 19/05/2021 EDT)
+[INFO] Using chromedriver 90.0.4430.24 (resolved driver for Chrome 90)
+[DEBUG] Driver chromedriver 90.0.4430.24 found in cache
+[INFO] Exporting webdriver.chrome.driver as /Users/mouli/.cache/selenium/chromedriver/mac64/90.0.4430.24/chromedriver
+
+    WebUI Build Object Repo From a Page
+    Web Browser Title
+    #1 Free CRM customer relationship management software cloud
+
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mopen the Browser&amp#27;[0m                      &amp#27;[90m# stepDefinitions.WebPracticesteps.open_the_browser(io.cucumber.datatable.DataTable)&amp#27;[0m
+unknown tag
+{free crm customer california=https://www.freecrm.com/images/index-14-150x150.png, offset-top-23=Try our mobile CRM applications for Android and iPhone and get your data on mobile on the web. Download and install our CRM apps and log in from anywhere to access your CRM data., https://www.freecrm.com/about.html=ABOUT, https://itunes.apple.com/us/app/cogmento/id1291380634?mt=8=, offset-top-22=Sales CRM
+HIPAA Medical CRM
+Dental CRM
+Automotive CRM
+Call Center CRM
+Insurance CRM
+Real Estate CRM
+Professional Services CRM
+Contractor Builder CRM
+Independent Sales CRM
+NPO Nonprofit CRM
+NGO Nongovernment CRM
+Wealth & Finance CRM
+Hospitality CRM
+Restaurant CRM
+, https://www.freecrm.com/hipaa.html=HIPAA Medical CRM, privacy=FreeCRM.com © 2021 - Privacy Policy - Terms of Use, https://www.freecrm.com/callcenter.html=Call Center CRM, https://www.freecrm.com/is.html=Independent Sales CRM, https://support.cogmento.com/webinars-and-videos=SUPPORT, free crm customer original=https://www.freecrm.com/images/index-11-150x150.png, iTunes=https://www.freecrm.com/images/Itunes.png, https://freecrm.com/=YOUR BUSINESS CLOUD PARTNER
+ FREECRM, https://www.freecrm.com/compare.html=COMPARE, https://www.freecrm.com/#=, https://www.freecrm.com/dental.html=Dental CRM, https://www.freecrm.com/auto.html=Automotive CRM, https://www.freecrm.com/privacy.html=Privacy Policy, txt-gray-light offset-top-75 offset-md-top-87=Grow every part of your business, monitor and manage everything from sales leads to support tickets and channel marketing to email campaigns, all from any desktop or device using our cloud-based software. We have everything you need to organize, track, and nurture your leads and customers. The power of a customer relationship management system is the ability to quickly identify a lead from a prospect or an existing customer. Free CRM software automates the tasks salespeople dislike and makes it easy for everyone. The best way to get started with CRM technology is to sign up and test it out on some of your data right now. Getting started with FreeCRM.com is easy if you have a CSV or Excel file with your leads or contacts; export from your existing system and then import into our CRM fast and easy., Download on the App Store=https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&h=95ead71555e15d4e25dc1db901e9e7b4, https://www.freecrm.com/cb.html=Contractor Builder CRM, free crm customer household=https://www.freecrm.com/images/index-13-150x150.png, https://ui.cogmento.com/=LOG IN, free crm customer 42 vantage=https://www.freecrm.com/images/index-10-150x150.png, https://register.freecrm.com/register/= SIGN UP, free crm customer jackson=https://www.freecrm.com/images/index-12-150x150.png, txt-gray-light offset-top-10=Know every contact in your key accounts. Get a complete view of your customers, including activity history, key contacts, customer communications, and discussions with your co-workers. Customers matter, but spreadsheets, emails, and sticky notes are a hard way to manage them. CRM centralizes your data so you can manage the sales process, help customers faster, and market smarter. With the CRM tool, it is easy to segment and slice and dice your customers or prospects and convert more leads to sales., Get it on Google Play=https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png, https://www.freecrm.com/crmcloud.html=Restaurant CRM, https://www.freecrm.com/insurance.html=Insurance CRM, Android=https://www.freecrm.com/images/Android.png, https://www.freecrm.com/re.html=Real Estate CRM, <a href="">Apps</a>=-------------BROKEN LINK, https://www.freecrm.com/terms.html=Terms of Use, https://apps.apple.com/us/app/cogmento/id1291380634=, https://play.google.com/store/apps/details?id=com.cogmento.app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1=, txt-gray-lighter offset-top-75 offset-md-top-87=Add as many employees as you wish to the CRM and automate your business like never before. Please take a closer look at what CRM is and how it helps find, win, and keep customers. Manage your sales pipeline and speed up your closing time with Free CRM. Interactions tracked in the CRM give you a bird's eye view, and deals are displayed on the dashboard for total visibility into everyone's progress and obstacles. Enterprise-level security and ongoing support to help you grow. Small businesses can grow faster with all of the tools to fill the sales pipeline through smarter marketing, improved sales productivity, and customer service., https://apps.apple.com/us/developer/cogmento-inc/id1291380633?itsct=apps_box&itscg=30200=, offset-top-35 offset-md-top-57=Reach out and engage your clients and nurture relationships. Personalize your email marketing, engage with mobile and influential social network marketing. Enable non-marketers to inform, engage in marketing quickly, and sell to their consumers at scale. Personalize the message and speak to people in their journey., free crm customer lakewoods=https://www.freecrm.com/images/index-12-150x150.png, https://www.freecrm.com/ps.html=Professional Services CRM, https://play.google.com/store/apps/details?id=com.cogmento.app=, https://www.freecrm.com/pricing.html=PRICING}
+
+    WebUI Build Object Repo From a Page
+    All Links From WebSite
+    https://freecrm.com/       *********YOUR BUSINESS CLOUD PARTNER
+     FREECRM*********
+    https://freecrm.com/       *********your business cloud partner FreeCRM*********
+    https://www.freecrm.com/about.html       *********ABOUT*********
+    https://www.freecrm.com/#       *********FREE CRM*********
+    https://www.freecrm.com/crmcloud.html       ******************
+    https://www.freecrm.com/hipaa.html       ******************
+    https://www.freecrm.com/dental.html       ******************
+    https://www.freecrm.com/auto.html       ******************
+    https://www.freecrm.com/callcenter.html       ******************
+    https://www.freecrm.com/insurance.html       ******************
+    https://www.freecrm.com/re.html       ******************
+    https://www.freecrm.com/ps.html       ******************
+    https://www.freecrm.com/cb.html       ******************
+    https://www.freecrm.com/is.html       ******************
+    <a href="">Apps</a>-------------BROKEN LINK
+    https://play.google.com/store/apps/details?id=com.cogmento.app       ******************
+    https://apps.apple.com/us/app/cogmento/id1291380634       ******************
+    https://www.freecrm.com/compare.html       *********COMPARE*********
+    https://www.freecrm.com/pricing.html       *********PRICING*********
+    https://itunes.apple.com/us/app/cogmento/id1291380634?mt=8       ******************
+    https://play.google.com/store/apps/details?id=com.cogmento.app       ******************
+    https://support.cogmento.com/webinars-and-videos       *********SUPPORT*********
+    https://ui.cogmento.com/       *********LOG IN*********
+    https://register.freecrm.com/register/       ********* SIGN UP*********
+    https://register.freecrm.com/register/       ********* SIGN UP*********
+    https://register.freecrm.com/register/       ********* SIGN UP*********
+    https://register.freecrm.com/register/       ********* SIGN UP*********
+    https://register.freecrm.com/register/       ********* SIGN UP*********
+    https://register.freecrm.com/register/       ********* SIGN UP*********
+    https://freecrm.com/       *********YOUR BUSINESS CLOUD PARTNER
+     FREECRM*********
+    https://play.google.com/store/apps/details?id=com.cogmento.app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1       ******************
+    https://apps.apple.com/us/developer/cogmento-inc/id1291380633?itsct=apps_box&itscg=30200       ******************
+    https://www.freecrm.com/crmcloud.html       *********Sales CRM*********
+    https://www.freecrm.com/hipaa.html       *********HIPAA Medical CRM*********
+    https://www.freecrm.com/dental.html       *********Dental CRM*********
+    https://www.freecrm.com/auto.html       *********Automotive CRM*********
+    https://www.freecrm.com/callcenter.html       *********Call Center CRM*********
+    https://www.freecrm.com/insurance.html       *********Insurance CRM*********
+    https://www.freecrm.com/re.html       *********Real Estate CRM*********
+    https://www.freecrm.com/ps.html       *********Professional Services CRM*********
+    https://www.freecrm.com/cb.html       *********Contractor Builder CRM*********
+    https://www.freecrm.com/is.html       *********Independent Sales CRM*********
+    https://www.freecrm.com/crmcloud.html       *********NPO Nonprofit CRM*********
+    https://www.freecrm.com/crmcloud.html       *********NGO Nongovernment CRM*********
+    https://www.freecrm.com/crmcloud.html       *********Wealth & Finance CRM*********
+    https://www.freecrm.com/crmcloud.html       *********Hospitality CRM*********
+    https://www.freecrm.com/crmcloud.html       *********Restaurant CRM*********
+    https://www.freecrm.com/privacy.html       *********Privacy Policy*********
+    https://www.freecrm.com/terms.html       *********Terms of Use*********
+    https://www.freecrm.com/#       ******************
+    offset-top-35 offset-md-top-57       *********Convert leads into accounts faster with the world's #1 CRM software. Grow your customer base, find new ones, and close faster from anywhere. Quickly follow up on leads, identify key contacts, and more. See a comfortable, customizable view of all of the details of sales at the touch of a button. Manage your pipeline and speed up your sales team.*********
+    offset-top-35 offset-md-top-57       *********Support every customer on every channel everywhere. Personalize customer care, close cases faster, and deliver support everywhere. Collect and organize all of your support channels and customer information on a single page to quickly help customers — route questions to the right agent and allocate work based on availability & expertise.*********
+    offset-top-35 offset-md-top-57       *********Reach out and engage your clients and nurture relationships. Personalize your email marketing, engage with mobile and influential social network marketing. Enable non-marketers to inform, engage in marketing quickly, and sell to their consumers at scale. Personalize the message and speak to people in their journey.*********
+    txt-gray-light offset-top-75 offset-md-top-87       *********Grow every part of your business, monitor and manage everything from sales leads to support tickets and channel marketing to email campaigns, all from any desktop or device using our cloud-based software. We have everything you need to organize, track, and nurture your leads and customers. The power of a customer relationship management system is the ability to quickly identify a lead from a prospect or an existing customer. Free CRM software automates the tasks salespeople dislike and makes it easy for everyone. The best way to get started with CRM technology is to sign up and test it out on some of your data right now. Getting started with FreeCRM.com is easy if you have a CSV or Excel file with your leads or contacts; export from your existing system and then import into our CRM fast and easy.*********
+    txt-gray-light offset-top-10       *********A CRM makes your team more efficient, identifying prospects and leads and closing more sales. On average, companies realize a 30% increase in sales by using FreeCRM. FreeCRM can also cut your time to close by as much as 50%. Put your company in this category and implement Free CRM now. Drive revenue growth; CRM powers your business when you streamline your configure, price, and quote process. Easily manage subscriptions, invoices, and payments. But there's more: a CRM can automate many things in your business, like tasks, documents, and support.*********
+    txt-gray-light offset-top-10       *********Find customers faster, win more customers, keep them happy, and connect everything. And it is not just sales; easy-to-use marketing automation and customer service tools boost engagement and happiness. Easy setup, manage leads, opportunities & accounts, create custom dashboards & reports, deliver social and email support, save time with customer service tools. Easily route the right customer service request to the proper agent and manage your knowledge base all in the CRM system.*********
+    txt-gray-light offset-top-10       *********Know every contact in your key accounts. Get a complete view of your customers, including activity history, key contacts, customer communications, and discussions with your co-workers. Customers matter, but spreadsheets, emails, and sticky notes are a hard way to manage them. CRM centralizes your data so you can manage the sales process, help customers faster, and market smarter. With the CRM tool, it is easy to segment and slice and dice your customers or prospects and convert more leads to sales.*********
+    txt-gray-lighter offset-top-75 offset-md-top-87       *********Add as many employees as you wish to the CRM and automate your business like never before. Please take a closer look at what CRM is and how it helps find, win, and keep customers. Manage your sales pipeline and speed up your closing time with Free CRM. Interactions tracked in the CRM give you a bird's eye view, and deals are displayed on the dashboard for total visibility into everyone's progress and obstacles. Enterprise-level security and ongoing support to help you grow. Small businesses can grow faster with all of the tools to fill the sales pipeline through smarter marketing, improved sales productivity, and customer service.*********
+    offset-top-23       *********Our company offers professional Free CRM services to boost sales and automate marketing and get more customers. CRM helps your whole team organize and keep track of all of your important corporate data.*********
+    offset-top-23       *********Try our mobile CRM applications for Android and iPhone and get your data on mobile on the web. Download and install our CRM apps and log in from anywhere to access your CRM data.*********
+    offset-top-22       *********Sales CRM
+    HIPAA Medical CRM
+    Dental CRM
+    Automotive CRM
+    Call Center CRM
+    Insurance CRM
+    Real Estate CRM
+    Professional Services CRM
+    Contractor Builder CRM
+    Independent Sales CRM
+    NPO Nonprofit CRM
+    NGO Nongovernment CRM
+    Wealth & Finance CRM
+    Hospitality CRM
+    Restaurant CRM
+    *********
+    privacy       *********FreeCRM.com © 2021 - Privacy Policy - Terms of Use*********
+    iTunes       *********https://www.freecrm.com/images/Itunes.png*********
+    Android       *********https://www.freecrm.com/images/Android.png*********
+    free crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********
+    free crm customer lakewoods       *********https://www.freecrm.com/images/index-12-150x150.png*********
+    free crm customer household       *********https://www.freecrm.com/images/index-13-150x150.png*********
+    free crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********
+    free crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********
+    free crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********
+    free crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********
+    free crm customer lakewoods       *********https://www.freecrm.com/images/index-12-150x150.png*********
+    free crm customer household       *********https://www.freecrm.com/images/index-13-150x150.png*********
+    free crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********
+    free crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********
+    free crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********
+    free crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********
+    free crm customer lakewoods       *********https://www.freecrm.com/images/index-12-150x150.png*********
+    free crm customer household       *********https://www.freecrm.com/images/index-13-150x150.png*********
+    free crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********
+    Get it on Google Play       *********https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png*********
+    Download on the App Store       *********https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&h=95ead71555e15d4e25dc1db901e9e7b4*********
+
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mstore all Links&amp#27;[0m                        &amp#27;[90m# stepDefinitions.WebPracticesteps.store_all_links()&amp#27;[0m
+unknown tag
+{free crm customer household=https://www.freecrm.com/images/index-13-150x150.png, free crm customer california=https://www.freecrm.com/images/index-14-150x150.png, free crm customer 42 vantage=https://www.freecrm.com/images/index-10-150x150.png, offset-top-23=Try our mobile CRM applications for Android and iPhone and get your data on mobile on the web. Download and install our CRM apps and log in from anywhere to access your CRM data., offset-top-22=Sales CRM
+HIPAA Medical CRM
+Dental CRM
+Automotive CRM
+Call Center CRM
+Insurance CRM
+Real Estate CRM
+Professional Services CRM
+Contractor Builder CRM
+Independent Sales CRM
+NPO Nonprofit CRM
+NGO Nongovernment CRM
+Wealth & Finance CRM
+Hospitality CRM
+Restaurant CRM
+, free crm customer jackson=https://www.freecrm.com/images/index-12-150x150.png, txt-gray-light offset-top-10=Know every contact in your key accounts. Get a complete view of your customers, including activity history, key contacts, customer communications, and discussions with your co-workers. Customers matter, but spreadsheets, emails, and sticky notes are a hard way to manage them. CRM centralizes your data so you can manage the sales process, help customers faster, and market smarter. With the CRM tool, it is easy to segment and slice and dice your customers or prospects and convert more leads to sales., Get it on Google Play=https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png, privacy=FreeCRM.com © 2021 - Privacy Policy - Terms of Use, Android=https://www.freecrm.com/images/Android.png, free crm customer original=https://www.freecrm.com/images/index-11-150x150.png, iTunes=https://www.freecrm.com/images/Itunes.png, txt-gray-lighter offset-top-75 offset-md-top-87=Add as many employees as you wish to the CRM and automate your business like never before. Please take a closer look at what CRM is and how it helps find, win, and keep customers. Manage your sales pipeline and speed up your closing time with Free CRM. Interactions tracked in the CRM give you a bird's eye view, and deals are displayed on the dashboard for total visibility into everyone's progress and obstacles. Enterprise-level security and ongoing support to help you grow. Small businesses can grow faster with all of the tools to fill the sales pipeline through smarter marketing, improved sales productivity, and customer service., offset-top-35 offset-md-top-57=Reach out and engage your clients and nurture relationships. Personalize your email marketing, engage with mobile and influential social network marketing. Enable non-marketers to inform, engage in marketing quickly, and sell to their consumers at scale. Personalize the message and speak to people in their journey., free crm customer lakewoods=https://www.freecrm.com/images/index-12-150x150.png, txt-gray-light offset-top-75 offset-md-top-87=Grow every part of your business, monitor and manage everything from sales leads to support tickets and channel marketing to email campaigns, all from any desktop or device using our cloud-based software. We have everything you need to organize, track, and nurture your leads and customers. The power of a customer relationship management system is the ability to quickly identify a lead from a prospect or an existing customer. Free CRM software automates the tasks salespeople dislike and makes it easy for everyone. The best way to get started with CRM technology is to sign up and test it out on some of your data right now. Getting started with FreeCRM.com is easy if you have a CSV or Excel file with your leads or contacts; export from your existing system and then import into our CRM fast and easy., Download on the App Store=https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&h=95ead71555e15d4e25dc1db901e9e7b4}
+
+    WebUI Build Object Repo From a Page
+    All Text From WebSite
+    offset-top-35 offset-md-top-57       *********Convert leads into accounts faster with the world's #1 CRM software. Grow your customer base, find new ones, and close faster from anywhere. Quickly follow up on leads, identify key contacts, and more. See a comfortable, customizable view of all of the details of sales at the touch of a button. Manage your pipeline and speed up your sales team.*********
+    offset-top-35 offset-md-top-57       *********Support every customer on every channel everywhere. Personalize customer care, close cases faster, and deliver support everywhere. Collect and organize all of your support channels and customer information on a single page to quickly help customers — route questions to the right agent and allocate work based on availability & expertise.*********
+    offset-top-35 offset-md-top-57       *********Reach out and engage your clients and nurture relationships. Personalize your email marketing, engage with mobile and influential social network marketing. Enable non-marketers to inform, engage in marketing quickly, and sell to their consumers at scale. Personalize the message and speak to people in their journey.*********
+    txt-gray-light offset-top-75 offset-md-top-87       *********Grow every part of your business, monitor and manage everything from sales leads to support tickets and channel marketing to email campaigns, all from any desktop or device using our cloud-based software. We have everything you need to organize, track, and nurture your leads and customers. The power of a customer relationship management system is the ability to quickly identify a lead from a prospect or an existing customer. Free CRM software automates the tasks salespeople dislike and makes it easy for everyone. The best way to get started with CRM technology is to sign up and test it out on some of your data right now. Getting started with FreeCRM.com is easy if you have a CSV or Excel file with your leads or contacts; export from your existing system and then import into our CRM fast and easy.*********
+    txt-gray-light offset-top-10       *********A CRM makes your team more efficient, identifying prospects and leads and closing more sales. On average, companies realize a 30% increase in sales by using FreeCRM. FreeCRM can also cut your time to close by as much as 50%. Put your company in this category and implement Free CRM now. Drive revenue growth; CRM powers your business when you streamline your configure, price, and quote process. Easily manage subscriptions, invoices, and payments. But there's more: a CRM can automate many things in your business, like tasks, documents, and support.*********
+    txt-gray-light offset-top-10       *********Find customers faster, win more customers, keep them happy, and connect everything. And it is not just sales; easy-to-use marketing automation and customer service tools boost engagement and happiness. Easy setup, manage leads, opportunities & accounts, create custom dashboards & reports, deliver social and email support, save time with customer service tools. Easily route the right customer service request to the proper agent and manage your knowledge base all in the CRM system.*********
+    txt-gray-light offset-top-10       *********Know every contact in your key accounts. Get a complete view of your customers, including activity history, key contacts, customer communications, and discussions with your co-workers. Customers matter, but spreadsheets, emails, and sticky notes are a hard way to manage them. CRM centralizes your data so you can manage the sales process, help customers faster, and market smarter. With the CRM tool, it is easy to segment and slice and dice your customers or prospects and convert more leads to sales.*********
+    txt-gray-lighter offset-top-75 offset-md-top-87       *********Add as many employees as you wish to the CRM and automate your business like never before. Please take a closer look at what CRM is and how it helps find, win, and keep customers. Manage your sales pipeline and speed up your closing time with Free CRM. Interactions tracked in the CRM give you a bird's eye view, and deals are displayed on the dashboard for total visibility into everyone's progress and obstacles. Enterprise-level security and ongoing support to help you grow. Small businesses can grow faster with all of the tools to fill the sales pipeline through smarter marketing, improved sales productivity, and customer service.*********
+    offset-top-23       *********Our company offers professional Free CRM services to boost sales and automate marketing and get more customers. CRM helps your whole team organize and keep track of all of your important corporate data.*********
+    offset-top-23       *********Try our mobile CRM applications for Android and iPhone and get your data on mobile on the web. Download and install our CRM apps and log in from anywhere to access your CRM data.*********
+    offset-top-22       *********Sales CRM
+    HIPAA Medical CRM
+    Dental CRM
+    Automotive CRM
+    Call Center CRM
+    Insurance CRM
+    Real Estate CRM
+    Professional Services CRM
+    Contractor Builder CRM
+    Independent Sales CRM
+    NPO Nonprofit CRM
+    NGO Nongovernment CRM
+    Wealth & Finance CRM
+    Hospitality CRM
+    Restaurant CRM
+    *********
+    privacy       *********FreeCRM.com © 2021 - Privacy Policy - Terms of Use*********
+    iTunes       *********https://www.freecrm.com/images/Itunes.png*********
+    Android       *********https://www.freecrm.com/images/Android.png*********
+    free crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********
+    free crm customer lakewoods       *********https://www.freecrm.com/images/index-12-150x150.png*********
+    free crm customer household       *********https://www.freecrm.com/images/index-13-150x150.png*********
+    free crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********
+    free crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********
+    free crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********
+    free crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********
+    free crm customer lakewoods       *********https://www.freecrm.com/images/index-12-150x150.png*********
+    free crm customer household       *********https://www.freecrm.com/images/index-13-150x150.png*********
+    free crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********
+    free crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********
+    free crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********
+    free crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********
+    free crm customer lakewoods       *********https://www.freecrm.com/images/index-12-150x150.png*********
+    free crm customer household       *********https://www.freecrm.com/images/index-13-150x150.png*********
+    free crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********
+    Get it on Google Play       *********https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png*********
+    Download on the App Store       *********https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&h=95ead71555e15d4e25dc1db901e9e7b4*********
+
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mstore all staticText&amp#27;[0m                   &amp#27;[90m# stepDefinitions.WebPracticesteps.store_all_static_text()&amp#27;[0m
+unknown tag
+{free crm customer original=https://www.freecrm.com/images/index-11-150x150.png, iTunes=https://www.freecrm.com/images/Itunes.png, free crm customer household=https://www.freecrm.com/images/index-13-150x150.png, free crm customer california=https://www.freecrm.com/images/index-14-150x150.png, free crm customer 42 vantage=https://www.freecrm.com/images/index-10-150x150.png, free crm customer jackson=https://www.freecrm.com/images/index-12-150x150.png, Get it on Google Play=https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png, free crm customer lakewoods=https://www.freecrm.com/images/index-12-150x150.png, Download on the App Store=https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&h=95ead71555e15d4e25dc1db901e9e7b4, Android=https://www.freecrm.com/images/Android.png}
+
+    WebUI Build Object Repo From a Page
+    All Image From WebSite
+    iTunes       *********https://www.freecrm.com/images/Itunes.png*********
+    Android       *********https://www.freecrm.com/images/Android.png*********
+    free crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********
+    free crm customer lakewoods       *********https://www.freecrm.com/images/index-12-150x150.png*********
+    free crm customer household       *********https://www.freecrm.com/images/index-13-150x150.png*********
+    free crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********
+    free crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********
+    free crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********
+    free crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********
+    free crm customer lakewoods       *********https://www.freecrm.com/images/index-12-150x150.png*********
+    free crm customer household       *********https://www.freecrm.com/images/index-13-150x150.png*********
+    free crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********
+    free crm customer jackson       *********https://www.freecrm.com/images/index-12-150x150.png*********
+    free crm customer 42 vantage       *********https://www.freecrm.com/images/index-10-150x150.png*********
+    free crm customer original       *********https://www.freecrm.com/images/index-11-150x150.png*********
+    free crm customer lakewoods       *********https://www.freecrm.com/images/index-12-150x150.png*********
+    free crm customer household       *********https://www.freecrm.com/images/index-13-150x150.png*********
+    free crm customer california       *********https://www.freecrm.com/images/index-14-150x150.png*********
+    Get it on Google Play       *********https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png*********
+    Download on the App Store       *********https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&h=95ead71555e15d4e25dc1db901e9e7b4*********
+
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mstore all image&amp#27;[0m                        &amp#27;[90m# stepDefinitions.WebPracticesteps.store_all_image()&amp#27;[0m
+
+    WebUI Build Object Repo From a Page
+
+
+    WebUI Build Object Repo From a Page
+
+
+    BinaryTree.BinaryTreeNew@5513745d
+
+
+    Embedding ScreenShot [image/png 612049 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 28264
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 18, 2021 12:54:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
 </testsuite>

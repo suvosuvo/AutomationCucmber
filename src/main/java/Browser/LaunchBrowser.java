@@ -1,6 +1,10 @@
 package Browser;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,12 +19,17 @@ import java.util.concurrent.TimeUnit;
 public class LaunchBrowser {
 
     public WebDriver webDriver;
+    @Severity(SeverityLevel.BLOCKER)
+    @Description("Verified WebUI coming up in Test")
+    @Story("To launch the Browser Page")
     public void initiateBrowser(String websiteName) {
         WebDriverManager.chromedriver().setup();
         webDriver = new ChromeDriver();
         webDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         webDriver.get(websiteName);
     }
+    @Severity(SeverityLevel.BLOCKER)
+    @Description("Login in Browser for Mobile")
     public void initiateMobileBrowser(String websiteName) {
         Map<String, Object> deviceMetrics = new HashMap<>();
         deviceMetrics.put("width", 360);
