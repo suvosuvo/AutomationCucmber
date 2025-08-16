@@ -21,6 +21,7 @@ def test_second_known_prompt_no_hallucination():
 @pytest.mark.regression
 @pytest.mark.smike
 @pytest.mark.a11y
+
 def test_unknown_prompt_raises_error():
     """Model raises ValueError when encountering an unknown prompt."""
     with pytest.raises(ValueError):
