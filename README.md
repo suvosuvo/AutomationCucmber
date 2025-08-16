@@ -34,4 +34,3 @@ For a quick smoke check of the sample health API endpoint, run:
 ```bash
 pytest -m smoke
 ```
-
