@@ -28,3 +28,10 @@ To run the regression suite, including hallucination checks maintained by @smike
 ```bash
 pytest -m regression
 ```
+
+For a quick smoke check of the sample health API endpoint, run:
+
+```bash
+pytest -m smoke
+```
+
