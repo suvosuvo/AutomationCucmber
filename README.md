@@ -23,3 +23,8 @@ To execute the sample ETL test, install the required Python dependencies and run
 pytest tests/test_sample_etl.py
 ```
 
+To run the regression suite, including hallucination checks maintained by @smike and @a11y, use:
+
+```bash
+pytest -m regression
+```
